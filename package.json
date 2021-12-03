@@ -1,0 +1,28 @@
+{
+  "name": "hack-hub2022",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HackHub2022",
+  "author": "Abhijith Ganesh",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.2.0",
+    "gatsby-plugin-image": "^2.3.0",
+    "gatsby-plugin-postcss": "^5.3.0",
+    "gatsby-plugin-sharp": "^4.3.0",
+    "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-transformer-sharp": "^4.3.0",
+    "postcss": "^8.4.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
