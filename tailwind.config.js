@@ -4,7 +4,13 @@ module.exports = {
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        Atmos : ["Atmospheric"],
+        Sansation: ["Sansation"],
+        SanBold: ["Sansation-Bold"],
+      }
+    },
   },
   variants: {
     extend: {},
