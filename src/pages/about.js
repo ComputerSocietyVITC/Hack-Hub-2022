@@ -1,16 +1,19 @@
-import React from "react";
+import React from 'react';
 
 let page=[
     {
-        id:1,smallHeader:"About",Text:""
+        id : 1,
+        textHeader:"ABOUT",
+        About : "Sample Text"
     }
 ]
+
 function About(){
     return(
-        <section className="abt">
+        <section className="bground">
             {page.map((pag)=>{
                 return(
-                    <Show key={pag.id}{...pag}></Show>
+                    <Show key={pag.id}{...pag}/>
                 )
             })}
         </section>
@@ -18,13 +21,19 @@ function About(){
 }
 
 const Show=(props)=>{
-    const {smallHeader,Text}=props
+    const {textHeader,About}=props
     return(
-        <div>
-            <h3>{smallHeader}</h3>
-            <p className="pa">{Text}</p>
-        </div>
-
+        <section>
+            <section className="around-head">
+                <h2>{textHeader}</h2>
+            </section>
+            <section className="around-abt">
+                <section className="ard-abt">
+                    <p>{About}</p>
+                </section>
+                
+            </section>
+        </section>
     )
 }
 export default About;
