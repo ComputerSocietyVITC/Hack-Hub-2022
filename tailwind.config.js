@@ -10,12 +10,12 @@ module.exports = {
         Sansation: ["Sansation"],
         SanBold: ["Sansation-Bold"],
       },
-      backgroundImage: {
-        'bgimage': "url('../images/bgimage.png')",
-      },
       colors: {
         'color1': '#FF005D',
         'color2': '#5000A4'
+      },
+      fontSize: {
+        'xxs': '.6rem',
       }
     }
   },

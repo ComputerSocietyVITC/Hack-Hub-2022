@@ -1,12 +1,11 @@
 import * as React from "react"
+import Navbar from "../components/navbar"
 import TimeLine from "./timeline"
 
 const IndexPage = () => {
   return (
     <>
-      <h1 className="text-red-800 h-screen">
-        Hello World
-      </h1>
+      {/* <Navbar /> */}
       <TimeLine />
     </>
   )

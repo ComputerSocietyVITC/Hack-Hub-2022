@@ -4,60 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#arrowleft {
-    width: 270px;
-    height: 62px;
-    background: linear-gradient(90deg, #FF005D 0%, #4E009F 100%);
-    border: 1px solid #000000;
-    position:relative;
-    
-}
-#arrowleft:before {
-    content:"";
-    position:absolute;
-    border-bottom: 30.5px solid transparent;
-    border-right: 30px solid #FF005D;
-    border-top: 30px solid transparent;
-    height: 0px;
-    width: 0px;
-    margin-left:-30px;
-}
-
-#arrowright {
-    width: 270px;
-    height: 62px;
-    background: linear-gradient(90deg, #4E009F 0%, #FF005D 100%);
-    border: 1px solid #000000;
-    position:relative;
-    
-}
-#arrowright:before {
-    content:"";
-    position:absolute;
-    border-bottom: 30.5px solid transparent;
-    border-left: 30px solid #FF005D;
-    border-top: 30px solid transparent;
-    height: 0px;
-    width: 0px;
-    margin-left:268px;
-}
-
-@media only screen and (max-width: 600px) {
-  #arrowleft, #arrowright {
-        width: 120px;
-        height: 30px;
-        
-    }
-    #arrowleft:before {
-        border-bottom: 20px solid transparent;
-        border-right: 20px solid #FF005D;
-        border-top: 20px solid transparent;
-        margin-left:-20px;
-    }
-    #arrowright:before {
-        border-bottom: 20px solid transparent;
-        border-left: 20px solid #FF005D;
-        border-top: 20px solid transparent;
-        margin-left:188px;
-    }
+html{
+    background-color: black;
 }
