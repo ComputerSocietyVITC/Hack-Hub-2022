@@ -1,0 +1,24 @@
+.underline_hover {
+  text-decoration: none;
+  position: relative;
+}
+
+.underline_hover:hover {
+  color: #fff;
+}
+.underline_hover:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  text-align: center;
+  display: block;
+  height: 2px;
+  position: relative;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underline_hover:hover:after {
+  width: 100%;
+  left: 0;
+}
