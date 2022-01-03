@@ -1,13 +1,15 @@
 import * as React from "react"
+
+import Navbar from "../components/navbar"
+
 import About from "./about.js";
 import "./about.css";
 
 const IndexPage = () => {
   return (
     <>
-      <h1 className="text-red-800">
-        Hello World
-      </h1>
+      <Navbar/>
+      <About/>
     </>
   )
 }
