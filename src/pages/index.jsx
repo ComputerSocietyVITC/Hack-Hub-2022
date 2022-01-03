@@ -1,5 +1,6 @@
 import * as React from "react"
-
+import About from "./about.js";
+import "./about.css";
 
 const IndexPage = () => {
   return (
