@@ -1,10 +1,11 @@
 import React from "react";
-import logo from "../images/svgs/line_1.svg"
+import logo from "../images/svgs/line_1.svg";
 import "../styles/styles.css";
+
 const Component = ({ Heading, Link }) => {
   return (
     <>
-      <section className="uppercase  items-center text-center text-gray-500 text2xl underline_hover">
+      <section className="uppercase  items-center text-center text-gray-400 text2xl underline_hover">
         <a href={Link}>{Heading}</a>
       </section>
     </>
@@ -36,7 +37,7 @@ const Navbar = () => {
           </section>
         </section>
       </section>
-      <img src = {logo}/>
+      <img src={logo} />
     </>
   );
 };

@@ -1,8 +1,6 @@
 module.exports = {
-  purge: [
-    './src/**/*.{js,jsx,ts,tsx}'
-  ],
-  darkMode: 'media', // or 'media' or 'class'
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -11,16 +9,17 @@ module.exports = {
         SanBold: ["Sansation-Bold"],
       },
       colors: {
-        'color1': '#FF005D',
-        'color2': '#5000A4'
+        gradPink: "#FF005D",
+        gradViolet: "#440089",
       },
-      fontSize: {
-        'xxs': '.6rem',
-      }
-    }
+      backgroundImage: {
+        "gradient-radial":
+          "radial-gradient(ellipse at center, var(--tw-gradient-stops))",
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
