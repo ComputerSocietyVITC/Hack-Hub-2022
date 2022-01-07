@@ -1,16 +1,15 @@
 import * as React from "react"
 
 import Navbar from "../components/navbar"
-
-import About from "./about.js";
-import Sponsors from "../components/sponsors.jsx";
+import About from "../components/about"
+import Sponsors from "../components/sponsors"
 
 const IndexPage = () => {
   return (
     <>
       <Navbar/>
-      <Sponsors/>
       <About/>
+      <Sponsors/>
     </>
   )
 }
