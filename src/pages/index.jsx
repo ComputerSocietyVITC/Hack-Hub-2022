@@ -1,18 +1,20 @@
-import * as React from "react"
+import * as React from "react";
+import CountDown from "../components/countdown";
+import Navbar from "../components/navbar";
+import TimeLine from "../components/timeline";
+import About from "../components/about";
 
-import Navbar from "../components/navbar"
-
-import About from "./about.js";
-import Sponsors from "../components/sponsors.jsx";
 
 const IndexPage = () => {
   return (
     <>
-      <Navbar/>
-      <Sponsors/>
-      <About/>
-    </>
-  )
-}
 
-export default IndexPage
+      <Navbar />
+      <CountDown />
+      <About /> 
+      <TimeLine />
+    </>
+  );
+};
+
+export default IndexPage;

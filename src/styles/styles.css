@@ -6,6 +6,7 @@
 .underline_hover:hover {
   color: #fff;
 }
+
 .underline_hover:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -14,7 +15,12 @@
   display: block;
   height: 2px;
   position: relative;
-  background: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 93, 0.68) 1.95%,
+    #440089 97.43%,
+    #440089 97.43%
+  );
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
