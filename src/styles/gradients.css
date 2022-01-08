@@ -1,0 +1,20 @@
+.radial_bg-text {
+  text-decoration-color: radial-gradient(
+    61.85% 61.85% at 51.18% 57.69%,
+    #ff005d 0%,
+    #440089 100%
+  );
+}
+
+.square-box {
+  background-color: #ff005d;
+  opacity: 12%;
+}
+
+.parent-element {
+  border-color: radial-gradient(
+    61.85% 61.85% at 51.18% 57.69%,
+    #ff005d 0%,
+    #440089 100%
+  );
+}

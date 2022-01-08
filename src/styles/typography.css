@@ -17,7 +17,7 @@
 @font-face {
   font-family: "Sansation";
   src: url("./fonts/Sansation_Bold_Italic.ttf");
-  font-style: italic,bold;
+  font-style: italic, bold;
 }
 @font-face {
   font-family: "Sansation";
@@ -27,11 +27,40 @@
 @font-face {
   font-family: "Sansation";
   src: url("./fonts/Sansation_Light.ttf");
-  font-weight:300;
+  font-weight: 300;
 }
 @font-face {
   font-family: "Sansation";
   src: url("./fonts/Sansation_Light_Italic.ttf");
-  font-weight:300;
+  font-weight: 300;
   font-style: italic;
+}
+
+@font-face {
+  font-family: "Saira-Condensed";
+  src: url("./fonts/SairaCondensed-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Saira-Condensed";
+  src: url("./fonts/SairaCondensed-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Saira-Condensed";
+  src: url("./fonts/SairaCondensed-Bold.ttf");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Arya";
+  src: url("./fonts/Arya-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Arya";
+  src: url("./fonts/Arya-Bold.ttf");
+  font-weight: 700;
 }
