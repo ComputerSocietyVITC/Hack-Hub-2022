@@ -4,9 +4,11 @@ import Navbar from "../components/navbar";
 import TimeLine from "../components/timeline";
 import About from "../components/about";
 
+
 const IndexPage = () => {
   return (
     <>
+
       <Navbar />
       <CountDown />
       <About /> 
