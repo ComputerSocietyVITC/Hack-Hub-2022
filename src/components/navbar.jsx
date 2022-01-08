@@ -5,7 +5,7 @@ import "../styles/styles.css";
 const Component = ({ Heading, Link }) => {
   return (
     <>
-      <section className="uppercase  items-center text-center text-gray-400 text2xl underline_hover">
+      <section className="uppercase  items-center text-center text-gray-400 text-2xl underline_hover">
         <a href={Link}>{Heading}</a>
       </section>
     </>
