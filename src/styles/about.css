@@ -1,0 +1,12 @@
+.text-shadow-pink {
+  text-shadow: 4px 4px 8px #ea33f8;
+}
+
+.around-abt {
+  background: #ffffff;
+  background-blend-mode: hue;
+  border: 2px solid #3f3c3c;
+  box-sizing: border-box;
+  box-shadow: 3px 1px 22px 1px #ea33f8;
+  border-radius: 55px;
+}

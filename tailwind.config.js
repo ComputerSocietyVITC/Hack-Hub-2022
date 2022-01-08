@@ -7,6 +7,8 @@ module.exports = {
         Atmos: ["Atmospheric"],
         Sansation: ["Sansation"],
         SanBold: ["Sansation-Bold"],
+        Saira: ["Saira-Condensed"],
+        Arya:["Arya"]
       },
       colors: {
         gradPink: "#FF005D",

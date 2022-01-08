@@ -1,19 +1,18 @@
-import * as React from "react"
-import CountDown from "../components/countdown"
-import Navbar from "../components/navbar"
-import TimeLine from "./timeline"
-import About from "./about.js";
-
+import * as React from "react";
+import CountDown from "../components/countdown";
+import Navbar from "../components/navbar";
+import TimeLine from "../components/timeline";
+import About from "../components/about";
 
 const IndexPage = () => {
   return (
     <>
       <Navbar />
-      <CountDown />      
-      <About/>
-
+      <CountDown />
+      <About /> 
+      <TimeLine />
     </>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
