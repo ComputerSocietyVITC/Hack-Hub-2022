@@ -37,7 +37,7 @@ const Navbar = () => {
           </section>
         </section>
       </section>
-      <img src={line} alt="line"/>
+      <img src={line} alt="line" />
     </>
   );
 };
