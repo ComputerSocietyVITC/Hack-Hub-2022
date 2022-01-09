@@ -13,7 +13,7 @@ const OddComponent = ({ text, Answer }) => {
     <>
       <div className="md:w-1/2 mx-auto">
         <div
-          className="mx-auto w-full relative md:my-4 my-2 cursor-pointer"
+          className="mx-auto w-full relative md:my-4 font-Arya my-2 cursor-pointer"
           onClick={() => setDes(!des)}
         >
           <img src={faqribbon1} alt="Ribbon 1" />
@@ -108,7 +108,7 @@ const EvenComponent = ({ text, Answer }) => {
     <>
       <div className="md:w-7/12 mx-auto">
         <div
-          className="mx-auto w-full relative md:my-4 my-2 cursor-pointer"
+          className="mx-auto w-full relative md:my-4 my-2 font-Arya cursor-pointer"
           onClick={() => setState(!state)}
         >
           <img src={faqribbon2} alt="Ribbon 2" />
