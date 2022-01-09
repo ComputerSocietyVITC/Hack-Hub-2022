@@ -4,6 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
     background-color: black;
 }

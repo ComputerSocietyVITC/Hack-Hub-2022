@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import TimeLine from "../components/timeline";
 import About from "../components/about";
 import CentralComponents from "../components/centralComponents";
+import FAQ from "../components/faq";
 
 const IndexPage = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <CountDown />
       <About />
       <TimeLine />
+      <FAQ />
     </>
   );
 };
