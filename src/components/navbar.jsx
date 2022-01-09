@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/svgs/line_1.svg";
+import line from "../images/svgs/line_1.svg";
 import "../styles/styles.css";
 
 const Component = ({ Heading, Link }) => {
@@ -37,7 +37,7 @@ const Navbar = () => {
           </section>
         </section>
       </section>
-      <img src={logo} />
+      <img src={line} alt="line"/>
     </>
   );
 };
