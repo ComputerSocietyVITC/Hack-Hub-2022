@@ -38,7 +38,7 @@ const TimeLine = () => {
                 </div>
               </div>
             </div>
-            <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-color1 to-color2"></div>
+            <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-gradPink to-gradViolet"></div>
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="w-32 md:w-5/12">
                 <div className="uppercase text-white text-bold md:text-xl text-xxs text-Sansation text-right">
@@ -66,7 +66,7 @@ const TimeLine = () => {
                 </div>
               </div>
             </div>
-            <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-color1 to-color2"></div>
+            <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-gradPink to-gradViolet"></div>
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="shadow-xl md:w-5/12 relative">
                 <div className="ml-auto">
@@ -94,7 +94,7 @@ const TimeLine = () => {
                 </div>
               </div>
             </div>
-            <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-color1 to-color2"></div>
+            <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-gradPink to-gradViolet"></div>
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="w-32 md:w-5/12">
                 <div className="uppercase text-white text-bold md:text-xl text-xxs text-Sansation text-right">
@@ -122,7 +122,7 @@ const TimeLine = () => {
                 </div>
               </div>
             </div>
-            <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-color1 to-color2"></div>
+            <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-gradPink to-gradViolet"></div>
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="shadow-xl md:w-5/12 relative">
                 <div className="ml-auto ">
