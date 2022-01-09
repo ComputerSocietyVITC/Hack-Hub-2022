@@ -21,7 +21,7 @@ const page = [
         title: "Gold",
         content: [
           {
-            key:1,
+            key: 1,
             src: "images/sponsors/gold_1.png",
           },
         ],
@@ -31,58 +31,60 @@ const page = [
         title: "Silver",
         content: [
           {
-            key:1,
+            key: 1,
             src: "images/sponsors/silver_1.png",
           },
         ],
       },
-    ]
-  }
-]
+    ],
+  },
+];
 
-const SponsorTag = ( {Text} ) => {
+const SponsorTag = ({ Text }) => {
   return (
-      <div className="text-2xl col-span-4 font-Sansation font-bold text-white px-10 flex justify-center items-center">
-        {Text}
-      </div>
+    <div className="text-2xl col-span-4 font-Sansation font-bold text-white px-10 flex justify-center items-center">
+      {Text}
+    </div>
   );
-}
+};
 
 const Sponsors = () => {
   return (
     <section className="grid grid-cols-4 gap-10">
-      <div className="
+      <div
+        className="
         col-span-2 pt-20 pl-10 text-white 
         font-Sansation font-bold text-4xl border-b-2
-      ">
-        SPONSORS 
+      "
+      >
+        SPONSORS
       </div>
-      {
-        (page.filter((item) => {
-          return item.textHeader === "SPONSORS"
-        })[0]).sponsor.map((item) => {
+      {page
+        .filter((item) => {
+          return item.textHeader === "SPONSORS";
+        })[0]
+        .sponsor.map((item) => {
           return (
             <div id={item.title} className="bigCont col-span-4" key={item.id}>
               <div id="grid">
                 <SponsorTag Text={item.title} />
-                {
-                  item.content.map((item) => {
-                      console.log(item.src.default)
-                      return(
-                      <img className="px-10 flex justify-center items-center" 
-                        key={item.key}
-                        src={item.src} 
-                        alt=""/>
-                    )
-                  })
-                }
+                {item.content.map((item) => {
+                  console.log(item.src.default);
+                  return (
+                    <img
+                      className="px-10 flex justify-center items-center"
+                      key={item.key}
+                      src={item.src}
+                      alt=""
+                    />
+                  );
+                })}
               </div>
             </div>
-          )
-        })
-      }
+          );
+        })}
     </section>
   );
-}
+};
 
 export default Sponsors;
