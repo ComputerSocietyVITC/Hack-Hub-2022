@@ -1,9 +1,3 @@
-:root{
-  --plat: conic-gradient(from 180deg at 50% 50%, #FFFFFF -9.38deg, #040403 91.88deg, #FFFFFF 350.63deg, #040403 451.88deg);
-  --gold: conic-gradient(from 180deg at 50% 50%, #FFE872 -54.38deg, #625200 100.35deg, #FFE872 305.62deg, #625200 460.35deg);
-  --silv: conic-gradient(from 180deg at 50% 50%, #F7F2DB -82.5deg, #A09F9A 91.88deg, #F7F2DB 277.5deg, #A09F9A 451.88deg);
-}
-
 .underline_hover {
   text-decoration: none;
   position: relative;
@@ -33,22 +27,4 @@
 .underline_hover:hover:after {
   width: 100%;
   left: 0;
-}
-.sponsor_gradient{
-  width: 307px;
-  height: 65px;
-  clip-path: path('M307 0H0V67H307L259.769 35.7738L307 0Z');
-  text-shadow:  -1px 1px 0 #000,
-                1px 1px 0 #000,
-                1px -1px 0 #000,
-                -1px -1px 0 #000;
-}
-#Platinum{
-  background: var(--plat);
-}
-#Gold{
-  background: var(--gold);
-}
-#Silver{
-  background: var(--silv);
 }
