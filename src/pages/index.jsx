@@ -6,10 +6,12 @@ import About from "../components/about";
 import Footer from "../components/footer";
 import CentralComponents from "../components/centralComponents";
 import FAQ from "../components/faq";
+import Background from "../components/background";
 
 const IndexPage = () => {
   return (
     <>
+      <Background/>
       <Navbar />
       <CentralComponents />
       <CountDown />
