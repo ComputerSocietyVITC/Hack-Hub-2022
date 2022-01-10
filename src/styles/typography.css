@@ -9,16 +9,12 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Sansation";
+  font-family: "Sansation-Bold";
   src: url("./fonts/Sansation_Bold.ttf");
   font-style: bold;
-  font-weight: 600;
+  font-weight: 700;
 }
-@font-face {
-  font-family: "Sansation";
-  src: url("./fonts/Sansation_Bold_Italic.ttf");
-  font-style: italic, bold;
-}
+
 @font-face {
   font-family: "Sansation";
   src: url("./fonts/Sansation_Italic.ttf");

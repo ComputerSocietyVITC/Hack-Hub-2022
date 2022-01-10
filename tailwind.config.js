@@ -8,7 +8,7 @@ module.exports = {
         Sansation: ["Sansation"],
         SanBold: ["Sansation-Bold"],
         Saira: ["Saira-Condensed"],
-        Arya:["Arya"]
+        Arya: ["Arya"],
       },
       colors: {
         gradPink: "#FF005D",
@@ -18,6 +18,7 @@ module.exports = {
         "gradient-radial":
           "radial-gradient(ellipse at center, var(--tw-gradient-stops))",
       },
+      dropShadow: { white: "0 35px 35px #FFF" },
     },
   },
   variants: {

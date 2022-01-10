@@ -7,11 +7,9 @@ import Footer from "../components/footer";
 import CentralComponents from "../components/centralComponents";
 import FAQ from "../components/faq";
 
-
 const IndexPage = () => {
   return (
     <>
-
       <Navbar />
       <CentralComponents />
       <CountDown />
