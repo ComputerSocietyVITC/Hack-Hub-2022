@@ -12,25 +12,25 @@ const Background = () => {
   return (
     <>
       <section className="bg-images">
-          
-          <section className="md: left-top-libra">
-            <img src={libra} />
-          </section>
-          <section className="lg: virgo">
-            <img src={virgo} />
-          </section>
-          <section className="md: left-bottom-leo">
-            <img src={leo} />
-          </section>
-          <section className="md: right-top-aquaris">
-            <img src={aquaris} />
-          </section>
-          <section className="md: pisces">
-            <img src={pisces} />
-          </section>
-          <section className="md: aries">
-            <img src={aries} />
-          </section>
+
+        <section className="md:left-top-libra">
+          <img src={libra} />
+        </section>
+        <section className="lg:virgo">
+          <img src={virgo} />
+        </section>
+        <section className="md:left-bottom-leo">
+          <img src={leo} />
+        </section>
+        <section className="md:right-top-aquaris">
+          <img src={aquaris} />
+        </section>
+        <section className="md:pisces">
+          <img src={pisces} />
+        </section>
+        <section className="md:aries">
+          <img src={aries} />
+        </section>
       </section>
     </>
   );

@@ -10,13 +10,17 @@ import Background from "../components/background";
 const IndexPage = () => {
   return (
     <>
-      {/* <Background/> */}
       <Navbar />
-      <CentralComponents />
-      <About />
-      <TimeLine />
-      <FAQ />
-      <Footer />
+      <div className="bg-images z-0">
+        <div className="bg-bgimage bg-center">
+          {/* <Background /> */}
+          <CentralComponents />
+          <About />
+          <TimeLine />
+          <FAQ />
+          <Footer />
+        </div>
+      </div>
     </>
   );
 };

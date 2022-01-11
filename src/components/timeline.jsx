@@ -3,7 +3,7 @@ import hex1 from "../images/hex1.png";
 import hex2 from "../images/hex2.png";
 import arrow1 from "../images/arrow1.png";
 import arrow2 from "../images/arrow2.png";
-import libra from "../images/constellations/libra.png";
+import libra from "../images/svgs/libra.svg";
 
 const TimeLine = () => {
   return (

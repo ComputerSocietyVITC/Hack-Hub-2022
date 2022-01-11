@@ -1,11 +1,43 @@
 import * as React from "react";
 import CountDown from "./countdown";
 import hackhublogo from "../images/hackhublogo.png";
+import discordlogo from "../images/footer/discord.png";
+import aries from "../images/svgs/aries.svg";
+import libra from "../images/svgs/libra.svg";
+import virgo from "../images/svgs/virgo.svg";
+import aquaris from "../images/svgs/Aquaris.svg";
+import pisces from "../images/svgs/pisces.svg";
+import leo from "../images/svgs/leo.svg";
+import group22 from "../images/svgs/Group_22.svg";
+
 
 const CentralComponents = () => {
   return (
     <>
-      <div className="h-screen bg-bgimage bg-cover bg-center ">
+      <div className="h-screen relative">
+        <section className="z-0">
+          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 top-10">
+            <img src={libra} alt="libra" className="w-2/3" />
+          </section>
+          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 -top-10 left-1/3">
+            <img src={virgo} alt="virgo" className="w-5/6" />
+          </section>
+          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 top-6 right-20">
+            <img src={aquaris} alt="aquaris" className="w-5/6" />
+          </section>
+          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-1/4 right-0">
+            <img src={pisces} alt="pisces" className="w-3/4 ml-auto" />
+          </section>
+          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-14 right-1/4">
+            <img src={aries} alt="aries" className="w-2/3" />
+          </section>
+          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-1/4 ">
+            <img src={leo} alt="leo" className="w-3/4" />
+          </section>
+          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 top-1/4 left-1/4">
+            <img src={group22} alt="group22" className="w-2/3" />
+          </section>
+        </section>
         <div className="w-full pt-28 px-10 md:p-20 md:pb-12">
           <div className="md:w-2/3 mx-auto">
             <img src={hackhublogo} alt="Hackhub 2022" />
@@ -33,6 +65,7 @@ const CentralComponents = () => {
             </svg>
           </div>
           <div className="order-2 md:order-3 md:mx-0 drop-shadow-2xl font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl">
+            <img src={discordlogo} alt="Discord" className="w-8 mr-4" />
             <button>JOIN US ON DISCORD</button>
           </div>
         </div>
