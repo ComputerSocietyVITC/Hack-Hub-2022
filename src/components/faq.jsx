@@ -1,11 +1,28 @@
 import * as React from "react";
 import faqribbon1 from "../images/faqribbon1.png";
 import faqribbon2 from "../images/faqribbon2.png";
+import arrow from "../images/svgs/arrow.svg";
 
-const data = {
-  Text: "How can I register for the event",
+const data = [{
+  Text: "How can i register for hackhub?",
   Answer: "Click on this!",
-};
+},
+{
+  Text: "How can i register for hackhub?",
+  Answer: "Click on this!",
+},
+{
+  Text: "How can i register for hackhub?",
+  Answer: "Click on this!",
+},
+{
+  Text: "How can i register for hackhub?",
+  Answer: "Click on this!",
+},
+{
+  Text: "How can i register for hackhub?",
+  Answer: "Click on this!",
+}];
 
 const OddComponent = ({ text, Answer }) => {
   const [des, setDes] = React.useState(false);
@@ -17,73 +34,29 @@ const OddComponent = ({ text, Answer }) => {
           onClick={() => setDes(!des)}
         >
           <img src={faqribbon1} alt="Ribbon 1" />
-          <div className="text-white text-lg md:text-2xl absolute md:top-4 md:left-32 top-1 left-12">
+          <div className="text-white text-lg md:text-2xl absolute md:top-4 md:left-36 top-1 left-12">
             {text}
           </div>
-          <div className="absolute md:top-4 md:left-12 top-2 left-5">
+          <div className="absolute md:top-4 md:left-16 top-3 left-7">
             {des ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="md:h-10 md:w-10 h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#fff"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <div className="md:h-4 md:w-4 h-2 w-2">
+                <img src={arrow} alt="arrow" className="transform rotate-90" />
+              </div>
             ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="md:h-10 md:w-10 h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#fff"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <div className="md:h-4 md:w-4 h-2 w-2">
+                <img src={arrow} alt="arrow" />
+              </div>
             )}
           </div>
-          <div className="absolute md:top-4 md:right-12 top-2 right-5">
+          <div className="absolute md:top-4 md:right-16 top-3 right-7">
             {des ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="md:h-10 md:w-10 h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#fff"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <div className="md:h-4 md:w-4 h-2 w-2">
+                <img src={arrow} alt="arrow" className="transform rotate-90" />
+              </div>
             ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="md:h-10 md:w-10 h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#fff"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
+              <div className="md:h-4 md:w-4 h-2 w-2">
+                <img src={arrow} alt="arrow" className="transform rotate-180" />
+              </div>
             )}
           </div>
         </div>
@@ -112,73 +85,29 @@ const EvenComponent = ({ text, Answer }) => {
           onClick={() => setState(!state)}
         >
           <img src={faqribbon2} alt="Ribbon 2" />
-          <div className="text-white text-lg md:text-2xl absolute md:top-4 md:left-1/4 top-1 left-12">
+          <div className="text-white text-lg md:text-2xl absolute md:top-4 md:left-48 top-1 left-12">
             {text}
           </div>
-          <div className="absolute md:top-4 md:left-12 top-2 left-5">
+          <div className="absolute md:top-4 md:left-28 top-3 left-7">
             {state ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="md:h-10 md:w-10 h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#fff"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <div className="md:h-4 md:w-4 h-2 w-2">
+                <img src={arrow} alt="arrow" className="transform rotate-90" />
+              </div>
             ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="md:h-10 md:w-10 h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#fff"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <div className="md:h-4 md:w-4 h-2 w-2">
+                <img src={arrow} alt="arrow" />
+              </div>
             )}
           </div>
-          <div className="absolute md:top-4 md:right-12 top-2 right-5">
+          <div className="absolute md:top-4 md:right-28 top-3 right-7">
             {state ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="md:h-10 md:w-10 h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#fff"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <div className="md:h-4 md:w-4 h-2 w-2">
+                <img src={arrow} alt="arrow" className="transform rotate-90" />
+              </div>
             ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="md:h-10 md:w-10 h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#fff"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
+              <div className="md:h-4 md:w-4 h-2 w-2">
+                <img src={arrow} alt="arrow" className="transform rotate-180" />
+              </div>
             )}
           </div>
         </div>
@@ -200,13 +129,20 @@ const EvenComponent = ({ text, Answer }) => {
 const FAQ = () => {
   return (
     <>
-      <div className="h-screen">
-        <div className="w-full p-6 md:p-40">
-          <OddComponent text={data.Text} Answer={data.Answer} />
-          <EvenComponent text={data.Text} Answer={data.Answer} />
-          <OddComponent text={data.Text} Answer={data.Answer} />
-          <EvenComponent text={data.Text} Answer={data.Answer} />
-          <OddComponent text={data.Text} Answer={data.Answer} />
+      <div className="h-screen px-8 sm:px-0 pt-24">
+        <section className="sm:w-1/3 lg:w-1/5 py-20">
+          <section className="text-white font-Sansation font-bold text-5xl text-center">
+            FAQs
+          </section>
+          <div class="h-1 w-full rounded-lg bg-white"></div>
+        </section>
+        <div className="w-full px-6 md:px-40">
+          {data.map((faq, index) =>
+            index % 2 == 0 ?
+              <OddComponent text={faq.Text} Answer={faq.Answer} />
+              :
+              <EvenComponent text={faq.Text} Answer={faq.Answer} />
+          )}
         </div>
       </div>
     </>
