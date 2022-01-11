@@ -50,13 +50,13 @@ const CentralComponents = () => {
         </div>
         <CountDown />
         <div className="mt-12 md:px-36 grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div className="cursor-pointer order-1 md:order-1 md:mx-0 md:ml-auto font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl">
+          <div className="cursor-pointer mx-auto order-1 md:order-1 md:mx-0 md:ml-auto font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl py-4 md:py-0">
             <button>REGISTER ON DEVFOLIO</button>
           </div>
-          <div className="relative z-10 cursor-pointer mx-auto order-3 md:order-2 mt-20 md:mt-0 drop-shadow-white">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 md:h-14 md:w-14" fill="none" viewBox="0 0 24 24" stroke="url(#gradient)" >
+          <div className="relative z-40 cursor-pointer mx-auto order-3 md:order-2 mt-12 md:mt-0 drop-shadow-white">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 md:h-14 md:w-14" fill="none" viewBox="0 0 24 24" stroke="url(#gradientarrow)" >
               <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <linearGradient id="gradientarrow" x1="0%" y1="0%" x2="0%" y2="100%">
                   <stop offset="0%" stop-color="#440089" />
                   <stop offset="100%" stop-color="#FF005D" />
                 </linearGradient>
@@ -64,7 +64,7 @@ const CentralComponents = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
             </svg>
           </div>
-          <div className="cursor-pointer order-2 md:order-3 md:mx-0 drop-shadow-2xl font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl">
+          <div className="cursor-pointer mx-auto order-2 md:order-3 md:mx-0 drop-shadow-2xl font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl py-4 md:py-0">
             <img src={discordlogo} alt="Discord" className="w-8 mr-4" />
             <button>JOIN US ON DISCORD</button>
           </div>

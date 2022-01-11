@@ -28,9 +28,9 @@ const Navbar = () => {
             type="button"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="url(#gradient)">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="url(#gradientnav)">
               <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <linearGradient id="gradientnav" x1="0%" y1="0%" x2="0%" y2="100%">
                   <stop offset="0%" stop-color="#FF005D" />
                   <stop offset="100%" stop-color="#440089" />
                 </linearGradient>

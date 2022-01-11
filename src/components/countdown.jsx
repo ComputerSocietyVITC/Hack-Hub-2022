@@ -46,7 +46,7 @@ const CountDown = () => {
 
   return (
     <>
-      <section className="px-2 md:px-5 py-5 font-Sansation font-bold">
+      <section className="px-2 md:px-5 py-5 font-Sansation font-bold mt-16 md:mt-0">
         <section className="text-2xl sm:text-4xl md:text-5xl text-center flex w-full items-center justify-center bg-clip-text text-transparent bg-gradient-to-r from-gradViolet via-gradPink to-gradViolet">
           <div>
             <section className="mx-1 md:mx-4 grid grid-cols-2">
@@ -57,7 +57,7 @@ const CountDown = () => {
                 <section className="text-gradPink">{timerDays[1]}</section>
               </section>
             </section>
-            <h2 className="md:text-3xl mt-4 uppercase">Days</h2>
+            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">Days</h2>
           </div>
           <div>
             <section className="mx-1 md:mx-4 grid grid-cols-2">
@@ -68,7 +68,7 @@ const CountDown = () => {
                 <section className="text-gradPink">{timerHours[1]}</section>
               </section>
             </section>
-            <h2 className="md:text-3xl mt-4 uppercase">Hours</h2>
+            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">Hours</h2>
           </div>
           <div>
             <section className="mx-1 md:mx-4 grid grid-cols-2">
@@ -79,7 +79,7 @@ const CountDown = () => {
                 <section className="text-gradPink">{timerMinutes[1]}</section>
               </section>
             </section>
-            <h2 className="md:text-3xl mt-4 uppercase">Minutes</h2>
+            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">Minutes</h2>
           </div>
           <div>
             <section className="mx-1 md:mx-4 grid grid-cols-2">
@@ -90,10 +90,10 @@ const CountDown = () => {
                 <section className="text-gradPink">{timerSeconds[1]}</section>
               </section>
             </section>
-            <h2 className="md:text-3xl mt-4 uppercase">Seconds</h2>
+            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">Seconds</h2>
           </div>
         </section>
-        {/* <section className="text-md md:text-3xl grid grid-cols-4 text-center xl:w-2/3  mt-1 md:mt-4 mx-auto bg-clip-text text-transparent bg-gradient-to-r from-gradViolet via-gradPink to-gradViolet uppercase">
+        {/* <section className="text-md text-lg md:text-3xl md:mt-4 mt-1 grid-cols-4 text-center xl:w-2/3  mt-1 md:mt-4 mx-auto bg-clip-text text-transparent bg-gradient-to-r from-gradViolet via-gradPink to-gradViolet uppercase">
           <section className="">Days</section>
           <section className="">Hours</section>
           <section className="">Minutes</section>
