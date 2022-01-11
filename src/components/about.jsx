@@ -4,8 +4,8 @@ import "../styles/about.css";
 function About() {
 
   return (
-    <section className="my-12 px-8 md:px-0">
-      <section className="sm:w-1/4 lg:w-1/6">
+    <section className="my-12 px-8 sm:px-0">
+      <section className="sm:w-1/3 lg:w-1/5">
         <section className="text-white font-Sansation font-bold text-5xl text-center">
           ABOUT
         </section>

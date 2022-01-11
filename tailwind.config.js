@@ -10,6 +10,9 @@ module.exports = {
         Saira: ["Saira-Condensed"],
         Arya: ["Arya"],
       },
+      fontSize: {
+        xxs: '0.65rem',
+      },
       colors: {
         gradPink: "#FF005D",
         gradViolet: "#440089",
