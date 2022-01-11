@@ -41,7 +41,7 @@ const Navbar = () => {
           </section>
         </section>
         <section className="w-full">
-          <img src={header} style={{width:"100%"}}/>
+          <img src={header} style={{width:"100%"}} alt = "Line"/>
         </section>
       </section>
     </>

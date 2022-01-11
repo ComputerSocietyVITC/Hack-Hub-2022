@@ -23,16 +23,4 @@
   width: 100%;
   left: 0;
 }
-.background {
-  background: linear-gradient(
-      280.15deg,
-      rgba(231, 78, 31, 0.7) -5.92%,
-      rgba(231, 78, 31, 0) 18.17%
-    ),
-    linear-gradient(
-      294.49deg,
-      rgba(20, 27, 72, 0.2) 44.44%,
-      rgba(109, 119, 183, 0.2) 77.58%
-    ),
-    linear-gradient(137.94deg, #0f1642 14.99%, #0f1642 71.5%);
-}
+
