@@ -1,5 +1,4 @@
 import * as React from "react";
-import CountDown from "../components/countdown";
 import Navbar from "../components/navbar";
 import TimeLine from "../components/timeline";
 import About from "../components/about";
@@ -11,10 +10,9 @@ import Background from "../components/background";
 const IndexPage = () => {
   return (
     <>
-      <Background/>
+      {/* <Background/> */}
       <Navbar />
       <CentralComponents />
-      <CountDown />
       <About />
       <TimeLine />
       <FAQ />

@@ -15,8 +15,7 @@ module.exports = {
         gradViolet: "#440089",
       },
       backgroundImage: {
-        "gradient-radial":
-          "radial-gradient(ellipse at center, var(--tw-gradient-stops))",
+        'bgimage': "url('../images/bgimage.png')",
       },
       dropShadow: { white: "0 35px 35px #FFF" },
     },

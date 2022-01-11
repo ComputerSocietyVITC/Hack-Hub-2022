@@ -47,46 +47,58 @@ const CountDown = () => {
   return (
     <>
       <section className="px-2 md:px-5 py-5 font-Sansation font-bold">
-        <section className="text-2xl sm:text-4xl md:text-6xl text-center flex w-full items-center justify-center ">
-          <section className="mx-1 md:mx-4 grid grid-cols-2">
-            <section className="w-10 sm:w-16 md:w-24 mx-1 md:mx-2 h-10 sm:h-16 md:h-24 rounded-lg p-1 sm:p-4 md:p-5 bg-gray-900">
-              <section className="text-gradPink">{timerDays[0]}</section>
+        <section className="text-2xl sm:text-4xl md:text-5xl text-center flex w-full items-center justify-center bg-clip-text text-transparent bg-gradient-to-r from-gradViolet via-gradPink to-gradViolet">
+          <div>
+            <section className="mx-1 md:mx-4 grid grid-cols-2">
+              <section className="w-10 sm:w-16 md:w-20 mx-1 md:mx-2 h-10 sm:h-16 md:h-20 rounded-lg p-1 sm:p-4 bg-gradPink bg-opacity-10 border-gradPink border">
+                <section className="text-gradPink">{timerDays[0]}</section>
+              </section>
+              <section className="w-10 sm:w-16 md:w-20 mx-1 md:mx-2 h-10 sm:h-16 md:h-20 rounded-lg p-1 sm:p-4 bg-gradPink bg-opacity-10 border-gradPink border">
+                <section className="text-gradPink">{timerDays[1]}</section>
+              </section>
             </section>
-            <section className="w-10 sm:w-16 md:w-24 mx-1 md:mx-2 h-10 sm:h-16 md:h-24 rounded-lg p-1 sm:p-4 md:p-5 bg-gray-900">
-              <section className="text-gradPink">{timerDays[1]}</section>
+            <h2 className="md:text-3xl mt-4 uppercase">Days</h2>
+          </div>
+          <div>
+            <section className="mx-1 md:mx-4 grid grid-cols-2">
+              <section className="w-10 sm:w-16 md:w-20 mx-1 md:mx-2 h-10 sm:h-16 md:h-20 rounded-lg p-1 sm:p-4 bg-gradPink bg-opacity-10 border-gradPink border">
+                <section className="text-gradPink">{timerHours[0]}</section>
+              </section>
+              <section className="w-10 sm:w-16 md:w-20 mx-1 md:mx-2 h-10 sm:h-16 md:h-20 rounded-lg p-1 sm:p-4 bg-gradPink bg-opacity-10 border-gradPink border">
+                <section className="text-gradPink">{timerHours[1]}</section>
+              </section>
             </section>
-          </section>
-          <section className="mx-1 md:mx-4 grid grid-cols-2">
-            <section className="w-10 sm:w-16 md:w-24 mx-1 md:mx-2 h-10 sm:h-16 md:h-24 rounded-lg p-1 sm:p-4 md:p-5 bg-gray-900">
-              <section className="text-gradPink">{timerHours[0]}</section>
+            <h2 className="md:text-3xl mt-4 uppercase">Hours</h2>
+          </div>
+          <div>
+            <section className="mx-1 md:mx-4 grid grid-cols-2">
+              <section className="w-10 sm:w-16 md:w-20 mx-1 md:mx-2 h-10 sm:h-16 md:h-20 rounded-lg p-1 sm:p-4 bg-gradPink bg-opacity-10 border-gradPink border">
+                <section className="text-gradPink">{timerMinutes[0]}</section>
+              </section>
+              <section className="w-10 sm:w-16 md:w-20 mx-1 md:mx-2 h-10 sm:h-16 md:h-20 rounded-lg p-1 sm:p-4 bg-gradPink bg-opacity-10 border-gradPink border">
+                <section className="text-gradPink">{timerMinutes[1]}</section>
+              </section>
             </section>
-            <section className="w-10 sm:w-16 md:w-24 mx-1 md:mx-2 h-10 sm:h-16 md:h-24 rounded-lg p-1 sm:p-4 md:p-5 bg-gray-900">
-              <section className="text-gradPink">{timerHours[1]}</section>
+            <h2 className="md:text-3xl mt-4 uppercase">Minutes</h2>
+          </div>
+          <div>
+            <section className="mx-1 md:mx-4 grid grid-cols-2">
+              <section className="w-10 sm:w-16 md:w-20 mx-1 md:mx-2 h-10 sm:h-16 md:h-20 rounded-lg p-1 sm:p-4 bg-gradPink bg-opacity-10 border-gradPink border">
+                <section className="text-gradPink">{timerSeconds[0]}</section>
+              </section>
+              <section className="w-10 sm:w-16 md:w-20 mx-1 md:mx-2 h-10 sm:h-16 md:h-20 rounded-lg p-1 sm:p-4 bg-gradPink bg-opacity-10 border-gradPink border">
+                <section className="text-gradPink">{timerSeconds[1]}</section>
+              </section>
             </section>
-          </section>
-          <section className="mx-1 md:mx-4 grid grid-cols-2">
-            <section className="w-10 sm:w-16 md:w-24 mx-1 md:mx-2 h-10 sm:h-16 md:h-24 rounded-lg p-1 sm:p-4 md:p-5 bg-gray-900">
-              <section className="text-gradPink">{timerMinutes[0]}</section>
-            </section>
-            <section className="w-10 sm:w-16 md:w-24 mx-1 md:mx-2 h-10 sm:h-16 md:h-24 rounded-lg p-1 sm:p-4 md:p-5 bg-gray-900">
-              <section className="text-gradPink">{timerMinutes[1]}</section>
-            </section>
-          </section>
-          <section className="mx-1 md:mx-4 grid grid-cols-2">
-            <section className="w-10 sm:w-16 md:w-24 mx-1 md:mx-2 h-10 sm:h-16 md:h-24 rounded-lg p-1 sm:p-4 md:p-5 bg-gray-900">
-              <section className="text-gradPink">{timerSeconds[0]}</section>
-            </section>
-            <section className="w-10 sm:w-16 md:w-24 mx-1 md:mx-2 h-10 sm:h-16 md:h-24 rounded-lg p-1 sm:p-4 md:p-5 bg-gray-900">
-              <section className="text-gradPink">{timerSeconds[1]}</section>
-            </section>
-          </section>
+            <h2 className="md:text-3xl mt-4 uppercase">Seconds</h2>
+          </div>
         </section>
-        <section className="text-md md:text-3xl grid grid-cols-4 text-center xl:w-2/3 mt-1 md:mt-4 mx-auto bg-clip-text text-transparent bg-gradient-to-r from-gradViolet via-gradPink to-gradViolet uppercase">
+        {/* <section className="text-md md:text-3xl grid grid-cols-4 text-center xl:w-2/3  mt-1 md:mt-4 mx-auto bg-clip-text text-transparent bg-gradient-to-r from-gradViolet via-gradPink to-gradViolet uppercase">
           <section className="">Days</section>
           <section className="">Hours</section>
           <section className="">Minutes</section>
           <section className="">Seconds</section>
-        </section>
+        </section> */}
       </section>
     </>
   );
