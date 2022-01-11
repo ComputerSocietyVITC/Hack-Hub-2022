@@ -1,38 +1,23 @@
 import React from "react";
 import "../styles/about.css";
 
-let page = [
-  {
-    id: 1,
-    textHeader: "ABOUT",
-    About:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae arcu dui. Praesent ut eros nulla. Phasellus ex tellus, pulvinar quis placerat semper, maximus a lorem. Nullam hendrerit, erat blandit iaculis eleifend, justo orci aliquet mi, finibus imperdiet augue lorem eget lacus. Quisque efficitur consectetur nisl, dapibus ullamcorper risus hendrerit sit amet. Donec rhoncus diam imperdiet, aliquam turpis et, aliquet nunc. Fusce augue magna, bibendum aliquam ullamcorper id, rhoncus bibendum nunc. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lacinia mauris eget massa rutrum dapibus. Cras molestie tempor tellus, a posuere leo. ",
-  },
-];
-
 function About() {
-  return (
-    <section className="bground">
-      {page.map((pag) => {
-        return <Show key={pag.id} {...pag} />;
-      })}
-    </section>
-  );
-}
 
-const Show = (props) => {
-  const { textHeader, About } = props;
   return (
-    <section className="grid grid-cols-12">
-      <section className="col-start-2 col-span-1">
-        <section className="text-white font-Sansation font-bold text-6xl">
-          {textHeader}
+    <section className="my-12 px-8 md:px-0">
+      <section className="sm:w-1/4 lg:w-1/6">
+        <section className="text-white font-Sansation font-bold text-5xl text-center">
+          ABOUT
         </section>
+        <div class="h-1 w-full rounded-lg bg-white"></div>
       </section>
-      <section className="col-start-2 col-span-10 font-Arya text-bold text-xl text-white">
-        {About}
+      <section className="font-Arya text-bold text-2xl text-white my-16 sm:mx-24 lg:mx-40 text-justify leading-loose">
+        HackHub is the flagship hackathon conducted by IEEE Computer Society VIT Chennai every year to encourage tech enthusiasts from across the country to apply their technical skills to develop solutions for the future. HackHub aims to provide a platform for students to ideate, develop and present their solutions to challenging real-world problems. It is a platform to compete and network with like-minded and skilled students from all walks of life.
+        <br /><br />
+        HackHub'22 brings you a multitude of areas to test your minds and wits, keeping in mind the IEEE CS ideals to discover, develop, and deploy. So gather your teams and get ready for the ultimate technical-skills showdown from March 29 to March 30, 2022.
       </section>
     </section>
   );
 };
+
 export default About;

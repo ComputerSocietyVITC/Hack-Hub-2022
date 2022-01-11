@@ -28,8 +28,8 @@ const CentralComponents = () => {
           <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-1/4 right-0">
             <img src={pisces} alt="pisces" className="w-3/4 ml-auto" />
           </section>
-          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-14 right-1/4">
-            <img src={aries} alt="aries" className="w-2/3" />
+          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-14 right-1/3">
+            <img src={aries} alt="aries" className="w-2/3 ml-16" />
           </section>
           <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-1/4 ">
             <img src={leo} alt="leo" className="w-3/4" />
@@ -50,10 +50,10 @@ const CentralComponents = () => {
         </div>
         <CountDown />
         <div className="mt-12 md:px-36 grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div className="order-1 md:order-1 md:mx-0 md:ml-auto font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl">
+          <div className="cursor-pointer order-1 md:order-1 md:mx-0 md:ml-auto font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl">
             <button>REGISTER ON DEVFOLIO</button>
           </div>
-          <div className="mx-auto order-3 md:order-2 mt-20 md:mt-0 drop-shadow-white">
+          <div className="relative z-10 cursor-pointer mx-auto order-3 md:order-2 mt-20 md:mt-0 drop-shadow-white">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 md:h-14 md:w-14" fill="none" viewBox="0 0 24 24" stroke="url(#gradient)" >
               <defs>
                 <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -64,7 +64,7 @@ const CentralComponents = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
             </svg>
           </div>
-          <div className="order-2 md:order-3 md:mx-0 drop-shadow-2xl font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl">
+          <div className="cursor-pointer order-2 md:order-3 md:mx-0 drop-shadow-2xl font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl">
             <img src={discordlogo} alt="Discord" className="w-8 mr-4" />
             <button>JOIN US ON DISCORD</button>
           </div>
