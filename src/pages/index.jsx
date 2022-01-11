@@ -1,9 +1,10 @@
-import * as React from "react";
+import React from "react";
+import Navbar from "../components/navbar/navbar";
 
 const IndexPage = () => {
   return (
     <>
-      <section className="font-bold text-red-400">Hello World</section>
+      <Navbar />
     </>
   );
 };

@@ -1,0 +1,38 @@
+.underline_hover:hover {
+  color: #fff;
+}
+
+.underline_hover:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  text-align: center;
+  display: block;
+  height: 2px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(109, 119, 183, 1),
+    rgba(176, 37, 88, 1),
+    #ec521a
+  );
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underline_hover:hover:after {
+  width: 100%;
+  left: 0;
+}
+.background {
+  background: linear-gradient(
+      280.15deg,
+      rgba(231, 78, 31, 0.7) -5.92%,
+      rgba(231, 78, 31, 0) 18.17%
+    ),
+    linear-gradient(
+      294.49deg,
+      rgba(20, 27, 72, 0.2) 44.44%,
+      rgba(109, 119, 183, 0.2) 77.58%
+    ),
+    linear-gradient(137.94deg, #0f1642 14.99%, #0f1642 71.5%);
+}
