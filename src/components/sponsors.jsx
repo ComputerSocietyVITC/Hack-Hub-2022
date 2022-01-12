@@ -50,15 +50,16 @@ const SponsorTag = ({ Text }) => {
 
 const Sponsors = () => {
   return (
-    <section className="grid grid-cols-4 gap-10">
-      <div
-        className="
-        col-span-2 pt-20 pl-10 text-white 
-        font-Sansation font-bold text-4xl border-b-2
-      "
-      >
-        SPONSORS
-      </div>
+    <>
+      <div className="pt-24">
+        <section className="sm:w-1/3 lg:w-1/5 py-20">
+          <section className="text-white font-Sansation font-bold text-5xl text-center">
+            SPONSORS
+          </section>
+          <div class="h-1 w-full rounded-lg bg-white"></div>
+        </section>
+        <h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>
+        {/* <section className="grid grid-cols-4 gap-10">
       {page
         .filter((item) => {
           return item.textHeader === "SPONSORS";
@@ -83,7 +84,9 @@ const Sponsors = () => {
             </div>
           );
         })}
-    </section>
+    </section> */}
+      </div>
+    </>
   );
 };
 

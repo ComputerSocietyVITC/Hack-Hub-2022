@@ -5,7 +5,8 @@ import About from "../components/about";
 import Footer from "../components/footer";
 import CentralComponents from "../components/centralComponents";
 import FAQ from "../components/faq";
-import Background from "../components/background";
+import Sponsors from "../components/sponsors";
+// import Background from "../components/background";
 
 const IndexPage = () => {
   return (
@@ -17,6 +18,7 @@ const IndexPage = () => {
           <CentralComponents />
           <About />
           <TimeLine />
+          <Sponsors />
           <FAQ />
           <Footer />
         </div>
