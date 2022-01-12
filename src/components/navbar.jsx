@@ -1,7 +1,8 @@
 import React from "react";
 import { useRef } from "react";
-import line from "../images/svgs/line_1.svg";
+// import line from "../images/svgs/line_1.svg";
 import "../styles/styles.css";
+import hackhubsquarelogo from "../images/hackhubsquarelogo.png"
 
 const Component = ({ Heading, Link }) => {
   return (
@@ -33,8 +34,8 @@ const Navbar = () => {
       <div className="fixed w-full z-30 bg-black" ref={navRef}>
         <section className="font-Sansation font-bold relative z-10">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-3 lg:px-0">
-            <div className="text-sm mt-6 font-bold leading-relaxed inline-block mr-4 whitespace-nowrap uppercase lg:hidden" >
-              {/* <img src={hackhubsquarelogo} alt="HackHub Logo" className="h-16"></img> */}
+            <div className="py-2 lg:hidden">
+              <img src={hackhubsquarelogo} alt="HackHub Logo" className="h-16"></img>
             </div>
             <button
               className="cursor-pointer text-xl leading-none py-2 block lg:hidden"
