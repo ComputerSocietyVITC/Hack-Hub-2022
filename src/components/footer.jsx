@@ -2,6 +2,8 @@ import React from "react";
 import instagram from "../images/footer/instagram_footer.png";
 import linkedin from "../images/footer/linkedin_footer.png";
 import github from "../images/footer/github_footer.png";
+import comsoc from "../images/footer/comsoc.jpeg";
+import hackhublogo from "../images/hackhublogo.png";
 import "../styles/styles.css";
 
 let contact = [
@@ -18,6 +20,12 @@ let contact = [
       {
         id: 2,
         name: "Person 2",
+        email: "contact@example.com",
+        to: "#",
+      },
+      {
+        id: 3,
+        name: "Person 3",
         email: "contact@example.com",
         to: "#",
       },
@@ -48,25 +56,36 @@ let socials = [
         alt: "github",
         src: github,
       },
+      {
+        id: 4,
+        Link: "#",
+        alt: "comsoc",
+        src: comsoc,
+      },
     ],
   },
 ];
 
-const Foot = (props) => {
-  const { emails, src, Link, alt, to, name } = props;
+const ContactFoot = (props) => {
+  const { emails, name } = props;
+  return (
+    <section>
+      <div className="my-4">
+        <p>{name}</p>
+        <a href={emails}>{emails}</a>
+      </div>
+    </section>
+  );
+};
+
+const SocialFoot = (props) => {
+  const { src, Link, alt } = props;
   return (
     <section>
       <div>
-        <p className="whitespace-nowrap">{name}</p>
-        <a href={to}>{emails}</a>
-      </div>
-
-      <div>
-        <div>
-          <a href={Link}>
-            <img className="h-7 my-3 mx-auto lg:mx-0" src={src} alt={alt} />
-          </a>
-        </div>
+        <a href={Link}>
+          <img className="h-10 lg:h-7 mx-auto lg:mx-0" src={src} alt={alt} />
+        </a>
       </div>
     </section>
   );
@@ -74,36 +93,41 @@ const Foot = (props) => {
 
 function Footer() {
   return (
-    <section>
-      <section className="font-Sansation font-bold py-2 grid grid-cols-10 gap-2">
-        <div className="col-start-3 col-span-2 ">
+    <section className="bg-black mt-16">
+      <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
+      <section className="font-Sansation font-bold py-2 grid lg:grid-cols-3 lg:gap-44">
+        <div className="lg:ml-auto text-center order-1 lg:order-1">
           <div>
-            <p className="uppercase  font-SanBold text-4xl text-white flex-row flex-wrap mt-4 mb-5">
+            <p className="uppercase font-SanBold text-4xl text-white flex-row flex-wrap mt-4 mb-5">
               Contact Us
             </p>
           </div>
-          <div className="grid grid-cols-8 gap-1">
-            <div className="col-start-2 col-span-1 text-base text-white">
+          <div>
+            <div className="text-white">
               {contact
                 .filter((header) => {
                   return header.head === "Contact Us";
                 })[0]
                 .emails.map((ema) => {
                   return (
-                    <Foot key={ema.id} emails={ema.email} name={ema.name} />
+                    <ContactFoot key={ema.id} emails={ema.email} name={ema.name} />
                   );
                 })}
             </div>
           </div>
         </div>
-
-        <div className="col-start-7 col-span-2">
+        <div className="flex items-center justify-center order-3 lg:order-2 m-6 lg:m-0">
           <div>
-            <p className="uppercase text-white text-xl mx-auto mt-3 mb-4 ">
-              Social Media
+            <img src={hackhublogo} alt="Hackhub 2022" />
+          </div>
+        </div>
+        <div className="order-2 lg:order-3">
+          <div>
+            <p className="uppercase font-SanBold text-4xl text-white flex-row flex-wrap mt-4 mb-5 text-center lg:mr-16">
+              Social Links
             </p>
           </div>
-          <div>
+          <div className="py-10">
             <div className="grid grid-rows-1 grid-flow-col gap-1 ">
               {socials
                 .filter((title) => {
@@ -111,7 +135,7 @@ function Footer() {
                 })[0]
                 .icons.map((im) => {
                   return (
-                    <Foot
+                    <SocialFoot
                       key={im.id}
                       src={im.src}
                       Link={im.Link}
@@ -123,8 +147,9 @@ function Footer() {
           </div>
         </div>
       </section>
-      <p className="text-white font-Sansation items-left justify-left text-center text-1xl mb-5">
-        ©️ IEEE CS VITC
+      <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
+      <p className="text-white font-Sansation items-left justify-left text-center text-xl my-2 mx-10 lg:mx-0">
+        Made With ❤️ by Team HackHub | ©️ IEEE CS VITC
       </p>
     </section>
   );

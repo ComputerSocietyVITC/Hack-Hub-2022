@@ -51,7 +51,7 @@ const SponsorTag = ({ Text }) => {
 const Sponsors = () => {
   return (
     <>
-      <div className="pt-24">
+      <div className="pt-24 px-8 sm:px-0">
         <section className="sm:w-1/3 lg:w-1/5 py-20">
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             SPONSORS

@@ -65,7 +65,7 @@ const TimeLine = () => {
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="w-32 md:w-5/12">
                 <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya text-right">
-                  14th Febraury 2022
+                  3rd March 2022
                 </div>
               </div>
               <div className="z-20 flex items-center shadow-xl">
@@ -97,7 +97,7 @@ const TimeLine = () => {
                     <img src={arrow1} alt="arrow1" />
                   </div>
                   <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya absolute top-2 right-6 md:top-4 md:right-16">
-                    Submission Starts
+                    Hackathon Starts
                   </div>
                 </div>
               </div>
@@ -113,7 +113,7 @@ const TimeLine = () => {
               </div>
               <div className="w-32 md:w-5/12">
                 <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya text-left">
-                  14th Febraury 2022
+                  4th March 2022
                 </div>
               </div>
             </div>
@@ -121,7 +121,7 @@ const TimeLine = () => {
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="w-32 md:w-5/12">
                 <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya text-right">
-                  14th Febraury 2022
+                  6th March 2022
                 </div>
               </div>
               <div className="z-20 flex items-center shadow-xl">
@@ -140,7 +140,7 @@ const TimeLine = () => {
                     <img src={arrow2} alt="arrow2" />
                   </div>
                   <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya absolute top-2 left-7 md:top-4 md:left-20">
-                    Submission Ends
+                    Hackathon Ends
                   </div>
                 </div>
               </div>
@@ -169,7 +169,7 @@ const TimeLine = () => {
               </div>
               <div className="w-32 md:w-5/12">
                 <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya text-left">
-                  14th Febraury 2022
+                  8th March 2022
                 </div>
               </div>
             </div>
