@@ -4,15 +4,28 @@ import hex2 from "../images/hex2.png";
 import arrow1 from "../images/arrow1.png";
 import arrow2 from "../images/arrow2.png";
 import libra from "../images/svgs/libra.svg";
-import aries from "../images/svgs/Aries.svg";
+import aries from "../images/svgs/aries.svg";
 import trophy from "../images/svgs/trophy.svg";
 import leo from "../images/svgs/leo.svg";
 import group22 from "../images/svgs/Group_22.svg";
+import { useRef } from "react";
 
 const TimeLine = () => {
+
+  const timelineRef = useRef(null);
+
+  React.useEffect(() => {
+    const onScroll = e => {
+      console.log(timelineRef.current.offsetTop)
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <>
-      <div className="h-screen px-8 sm:px-0">
+      <div className="h-screen px-8 sm:px-0" ref={timelineRef}>
         <section className="sm:w-1/3 lg:w-1/5 py-8">
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             TIMELINE

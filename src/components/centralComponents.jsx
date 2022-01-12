@@ -14,27 +14,27 @@ import group22 from "../images/svgs/Group_22.svg";
 const CentralComponents = () => {
   return (
     <>
-      <div className="h-screen relative">
+      <div className="h-screen relative pt-14">
         <section className="z-0">
-          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 top-10">
+          <section className="absolute opacity-50 hidden md:block hover:opacity-100 transition duration-500 top-10">
             <img src={libra} alt="libra" className="w-2/3" />
           </section>
-          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 -top-10 left-1/3">
+          <section className="absolute opacity-50 hidden md:block hover:opacity-100 transition duration-500 -top-10 left-1/3">
             <img src={virgo} alt="virgo" className="w-5/6" />
           </section>
-          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 top-6 right-20">
+          <section className="absolute opacity-50 hidden md:block hover:opacity-100 transition duration-500 top-6 right-20">
             <img src={aquaris} alt="aquaris" className="w-5/6" />
           </section>
-          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-1/4 right-0">
+          <section className="absolute opacity-50 hidden md:block hover:opacity-100 transition duration-500 bottom-1/4 right-0">
             <img src={pisces} alt="pisces" className="w-3/4 ml-auto" />
           </section>
-          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-14 right-1/3">
+          <section className="absolute opacity-50 hidden md:block hover:opacity-100 transition duration-500 bottom-14 right-1/3">
             <img src={aries} alt="aries" className="w-2/3 ml-16" />
           </section>
-          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 bottom-1/4 ">
+          <section className="absolute opacity-50 hidden md:block hover:opacity-100 transition duration-500 bottom-1/4 ">
             <img src={leo} alt="leo" className="w-3/4" />
           </section>
-          <section className="absolute opacity-0 hover:opacity-100 transition duration-500 top-1/4 left-1/4">
+          <section className="absolute opacity-50 hidden md:block hover:opacity-100 transition duration-500 top-1/4 left-1/4">
             <img src={group22} alt="group22" className="w-2/3" />
           </section>
         </section>
