@@ -5,6 +5,7 @@ import github from "../images/footer/github_footer.png";
 import comsoc from "../images/footer/comsoc.jpeg";
 import hackhublogo from "../images/hackhublogo.png";
 import "../styles/styles.css";
+import { useNav } from '../helpers/customHooks/useNav';
 
 let contact = [
   {
@@ -92,8 +93,11 @@ const SocialFoot = (props) => {
 };
 
 function Footer() {
+
+  const contactRef = useNav('Contact');
+
   return (
-    <section className="bg-black mt-16">
+    <section className="bg-black mt-16" ref={contactRef} id='contactContainer'>
       <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
       <section className="font-Sansation font-bold py-2 grid lg:grid-cols-3 lg:gap-44">
         <div className="lg:ml-auto text-center order-1 lg:order-1">

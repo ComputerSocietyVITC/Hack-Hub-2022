@@ -3,9 +3,12 @@ import faqribbon1 from "../images/faqribbon1.png";
 import faqribbon2 from "../images/faqribbon2.png";
 import arrow from "../images/svgs/arrow.svg";
 import FAQdata from "../helpers/FAQdata"
+import { useNav } from '../helpers/customHooks/useNav';
 
 const OddComponent = ({ Question, Answer }) => {
+
   const [des, setDes] = React.useState(false);
+
   return (
     <>
       <div className="md:w-3/5 mx-auto">
@@ -107,10 +110,13 @@ const EvenComponent = ({ Question, Answer }) => {
 };
 
 const FAQ = () => {
+
+  const faqsRef = useNav('Faqs');
+
   return (
     <>
-      <div className="min-h-screen px-8 sm:px-0 pt-24">
-        <section className="sm:w-1/3 lg:w-1/5 py-20">
+      <div className="min-h-screen px-8 sm:px-0 mt-24" ref={faqsRef} id='faqsContainer'>
+        <section className="sm:w-1/3 lg:w-1/5 my-8 py-12">
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             FAQs
           </section>

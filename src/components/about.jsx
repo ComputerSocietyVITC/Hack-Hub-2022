@@ -1,10 +1,13 @@
 import React from "react";
 import "../styles/about.css";
+import { useNav } from '../helpers/customHooks/useNav';
 
 function About() {
 
+  const aboutRef = useNav('About');
+
   return (
-    <section className="my-12 px-8 sm:px-0">
+    <section className="pt-12 px-8 sm:px-0" ref={aboutRef} id='aboutContainer'>
       <section className="sm:w-1/3 lg:w-1/5">
         <section className="text-white font-Sansation font-bold text-5xl text-center">
           ABOUT

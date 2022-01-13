@@ -6,23 +6,26 @@ import Footer from "../components/footer";
 import CentralComponents from "../components/centralComponents";
 import FAQ from "../components/faq";
 import Sponsors from "../components/sponsors";
+import NavProvider from '../helpers/NavContext';
 // import Background from "../components/background";
 
 const IndexPage = () => {
   return (
     <>
-      <Navbar />
-      <div className="bg-images z-0">
-        <div className="bg-bgimage bg-center">
-          {/* <Background /> */}
-          <CentralComponents />
-          <About />
-          <TimeLine />
-          <Sponsors />
-          <FAQ />
-          <Footer />
+      <NavProvider>
+        <Navbar />
+        <div className="bg-images z-0">
+          <div className="bg-bgimage bg-center">
+            {/* <Background /> */}
+            <CentralComponents />
+            <About />
+            <TimeLine />
+            <Sponsors />
+            <FAQ />
+            <Footer />
+          </div>
         </div>
-      </div>
+      </NavProvider>
     </>
   );
 };

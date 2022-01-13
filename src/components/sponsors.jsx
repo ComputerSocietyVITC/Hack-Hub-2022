@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/navbar.css";
+import { useNav } from '../helpers/customHooks/useNav';
 
 const page = [
   {
@@ -49,10 +50,13 @@ const SponsorTag = ({ Text }) => {
 };
 
 const Sponsors = () => {
+
+  const sponsorsRef = useNav('Sponsors');
+
   return (
     <>
-      <div className="pt-24 px-8 sm:px-0">
-        <section className="sm:w-1/3 lg:w-1/5 py-20">
+      <div className="mt-24 px-8 sm:px-0" ref={sponsorsRef} id='sponsContainer'>
+        <section className="sm:w-1/3 lg:w-1/5 my-8 py-12">
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             SPONSORS
           </section>

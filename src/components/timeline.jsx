@@ -8,24 +8,15 @@ import aries from "../images/svgs/aries.svg";
 import trophy from "../images/svgs/trophy.svg";
 import leo from "../images/svgs/leo.svg";
 import group22 from "../images/svgs/Group_22.svg";
-import { useRef } from "react";
+import { useNav } from '../helpers/customHooks/useNav';
 
 const TimeLine = () => {
 
-  const timelineRef = useRef(null);
-
-  React.useEffect(() => {
-    const onScroll = e => {
-      console.log(timelineRef.current.offsetTop)
-    };
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const timelineRef = useNav('Timeline');
 
   return (
     <>
-      <div className="h-screen px-8 sm:px-0" ref={timelineRef}>
+      <div className="h-screen px-8 py-4 sm:px-0" ref={timelineRef} id='timelineContainer'>
         <section className="sm:w-1/3 lg:w-1/5 py-8">
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             TIMELINE

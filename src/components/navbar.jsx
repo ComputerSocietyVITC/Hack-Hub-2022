@@ -1,7 +1,7 @@
 import React from "react";
-import { useRef } from "react";
 // import line from "../images/svgs/line_1.svg";
 import "../styles/styles.css";
+import NavLink from '../helpers/NavLink';
 import hackhubsquarelogo from "../images/hackhubsquarelogo.png"
 
 const Component = ({ Heading, Link }) => {
@@ -16,22 +16,20 @@ const Component = ({ Heading, Link }) => {
 
 const Navbar = () => {
 
-  const navRef = useRef(null);
-
-  React.useEffect(() => {
-    const onScroll = e => {
-      // console.log(window.pageYOffset)
-    };
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const navLinks = [
+    { navLinkId: 'Home', scrollToId: 'homeContainer' },
+    { navLinkId: 'About', scrollToId: 'aboutContainer' },
+    { navLinkId: 'Timeline', scrollToId: 'timelineContainer' },
+    { navLinkId: 'Sponsors', scrollToId: 'sponsContainer' },
+    { navLinkId: 'Faqs', scrollToId: 'faqsContainer' },
+    { navLinkId: 'Contact', scrollToId: 'contactContainer' },
+  ];
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   return (
     <>
-      <div className="fixed w-full z-30 bg-black" ref={navRef}>
+      <div className="fixed w-full z-30 bg-black">
         <section className="font-Sansation font-bold relative z-10">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-3 lg:px-0">
             <div className="py-2 lg:hidden">
@@ -53,25 +51,10 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <section className={"py-2 lg:grid lg:grid-cols-12 gap-4" + (navbarOpen ? " grid" : " hidden")}>
-            <section className="lg:col-start-4 col-span-1">
-              <Component Heading="Home" link="#" />
-            </section>
-            <section className="lg:col-start-5 col-span-1">
-              <Component Heading="About" link="#" />
-            </section>
-            <section className="lg:col-start-6 col-span-1">
-              <Component Heading="Timeline" link="#" />
-            </section>
-            <section className="lg:col-start-7 col-span-1">
-              <Component Heading="Sponsors" link="#" />
-            </section>
-            <section className="lg:col-start-8 col-span-1">
-              <Component Heading="FAQs" link="#" />
-            </section>
-            <section className="lg:col-start-9 col-span-1">
-              <Component Heading="Contact" link="#" />
-            </section>
+          <section className={"py-2 lg:flex lg:justify-evenly lg:mx-40" + (navbarOpen ? " grid gap-4" : " hidden")}>
+            {navLinks.map(({ navLinkId, scrollToId }, idx) => (
+              <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
+            ))}
           </section>
         </section>
         {/* <img src={line} alt="line" /> */}
