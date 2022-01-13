@@ -3,7 +3,7 @@ module.exports = {
     // siteUrl: "https://www.yourdomain.tld",
     title: "HackHub2022",
   },
-
+  pathPrefix: "/Hack-Hub-2022",
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
