@@ -24,3 +24,13 @@
   left: 0;
 }
 
+.main_grad {
+  position: relative;
+  background: linear-gradient(
+      280.15deg,
+      rgba(231, 78, 31, 0.7) -5.92%,
+      rgba(231, 78, 31, 0) 18.17%
+    ),
+    #0f1642;
+ 
+}
