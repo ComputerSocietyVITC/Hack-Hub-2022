@@ -24,6 +24,18 @@ module.exports = {
       },
     },
     "gatsby-plugin-postcss",
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, 
+        tailwind: true,
+        purgeCSSOptions: {
+          // https://purgecss.com/configuration.html#options
+          // safelist: ['safelist'], // Don't remove this selector
+        },
+        // More options defined here https://purgecss.com/configuration.html#options
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",

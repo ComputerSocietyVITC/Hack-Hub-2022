@@ -4,7 +4,7 @@ import TimeLine from "../components/timeline";
 import About from "../components/about";
 import Footer from "../components/footer";
 import CentralComponents from "../components/centralComponents";
-import FAQ from "../components/faq";
+import FrequentlyAskedQuestions from "../components/faq";
 import Sponsors from "../components/sponsors";
 import NavProvider from '../helpers/NavContext';
 // import Background from "../components/background";
@@ -21,7 +21,7 @@ const IndexPage = () => {
             <About />
             <TimeLine />
             <Sponsors />
-            <FAQ />
+            <FrequentlyAskedQuestions />
             <Footer />
           </div>
         </div>
