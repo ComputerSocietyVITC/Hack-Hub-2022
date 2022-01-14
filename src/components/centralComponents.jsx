@@ -35,7 +35,7 @@ const CentralComponents = () => {
           <section className="absolute opacity-50 hidden lg:block hover:opacity-100 transition duration-500 bottom-1/4 right-0">
             <img src={pisces} alt="pisces" className="w-3/4 ml-auto" />
           </section>
-          <section className="absolute opacity-50 hidden lg:block hover:opacity-100 transition duration-500 bottom-4 right-1/3">
+          <section className="absolute opacity-50 hidden lg:block hover:opacity-100 transition duration-500 bottom-0 right-1/3">
             <img src={aries} alt="aries" className="w-2/3 ml-16" />
           </section>
           <section className="absolute opacity-50 hidden lg:block hover:opacity-100 transition duration-500 bottom-1/4 ">
@@ -58,9 +58,9 @@ const CentralComponents = () => {
         <CountDown />
         <div className="mt-12 lg:px-36 grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="cursor-pointer mx-auto order-1 lg:order-1 lg:mx-0 lg:ml-auto font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl py-4 lg:py-0">
-            <button>REGISTER ON DEVFOLIO</button>
+            <button>APPLY WITH DEVFOLIO</button>
           </div>
-          <div className="relative z-20 cursor-pointer mx-auto order-3 lg:order-2 mt-12 lg:mt-0 drop-shadow-white" onClick={handleClickArrow}>
+          <div className="relative mx-auto order-3 lg:order-2 mt-12 lg:mt-0 lg:opacity-0" onClick={handleClickArrow}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 lg:h-14 lg:w-14" fill="none" viewBox="0 0 24 24" stroke="url(#gradientarrow)" >
               <defs>
                 <linearGradient id="gradientarrow" x1="0%" y1="0%" x2="0%" y2="100%">

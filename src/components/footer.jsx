@@ -14,21 +14,13 @@ let contact = [
     emails: [
       {
         id: 1,
-        name: "Person 1",
-        email: "contact@example.com",
-        to: "#",
+        name: "Samank Gupta",
+        email: "samankgupta@gmail.com",
       },
       {
         id: 2,
-        name: "Person 2",
-        email: "contact@example.com",
-        to: "#",
-      },
-      {
-        id: 3,
-        name: "Person 3",
-        email: "contact@example.com",
-        to: "#",
+        name: "Tanay Bhadula",
+        email: "tanaybhadula2002@gmail.com",
       },
     ],
   },
@@ -41,25 +33,25 @@ let socials = [
     icons: [
       {
         id: 1,
-        Link: "#",
+        Link: "https://www.instagram.com/comsoc.vitcc/",
         alt: "instagram",
         src: instagram,
       },
       {
         id: 2,
-        Link: "#",
+        Link: "https://www.linkedin.com/company/ieee-computer-society-vit-chennai/",
         alt: "linkedin",
         src: linkedin,
       },
       {
         id: 3,
-        Link: "#",
+        Link: "https://github.com/ComputerSocietyVITC/",
         alt: "github",
         src: github,
       },
       {
         id: 4,
-        Link: "#",
+        Link: "https://www.ieeecsvitc.com/",
         alt: "comsoc",
         src: comsoc,
       },
@@ -72,8 +64,8 @@ const ContactFoot = (props) => {
   return (
     <section>
       <div className="my-4">
-        <p>{name}</p>
-        <a href={emails}>{emails}</a>
+        <p className="font-semibold">{name}</p>
+        <a href={'mailto:' + emails}>{emails}</a>
       </div>
     </section>
   );
@@ -84,7 +76,7 @@ const SocialFoot = (props) => {
   return (
     <section>
       <div>
-        <a href={Link}>
+        <a href={Link} target="_blank">
           <img className="h-10 lg:h-7 mx-auto lg:mx-0" src={src} alt={alt} />
         </a>
       </div>
@@ -99,7 +91,7 @@ function Footer() {
   return (
     <section className="bg-black mt-16" ref={contactRef} id='contactContainer'>
       <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
-      <section className="font-Sansation font-bold py-2 grid lg:grid-cols-3 lg:gap-44">
+      <section className="py-2 grid lg:grid-cols-3 lg:gap-44">
         <div className="lg:ml-auto text-center order-1 lg:order-1">
           <div>
             <p className="uppercase font-SanBold text-4xl text-white flex-row flex-wrap mt-4 mb-5">
@@ -131,8 +123,8 @@ function Footer() {
               Social Links
             </p>
           </div>
-          <div className="py-10">
-            <div className="grid grid-rows-1 grid-flow-col gap-1 ">
+          <div className="py-10 mx-4">
+            <div className="grid grid-rows-1 grid-flow-col">
               {socials
                 .filter((title) => {
                   return title.header === "Social Links";
@@ -152,7 +144,7 @@ function Footer() {
         </div>
       </section>
       <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
-      <p className="text-white font-Sansation items-left justify-left text-center text-xl my-2 mx-10 lg:mx-0">
+      <p className="text-white items-left justify-left text-center text-xl my-2 mx-10 lg:mx-0">
         Made With ❤️ by Team HackHub | ©️ IEEE CS VITC
       </p>
     </section>
