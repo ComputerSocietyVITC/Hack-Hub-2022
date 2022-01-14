@@ -58,6 +58,51 @@ const OddComponent = ({ Question, Answer }) => {
   );
 };
 
+const FAQComponent = ({ Question, Answer }) => {
+  const [state, setState] = React.useState(false);
+  return (
+    <>
+      <div onClick={() => setState(!state)} className="cursor-pointer lg:mx-24 grid grid-cols-12 bg-gradient-to-r from-gradViolet to-gradPink text-lg md:text-2xl text-center text-white shadow-xl hover:shadow-md rounded-xl py-4 my-4">
+        <div className="ml-auto hidden md:block">
+          {state ? (
+            <div className="h-4 w-4">
+              <img src={arrow} alt="arrow" className="transform rotate-90" />
+            </div>
+          ) : (
+            <div className="h-4 w-4">
+              <img src={arrow} alt="arrow" />
+            </div>
+          )}
+        </div>
+        <div className="col-span-12 md:col-span-10 px-4">
+          {Question}
+        </div>
+        <div className="hidden md:block">
+          {state ? (
+            <div className="h-4 w-4">
+              <img src={arrow} alt="arrow" className="transform rotate-90" />
+            </div>
+          ) : (
+            <div className="h-4 w-4">
+              <img src={arrow} alt="arrow" className="transform rotate-180" />
+            </div>
+          )}
+        </div>
+      </div>
+      <div>
+        <p
+          className={
+            "p-2 text-white text-lg md:text-xl text-center md:w-2/3 mx-auto" +
+            (state ? " block" : " hidden")
+          }
+        >
+          {Answer}
+        </p>
+      </div>
+    </>
+  );
+}
+
 const EvenComponent = ({ Question, Answer }) => {
   const [state, setState] = React.useState(false);
   return (
@@ -125,9 +170,9 @@ const FAQ = () => {
         <div className="w-full md:px-40">
           {FAQdata.map((faq) =>
             faq.sr % 2 !== 0 ?
-              <OddComponent Question={faq.Question} Answer={faq.Answer} />
+              <FAQComponent Question={faq.Question} Answer={faq.Answer} />
               :
-              <EvenComponent Question={faq.Question} Answer={faq.Answer} />
+              <FAQComponent Question={faq.Question} Answer={faq.Answer} />
           )}
         </div>
       </div>

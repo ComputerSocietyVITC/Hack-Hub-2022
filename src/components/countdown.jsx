@@ -11,7 +11,7 @@ const CountDown = () => {
   const startTimer = () => {
     interval = setInterval(() => {
       let now = new Date().getTime();
-      let distance = new Date(2022, 3, 2).getTime() - now;
+      let distance = new Date(2022, 3, 4).getTime() - now;
       let days = String(Math.floor(distance / (1000 * 60 * 60 * 24)));
       let hours = String(
         Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))

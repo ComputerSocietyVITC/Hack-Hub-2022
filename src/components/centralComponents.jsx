@@ -60,7 +60,7 @@ const CentralComponents = () => {
           <div className="cursor-pointer mx-auto order-1 lg:order-1 lg:mx-0 lg:ml-auto font-SanBold font-bold bg-gradient-to-r w-80 from-gradViolet to-gradPink flex items-center justify-center text-xl text-center text-white shadow-xl hover:shadow-md rounded-2xl py-4 lg:py-0">
             <button>APPLY WITH DEVFOLIO</button>
           </div>
-          <div className="relative mx-auto order-3 lg:order-2 mt-12 lg:mt-0 opacity-0" onClick={handleClickArrow}>
+          <div className="relative mx-auto order-3 lg:order-2 mt-12 lg:mt-0 lg:opacity-0" onClick={handleClickArrow}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 lg:h-14 lg:w-14" fill="none" viewBox="0 0 24 24" stroke="url(#gradientarrow)" >
               <defs>
                 <linearGradient id="gradientarrow" x1="0%" y1="0%" x2="0%" y2="100%">

@@ -64,7 +64,7 @@ const ContactFoot = (props) => {
   return (
     <section>
       <div className="my-4">
-        <p>{name}</p>
+        <p className="font-semibold">{name}</p>
         <a href={'mailto:' + emails}>{emails}</a>
       </div>
     </section>
@@ -91,7 +91,7 @@ function Footer() {
   return (
     <section className="bg-black mt-16" ref={contactRef} id='contactContainer'>
       <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
-      <section className="font-Sansation font-bold py-2 grid lg:grid-cols-3 lg:gap-44">
+      <section className="py-2 grid lg:grid-cols-3 lg:gap-44">
         <div className="lg:ml-auto text-center order-1 lg:order-1">
           <div>
             <p className="uppercase font-SanBold text-4xl text-white flex-row flex-wrap mt-4 mb-5">
@@ -144,7 +144,7 @@ function Footer() {
         </div>
       </section>
       <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
-      <p className="text-white font-Sansation items-left justify-left text-center text-xl my-2 mx-10 lg:mx-0">
+      <p className="text-white items-left justify-left text-center text-xl my-2 mx-10 lg:mx-0">
         Made With ❤️ by Team HackHub | ©️ IEEE CS VITC
       </p>
     </section>
