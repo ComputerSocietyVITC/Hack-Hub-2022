@@ -14,21 +14,13 @@ let contact = [
     emails: [
       {
         id: 1,
-        name: "Person 1",
-        email: "contact@example.com",
-        to: "#",
+        name: "Samank Gupta",
+        email: "samankgupta@gmail.com",
       },
       {
         id: 2,
-        name: "Person 2",
-        email: "contact@example.com",
-        to: "#",
-      },
-      {
-        id: 3,
-        name: "Person 3",
-        email: "contact@example.com",
-        to: "#",
+        name: "Tanay Bhadula",
+        email: "tanaybhadula2002@gmail.com",
       },
     ],
   },
@@ -41,25 +33,25 @@ let socials = [
     icons: [
       {
         id: 1,
-        Link: "#",
+        Link: "https://www.instagram.com/comsoc.vitcc/",
         alt: "instagram",
         src: instagram,
       },
       {
         id: 2,
-        Link: "#",
+        Link: "https://www.linkedin.com/company/ieee-computer-society-vit-chennai/",
         alt: "linkedin",
         src: linkedin,
       },
       {
         id: 3,
-        Link: "#",
+        Link: "https://github.com/ComputerSocietyVITC/",
         alt: "github",
         src: github,
       },
       {
         id: 4,
-        Link: "#",
+        Link: "https://www.ieeecsvitc.com/",
         alt: "comsoc",
         src: comsoc,
       },
@@ -73,7 +65,7 @@ const ContactFoot = (props) => {
     <section>
       <div className="my-4">
         <p>{name}</p>
-        <a href={emails}>{emails}</a>
+        <a href={'mailto:' + emails}>{emails}</a>
       </div>
     </section>
   );
@@ -84,7 +76,7 @@ const SocialFoot = (props) => {
   return (
     <section>
       <div>
-        <a href={Link}>
+        <a href={Link} target="_blank">
           <img className="h-10 lg:h-7 mx-auto lg:mx-0" src={src} alt={alt} />
         </a>
       </div>
@@ -131,8 +123,8 @@ function Footer() {
               Social Links
             </p>
           </div>
-          <div className="py-10">
-            <div className="grid grid-rows-1 grid-flow-col gap-1 ">
+          <div className="py-10 mx-4">
+            <div className="grid grid-rows-1 grid-flow-col">
               {socials
                 .filter((title) => {
                   return title.header === "Social Links";

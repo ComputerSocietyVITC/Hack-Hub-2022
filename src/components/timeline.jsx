@@ -16,7 +16,7 @@ const TimeLine = () => {
 
   return (
     <>
-      <div className="h-screen px-8 py-4 sm:px-0" ref={timelineRef} id='timelineContainer'>
+      <div className="min-h-screen px-8 py-4 sm:px-0" ref={timelineRef} id='timelineContainer'>
         <section className="sm:w-1/3 lg:w-1/5 py-8">
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             TIMELINE
