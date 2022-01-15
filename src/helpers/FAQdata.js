@@ -2,7 +2,7 @@ const FAQdata = [
     {
         "sr": 1,
         "Question": "How can I register for HackHub?",
-        "Answer": "You can register for HackHub'22 by clicking on the 'Register on Devfolio' button in the home page and entering your details in our devfolio page"
+        "Answer": "You can register for HackHub'22 by clicking on the 'Apply with Devfolio' button in the home page and entering your details in our devfolio page"
     },
     {
         "sr": 2,
@@ -12,32 +12,32 @@ const FAQdata = [
     {
         "sr": 3,
         "Question": "How many team members can I have?",
-        "Answer": "Dont know :)"
+        "Answer": "1-4"
     },
     {
         "sr": 4,
         "Question": "Can members in a team be from different universities?",
-        "Answer": "Dont know :)"
+        "Answer": "Yes"
     },
     {
         "sr": 5,
         "Question": "Do we need to have the entire idea fully working?",
-        "Answer": "Dont know :)"
+        "Answer": "90%"
     },
     {
         "sr": 6,
         "Question": "Do I need to give the demonstration of my solution which I built?",
-        "Answer": "Dont know :)"
+        "Answer": "Yes"
     },
     {
         "sr": 7,
         "Question": "How to submit our work?",
-        "Answer": "Dont know :)"
+        "Answer": "On devfolio."
     },
     {
         "sr": 8,
         "Question": "Is it mandatory to join the discord server?",
-        "Answer": "Yes,it is mandatory for all participants to join the discord server since all the official communication during the hackthon will be done there."
+        "Answer": "Yes, it is mandatory for all participants to join the discord server since all the official communication during the hackthon will be done there."
     },
     {
         "sr": 9,
