@@ -31,7 +31,7 @@ const TimeLine = () => {
                   <div className="ml-auto w-32 md:w-72">
                     <img src={arrow1} alt="arrow1" />
                   </div>
-                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya absolute top-2 right-6 md:top-4 md:right-16">
+                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans absolute top-2 right-6 md:top-4 md:right-16">
                     Registration Starts
                   </div>
                 </div>
@@ -47,7 +47,7 @@ const TimeLine = () => {
                 </div>
               </div>
               <div className="w-32 md:w-5/12">
-                <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya text-left">
+                <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans text-left">
                   14th Febraury 2022
                 </div>
               </div>
@@ -55,7 +55,7 @@ const TimeLine = () => {
             <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-gradPink to-gradViolet"></div>
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="w-32 md:w-5/12">
-                <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya text-right">
+                <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans text-right">
                   3rd March 2022
                 </div>
               </div>
@@ -74,7 +74,7 @@ const TimeLine = () => {
                   <div className="mr-auto w-32 md:w-72">
                     <img src={arrow2} alt="arrow2" />
                   </div>
-                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya absolute top-2 left-7 md:top-4 md:left-20">
+                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans absolute top-2 left-7 md:top-4 md:left-16">
                     Registration Ends
                   </div>
                 </div>
@@ -87,7 +87,7 @@ const TimeLine = () => {
                   <div className="ml-auto w-32 md:w-72">
                     <img src={arrow1} alt="arrow1" />
                   </div>
-                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya absolute top-2 right-6 md:top-4 md:right-16">
+                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans absolute top-2 right-6 md:top-4 md:right-16">
                     Hackathon Starts
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const TimeLine = () => {
                 </div>
               </div>
               <div className="w-32 md:w-5/12">
-                <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya text-left">
+                <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans text-left">
                   4th March 2022
                 </div>
               </div>
@@ -111,7 +111,7 @@ const TimeLine = () => {
             <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-gradPink to-gradViolet"></div>
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="w-32 md:w-5/12">
-                <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya text-right">
+                <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans text-right">
                   6th March 2022
                 </div>
               </div>
@@ -130,7 +130,7 @@ const TimeLine = () => {
                   <div className="mr-auto w-32 md:w-72">
                     <img src={arrow2} alt="arrow2" />
                   </div>
-                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya absolute top-2 left-7 md:top-4 md:left-20">
+                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans absolute top-2 left-7 md:top-4 md:left-16">
                     Hackathon Ends
                   </div>
                 </div>
@@ -143,7 +143,7 @@ const TimeLine = () => {
                   <div className="ml-auto w-32 md:w-72">
                     <img src={arrow1} alt="arrow1" />
                   </div>
-                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya absolute top-2 right-12 md:top-4 md:right-32">
+                  <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans absolute top-2 right-12 md:top-4 md:right-32">
                     Results
                   </div>
                 </div>
@@ -159,7 +159,7 @@ const TimeLine = () => {
                 </div>
               </div>
               <div className="w-32 md:w-5/12">
-                <div className="uppercase text-white text-bold md:text-xl text-xxs font-Arya text-left">
+                <div className="uppercase text-white text-bold md:text-xl text-xxs font-sans text-left">
                   8th March 2022
                 </div>
               </div>
