@@ -10,12 +10,7 @@
   display: block;
   height: 2px;
   position: relative;
-  background: linear-gradient(
-    90deg,
-    rgba(109, 119, 183, 1),
-    rgba(176, 37, 88, 1),
-    #ec521a
-  );
+  background: linear-gradient(90deg, rgba(176, 37, 88, 1), #ec521a);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -32,5 +27,12 @@
       rgba(231, 78, 31, 0) 18.17%
     ),
     #0f1642;
- 
 }
+.frameworks_grad {
+  background: -webkit-linear-gradient(-70deg, #e24a24, #b02558);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* background: linear-gradient(92.01deg, # 34.13%, #B02558 50.54%, # 95.3%); */

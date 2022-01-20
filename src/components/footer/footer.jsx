@@ -1,5 +1,4 @@
 import React from "react";
-import header from "../svgs/Header.svg";
 import Socials from "./socials";
 
 const Footer = () => {
@@ -8,9 +7,9 @@ const Footer = () => {
       <section className="footer bg-bgBrand">
         <Socials />
         <section className="w-full">
-          <img src={header} style={{ width: "100%" }} alt="Line" />
+          <section className="h-1 w-auto bg-gradient-to-r from-[#094E63] via-[#B02558] to-[#EC521A]"></section>
         </section>
-        <section className="text-Ally text-2xl  text-white font-bold text-center">
+        <section className="py-2 text-Ally lg:text-2xl md:text-xl sm:text-lg text-white font-bold text-center">
           Made with 💝 using Gatsby
         </section>
       </section>

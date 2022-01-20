@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import logo from "../svgs/A Logo.svg";
-import header from "../svgs/Header.svg";
 import "../../styles/gradients.css";
 
 const styles = {
@@ -10,6 +9,14 @@ const styles = {
 };
 
 const HeaderContent = ({ Item, Reference }) => {
+  // const NavContext = React.createContext();
+  // const { activeNavLinkId, setActiveNavLinkId } = useContext(NavContext);
+  // const handleClick = () => {
+  //   setActiveNavLinkId(Item);
+  //   document
+  //     .getElementById(Reference)
+  //     .scrollIntoView({ behavior: "smooth", block: "start" });
+  // };
   return (
     <>
       <section className="text-2xl text-Ally text-gray-400 font-bold underline_hover">
@@ -20,6 +27,7 @@ const HeaderContent = ({ Item, Reference }) => {
 };
 
 const Navbar = () => {
+  // const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
       <section className="Navbar">
@@ -32,7 +40,7 @@ const Navbar = () => {
             </section>
           </section>
           <section className="col-start-4 col-span-3">
-            <section className="py-4 flex justify-center align-middle gap-8">
+            <section className="py-4 px-2 flex justify-center align-middle gap-8">
               <HeaderContent Item="New Text" Reference="#" />
               <HeaderContent Item="New Text" Reference="#" />
               <HeaderContent Item="New Text" Reference="#" />
@@ -41,7 +49,7 @@ const Navbar = () => {
           </section>
         </section>
         <section className="w-full">
-          <img src={header} style={{ width: "100%" }} alt="Line" />
+          <section className="h-1 w-auto bg-gradient-to-r from-[#094E63] via-[#B02558] to-[#EC521A]"></section>
         </section>
       </section>
     </>

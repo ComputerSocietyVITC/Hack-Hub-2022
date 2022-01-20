@@ -9,9 +9,9 @@ const message = [
 
 const Elements = ({ data }) => {
   return (
-    <section className="grid grid-rows gap-2">
+    <section className="grid grid-rows gap-2 lg:text-lg md:text-lg sm:text-md">
       {data.map((i) => {
-        return <section>{i}</section>;
+        return <li className="list-disc">{i}</li>;
       })}
     </section>
   );
@@ -20,12 +20,12 @@ const About = () => {
   return (
     <>
       <section className="bg-white">
-        <section className="grid grid-cols-12 lg:pl-24 py-4">
-          <section className="col-start-1 col-span-10 Box-shadow bg-bgBrand rounded-large">
+        <section className="grid sm:grid-cols-4 md:px-6 grid-cols-6 lg:grid-cols-12 lg:pl-24 py-4">
+          <section className="md:col-start-1 md:col-span-5 lg:col-start-1 lg:col-span-10 sm:col-start-1 sm:mx-4 sm:col-span-4 Box-shadow bg-bgBrand rounded-large">
             <section className="text-white text-3xl font-Ally font-black mx-4">
               About
             </section>
-            <section className="m-2 text-white font-Cons text-lg">
+            <section className="m-2 text-white font-Cons">
               <Elements data={message} />
             </section>
           </section>

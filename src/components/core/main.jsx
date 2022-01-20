@@ -5,8 +5,8 @@ const MainPage = () => {
   return (
     <>
       <section className="main_grad">
-        <section className="text-white ">
-          <section className="py-8 grid grid-cols-10 gap-2">
+        <section className= "text-white">
+          <section className="h-screen py-8 grid grid-cols-10 gap-2">
             <section className="col-start-2 col-span-3">
               <section className="font-Ally font-bold text-5xl">
                 Abhijith Ganesh
