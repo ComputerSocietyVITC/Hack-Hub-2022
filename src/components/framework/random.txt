@@ -1,0 +1,82 @@
+<section className="px-6 grid lg:grid-cols-12 xs:grid-cols-1 rounded-large text-white">
+  <section className="m-3 p-3 lg:col-start-2 col-span-3 text-left">
+    <section className="grid grid-rows gap-4">
+      <section className="lg:text-2xl xs:text-lg transition transform hover:translate-x-2 font-Ally font-bold">
+        Backend and Languages
+      </section>
+      <section className="lg:text-4xl xs:text-lg mt-8 flex flex-row justify-evenly gap-2">
+        <SiDjango />
+        <SiFastapi />
+        <SiRust />
+        <SiFlask />
+        <SiApachecassandra />
+      </section>
+      {/* <section className="row text-sm lg:text-lg">
+        <ul className="pl-2 font-Cons">
+          <li>Worked on Asynchronous, Micro and MVC based Frameworks</li>
+          <li>
+            I'm familiar with SQL and Cassandra for database operations.
+          </li>
+          <li>I've worked with Rust and exploring the same.</li>
+        </ul>
+      </section> */}
+    </section>
+  </section>
+
+  <section className="lg:col-start-5 col-span-3 m-3 p-3 text-left">
+    <section className="grid grid-rows text-white gap-4">
+      <section className="lg:text-2xl xs:text-lg transition transform hover:translate-x-2 font-Ally font-bold">
+        FrontEnd and Design
+      </section>
+      <section className="lg:text-4xl xs:text-lg mt-8 flex flex-row justify-evenly">
+        <SiMaterialui />
+        <SiReact className="transition duration-infinite otate-180" />
+        <SiTailwindcss />
+        <SiBootstrap />
+        <SiChakraui />
+        <SiFigma />
+      </section>
+      {/* <section className="row text-sm lg:text-lg  font-extrabold">
+        <ul className="pl-2 list-square font-Cons">
+          <li>Used react to design web-pages for front-end</li>
+          <li>
+            Familiar with CSS Frameworks like BootStrap and TailWind-CSS
+          </li>
+          <li>
+            Worked with libraries like ChakraUI and MaterialUI to design
+            web-pages.
+          </li>
+        </ul>
+      </section> */}
+    </section>
+  </section>
+
+  <section className="lg:col-start-8 col-span-3 m-3 p-3 text-left rounded-[20]">
+    <section className="grid grid-rows text-white gap-4">
+      <section className="lg:text-2xl xs:text-lg transition transform hover:translate-x-2 font-Ally font-bold">
+        Tools
+      </section>
+      <section className="lg:text-4xl xs:text-lg mt-8 flex flex-row justify-evenly">
+        <SiKubernetes />
+        <SiDocker />
+        <SiPrometheus />
+        <SiGrafana />
+        <SiPostman />
+        <SiNginx />
+      </section>
+      {/* <section className="row text-sm lg:text-lg  font-extrabold">
+        <ul className="pl-2 list-square font-Cons">
+          <li>
+            Worked on establishing monitoring tools like Prometheus and
+            Grafana
+          </li>
+          <li>Created Proxies and Load-Balancing setups with NGINX.</li>
+          <li>
+            Containerized several application and established
+            container-networks for several projects.
+          </li>
+        </ul>
+      </section> */}
+    </section>
+  </section>
+</section>

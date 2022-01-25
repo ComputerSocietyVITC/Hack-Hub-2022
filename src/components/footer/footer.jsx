@@ -4,7 +4,7 @@ import Socials from "./socials";
 const Footer = () => {
   return (
     <>
-      <section className="footer bg-bgBrand">
+      <section className="py-4 footer bg-bgBrand">
         <Socials />
         <section className="w-full">
           <section className="h-1 w-auto bg-gradient-to-r from-[#094E63] via-[#B02558] to-[#EC521A]"></section>

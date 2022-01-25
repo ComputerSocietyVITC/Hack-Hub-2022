@@ -1,18 +1,39 @@
 import React from "react";
+import "../../styles/shadows.css";
+import {
+  SiTailwindcss,
+  SiReact,
+  SiGatsby,
+  SiMaterialui,
+  SiChakraui,
+  SiFigma,
+} from "react-icons/si";
 import "../../styles/gradients.css";
 
-const WhiteBox = ({ Title }) => {
+const ContentOne = [
+  <section className="flex gap-2">
+    <SiTailwindcss />
+    <SiReact />
+    <SiGatsby />
+    <SiMaterialui />
+    <SiChakraui />
+    <SiFigma />
+  </section>,
+];
+
+const WhiteBox = ({ Title, Content }) => {
   return (
     <section className="m-4 py-4 bg-[#F3F1F1] rounded-large p-2 drop-shadow-[6px_6px_2px_rgba(236,82,26,100)]">
       <section className="font-Ally font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-orange-400">
         {Title}
       </section>
+      <section>{Content}</section>
     </section>
   );
 };
 const BlueBox = ({ Title }) => {
   return (
-    <section className="m-4 py-4 bg-[#101743] rounded-large p-2 drop-shadow-[4px_4px_2px_#08CFE9]">
+    <section className="bg-[#101743] rounded-large drop-shadow-[4px_4px_2px_#08CFE9]">
       <section className="font-Ally font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
         {Title}
       </section>
@@ -43,29 +64,8 @@ const ListItem = ({ Content, Title }) => {
 const FrameWorks = () => {
   return (
     <>
-      <section className="grid grid-rows-3">
-        <section className=" row-start-1 row-span-1">
-          <section className="pl-24 frameworks_grad text-4xl font-Ally font-bold">
-            Frameworks
-          </section>
-        </section>
-      </section>
-      <section className="grid grid-cols-12">
-        <section className="row-start-2 row-span-2 col-start-2 col-span-9">
-          <section className="py-2">
-            <ol className="border-l-4 dark:border-gray-700">
-              <li className="list-disc text-4xl">
-                <WhiteBox Title={TextTitle} />
-              </li>
-              <li className="list-disc text-4xl">
-                <BlueBox Title={TextTitle} />
-              </li>
-              <li className="list-disc text-4xl">
-                <WhiteBox Title={TextTitle} />
-              </li>
-            </ol>
-          </section>
-        </section>
+      <section className="m-4 Box-shadow bg-bgBrand rounded-large">
+        <section className="mx-2 font-Ally text-white font-bold text-3xl">Technologies</section>
       </section>
     </>
   );

@@ -1,13 +1,14 @@
 import React from "react";
 import About from "../about/about";
-import FrameWorks from "../framework/framework";
+import "../../styles/gradients.css"
+import TimeLine from "../core/timeline";
 
-const AboutFramework = () => {
+const WhitePageOne = () => {
   return (
     <section className="h-full">
       <About />
-      <FrameWorks />
+      <TimeLine/>
     </section>
   );
 };
-export default AboutFramework;
+export default WhitePageOne;

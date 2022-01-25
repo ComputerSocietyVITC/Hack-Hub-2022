@@ -1,3 +1,8 @@
-.Box-shadow{
-    box-shadow: 6px 6px 2px #08CFE9;
+.Box-shadow {
+  box-shadow: 6px 6px 2px #08cfe9;
+}
+
+.shadow-one {
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #fff;
 }
