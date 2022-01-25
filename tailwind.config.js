@@ -16,7 +16,7 @@ module.exports = {
         Cons: ["Consolas"],
       },
       colors: {
-        bgBrand: "#0F1642",
+        bgBrand: "#060D37",
         oran: "#E74E1F",
       },
       borderRadius: {

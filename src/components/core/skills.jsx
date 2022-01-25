@@ -10,16 +10,20 @@ import {
   SiPurgecss,
   SiTailwindcss,
   SiFigma,
+  SiPostcss,
   SiKubernetes,
   SiDocker,
+  SiHeroku,
   SiApachecassandra,
   SiPrometheus,
-  SiPostman,
   SiNginx,
   SiPostgresql,
   SiGrafana,
 } from "react-icons/si";
+
 import { RiGatsbyLine } from "react-icons/ri";
+
+const IconStyles = { height: "2em", width: "2em" };
 const Skills = () => {
   return (
     <section className="bg-bgBrand">
@@ -30,38 +34,40 @@ const Skills = () => {
         >
           Technologies
           <section className="text-white">
-            <section className="mt-2 w-full h-1.5 rounded-lg bg-gradient-to-r from-[#9a5ecc] to-[#21a4c9]" />
+            <section className="mt-2 w-full h-1.5 rounded-lg bg-gradient-to-r from-purple-800 to-pink-600" />
           </section>
         </section>
       </section>
       <section className="grid sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-12">
         <section className="py-10 lg:col-start-2 md:col-start-2 sm:px-10 sm:col-start-1 sm:col-span-3 md:col-span-4 lg:col-span-5 text-white font-Ally sm:text-xl md:text-xl lg:text-2xl">
-          I've worked with various tools, frameworks and Languages. From
+          I've worked with various tools, frameworks and Languages that cover
           Back-end to Front-end and design.
         </section>
-        <section className="sm:col-start-1 sm:col-span-3 md:col-start-2 md:col-span-4 lg:col-start-7 lg:col-span-5">
+        <section className="sm:col-start-1 sm:col-span-3 md:col-start-2 md:col-span-4 lg:col-start-7 lg:col-span-5 shadow-two sm:m-2 sm:border-2 md:border-2 lg:border-r-2 border-b-2">
           <section className="pt-4 flex flex-row justify-around text-white gap-2">
-            <SiMaterialui style={{ height: "2em", width: "2em" }} />
-            <SiReact style={{ height: "2em", width: "2em" }} />
-            <SiTailwindcss style={{ height: "2em", width: "2em" }} />
-            <SiPurgecss style={{ height: "2em", width: "2em" }} />
-            <RiGatsbyLine style={{ height: "2em", width: "2em" }} />
-            <SiFigma style={{ height: "2em", width: "2em" }} />
+            <SiMaterialui style={IconStyles} />
+            <SiReact style={IconStyles} />
+            <SiTailwindcss style={IconStyles} />
+            <SiPurgecss style={IconStyles} />
+            <SiPostcss style={IconStyles} />
+            <RiGatsbyLine style={IconStyles} />
+            <SiFigma style={IconStyles} />
           </section>
           <section className="py-6 flex flex-row justify-around text-white gap-3">
-            <SiDjango style={{ height: "2em", width: "2em" }} />
-            <SiRust style={{ height: "2em", width: "2em" }} />
-            <SiFastapi style={{ height: "2em", width: "2em" }} />
-            <SiFlask style={{ height: "2em", width: "2em" }} />
-            <SiApachecassandra style={{ height: "2em", width: "2em" }} />
+            <SiDjango style={IconStyles} />
+            <SiRust style={IconStyles} />
+            <SiFastapi style={IconStyles} />
+            <SiFlask style={IconStyles} />
+            <SiApachecassandra style={IconStyles} />
           </section>
           <section className="pb-4 flex flex-row justify-around text-white gap-3">
-            <SiKubernetes style={{ height: "2em", width: "2em" }} />
-            <SiDocker style={{ height: "2em", width: "2em" }} />
-            <SiPrometheus style={{ height: "2em", width: "2em" }} />
-            <SiGrafana style={{ height: "2em", width: "2em" }} />
-            <SiPostgresql style={{ height: "2em", width: "2em" }} />
-            <SiNginx style={{ height: "2em", width: "2em" }} />
+            <SiKubernetes style={IconStyles} />
+            <SiDocker style={IconStyles} />
+            <SiPrometheus style={IconStyles} />
+            <SiGrafana style={IconStyles} />
+            <SiPostgresql style={IconStyles} />
+            <SiNginx style={IconStyles} />
+            <SiHeroku style={IconStyles} />
           </section>
         </section>
       </section>

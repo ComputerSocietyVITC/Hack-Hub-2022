@@ -24,6 +24,7 @@ const About = () => {
           <section className="md:col-start-1 md:col-span-6 lg:col-start-1 lg:col-span-10 sm:col-start-1 sm:mx-4 sm:col-span-4 Box-shadow bg-bgBrand rounded-large">
             <section className="text-white text-3xl font-Ally font-black mx-4">
               About
+              <section className="w-16 mt-2 h-1.5 rounded-lg bg-gradient-to-r from-[#9a5ecc] to-[#21a4c9]" />
             </section>
             <section className="m-2 text-white font-Cons">
               <Elements data={message} />

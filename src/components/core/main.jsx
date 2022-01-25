@@ -31,7 +31,7 @@ const MainPage = () => {
                   loop={Infinity}
                 />
               </section>
-              <section className="rounded-large p-4 my-4 flex font-bold font-Ally bg-oran text-l justify-center w-max transition transform hover:-translate-y-2 motion-reduce:transition-none motion-reduce:transform-none">
+              <section className="p-4 my-4 flex font-bold  bg-trans border border-oran text-l justify-center w-max transition transform hover:-translate-y-2 motion-reduce:transition-none motion-reduce:transform-none">
                 <a href="https://blog.abhijithganesh.tech">Visit my blog</a>
               </section>
             </section>

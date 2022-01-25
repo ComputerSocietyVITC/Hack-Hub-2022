@@ -6,3 +6,13 @@
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 10px #fff;
 }
+
+.shadow-two {
+  -webkit-box-shadow: 0 0 4px #3a95ca;
+  box-shadow: 0 0 4px #3a95ca;
+}
+
+.shadow-three{
+  -webkit-box-shadow: 0 0 4px #fff;
+  box-shadow: 0 0 4px #fff;
+}

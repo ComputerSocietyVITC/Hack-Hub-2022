@@ -41,10 +41,10 @@ const Navbar = () => {
           </section>
           <section className="col-start-4 col-span-3">
             <section className="py-4 px-2 flex justify-center align-middle gap-8">
-              <HeaderContent Item="New Text" Reference="#" />
-              <HeaderContent Item="New Text" Reference="#" />
-              <HeaderContent Item="New Text" Reference="#" />
-              <HeaderContent Item="New Text" Reference="#" />
+              <HeaderContent Item="About" Reference="#" />
+              <HeaderContent Item="Timeline" Reference="#" />
+              <HeaderContent Item="Projects" Reference="#" />
+              <HeaderContent Item="Tools and Tech" Reference="#" />
             </section>
           </section>
         </section>
