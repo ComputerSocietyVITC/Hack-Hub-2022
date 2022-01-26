@@ -6,10 +6,9 @@ import "../../styles/gradients.css";
 const HeaderContent = ({ Item, Reference }) => {
   return (
     <>
-    {/* text-lg font-Ally font-bold text-gray-400 underline_hover hover: transition ease-in-out delay-150 px-3 py-2 rounded-md" */}
-      <section className="text-lg font-bold px-3 py-2 text-gray-600 hover: transition ease-linear delay-300 rounded-md underline_hover">
-        <a href={Reference}>{Item}</a>
-      </section>
+      
+        <a href={Reference} className="text-gray-400 font-Ally font-bold text-lg px-3 py-2 transition transform hover:text-white rounded-lg motion-reduce:transform-none underline_hover">{Item}</a>
+      
     </>
   );
 };
@@ -18,8 +17,7 @@ const HeaderContentTwo = ({ Item, Reference }) => {
   return (
     <>
       <section className="text-xl font-Ally font-bold text-gray-400 ">
-        {Item}
-        <a href={Reference}></a>
+        <a href={Reference}>{Item}</a>
       </section>
     </>
   );
@@ -42,7 +40,7 @@ const Navbar = () => {
                 />
               </section>
               <section className="hidden md:block lg:block lg:col-start-12">
-                <section className="mx-10 flex flex-row justify-end">
+                <section className="transition ease-in-out mx-10 flex flex-row justify-end">
                   <HeaderContent Item={"About"} Reference={"#About"} />
                   <HeaderContent Item={"Timeline"} Reference={"#Timeline"} />
                   <HeaderContent Item={"Projects"} Reference={"#Projects"} />

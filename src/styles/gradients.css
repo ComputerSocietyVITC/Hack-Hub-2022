@@ -1,11 +1,13 @@
 .underline_hover:hover {
   color: #fff;
+  transition: ease-in-out;
   background-color: #374151;
 
 }
 
 .underline_hover:after {
   background: none repeat scroll 0 0 transparent;
+  transition: ease-in-out;
   bottom: 0;
   content: "";
   text-align: center;
@@ -18,6 +20,7 @@
 }
 .underline_hover:hover:after {
   width: 100%;
+  transition: ease-in-out;
   left: 0;
 }
 
