@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkabhijith_ganesh_portfolio_remake=self.webpackChunkabhijith_ganesh_portfolio_remake||[]).push([[256],{1657:function(e,t,n){n.r(t);var a=n(7294),l=n(5444);t.default=function(){return a.createElement("main",null,a.createElement("title",null,"Not found"),a.createElement(l.Link,{to:"/"},"Go home"),".")}}}]);
+//# sourceMappingURL=component---src-pages-404-jsx-77139e7865d27c284158.js.map
