@@ -3,8 +3,6 @@ import logo from "../svgs/A Logo.svg";
 import { Transition } from "@headlessui/react";
 import "../../styles/gradients.css";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
 const HeaderContent = ({ Item, Reference }) => {
   return (
     <>
@@ -18,11 +16,10 @@ const HeaderContent = ({ Item, Reference }) => {
 const HeaderContentTwo = ({ Item, Reference }) => {
   return (
     <>
-      <Link to={Reference}>
-        <section className="text-xl font-Ally font-bold text-gray-400 ">
-          {Item}
-        </section>
-      </Link>
+      <section className="text-xl font-Ally font-bold text-gray-400 ">
+        {Item}
+        <a href={Reference}></a>
+      </section>
     </>
   );
 };
