@@ -1,8 +1,13 @@
 import React from "react";
 
-import Typical from "react-typical"
+import "../../styles/images.css";
+import Typical from "react-typical";
 import landing from "../../images/landing.png";
 import "../../styles/gradients.css";
+
+
+
+
 const MainPage = () => {
   return (
     <>
@@ -39,8 +44,8 @@ const MainPage = () => {
                     <a href="https://blog.abhijithganesh.tech">Visit my blog</a>
                   </section>
                 </section>
-                <section className="col-start-6">
-                  {/* <img src={landing} style={{height:"5em",width:"5em"}}/> */}
+                <section className="md:hidden sm:hidden md:img lg: img -translate-y-64">
+                  <img src={landing} alt="AbhijithGanesh"/>
                 </section>
               </section>
             </section>

@@ -19,7 +19,7 @@ const Elements = ({ data }) => {
 const About = () => {
   return (
     <>
-      <section className="">
+      <section id="About">
         <section className="grid sm:grid-cols-4 md:px-6 grid-cols-6 lg:grid-cols-12 lg:pl-24 py-4">
           <section className="md:col-start-1 md:col-span-6 lg:col-start-1 lg:col-span-10 sm:col-start-1 sm:mx-4 sm:col-span-4 Box-shadow bg-bgBrand rounded-large">
             <section className="text-white text-3xl font-Ally font-black mx-4">

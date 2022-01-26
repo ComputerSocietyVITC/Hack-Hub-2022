@@ -3,16 +3,12 @@ import logo from "../svgs/A Logo.svg";
 import { Transition } from "@headlessui/react";
 import "../../styles/gradients.css";
 
-const styles = {
-  width: "3.5rem",
-  height: "3.5rem",
-  padding: 2,
-};
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const HeaderContent = ({ Item, Reference }) => {
   return (
     <>
-      <section className="text-lg font-Ally font-bold text-gray-400 underline_hover hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">
+      <section className="text-lg font-Ally font-bold text-gray-400 underline_hover transition ease-in-out delay-150 px-3 py-2 rounded-md">
         <a href={Reference}>{Item}</a>
       </section>
     </>
@@ -22,9 +18,11 @@ const HeaderContent = ({ Item, Reference }) => {
 const HeaderContentTwo = ({ Item, Reference }) => {
   return (
     <>
-      <section className="text-md font-Ally font-bold text-gray-400 ">
-        <a href={Reference}>{Item}</a>
-      </section>
+      <Link to={Reference}>
+        <section className="text-xl font-Ally font-bold text-gray-400 ">
+          {Item}
+        </section>
+      </Link>
     </>
   );
 };
@@ -34,27 +32,31 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-bgBrand">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <section className="flex justify-between h-16">
             <section className="flex items-center lg:grid grid-cols-12">
-              <div className="lg:col-start-2 ">
+              <section className="lg:col-start-2">
                 <img
                   className="h-16 w-16 p-2"
                   src={logo}
                   alt="Abhijith Ganesh's Website"
+                  href="/"
                 />
-              </div>
-              <div className="hidden md:block lg:block lg:col-start-12">
-                <div className="mx-10 flex flex-row justify-end space-x-4">
-                  <HeaderContent Item={"About"} Reference={"#"} />
-                  <HeaderContent Item={"Timeline"} Reference={"#"} />
-                  <HeaderContent Item={"Projects"} Reference={"#"} />
-                  <HeaderContent Item={"Technologies"} Reference={"#"} />
-                </div>
-              </div>
+              </section>
+              <section className="hidden md:block lg:block lg:col-start-12">
+                <section className="mx-10 flex flex-row justify-end">
+                  <HeaderContent Item={"About"} Reference={"#About"} />
+                  <HeaderContent Item={"Timeline"} Reference={"#Timeline"} />
+                  <HeaderContent Item={"Projects"} Reference={"#Projects"} />
+                  <HeaderContent
+                    Item={"Technologies"}
+                    Reference={"#Technologies"}
+                  />
+                </section>
+              </section>
             </section>
 
-            <div className="-mr-2 flex lg:hidden md:hidden">
+            <section className="-mr-2 flex lg:hidden md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -97,9 +99,9 @@ const Navbar = () => {
                   </svg>
                 )}
               </button>
-            </div>
-          </div>
-        </div>
+            </section>
+          </section>
+        </section>
         <section className="h-1 w-auto bg-gradient-to-r from-[#094E63] via-[#B02558] to-[#EC521A]" />
 
         <Transition
@@ -112,14 +114,17 @@ const Navbar = () => {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="lg:hidden md:hidden" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <HeaderContentTwo Item={"About"} Reference={"#"} />
-                <HeaderContentTwo Item={"Timeline"} Reference={"#"} />
-                <HeaderContentTwo Item={"Projects"} Reference={"#"} />
-                <HeaderContentTwo Item={"Technologies"} Reference={"#"} />
-              </div>
-            </div>
+            <section className="lg:hidden md:hidden" id="mobile-menu">
+              <section ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <HeaderContentTwo Item={"About"} Reference={"#About"} />
+                <HeaderContentTwo Item={"Timeline"} Reference={"#Timeline"} />
+                <HeaderContentTwo Item={"Projects"} Reference={"#Projects"} />
+                <HeaderContentTwo
+                  Item={"Technologies"}
+                  Reference={"#Technologies"}
+                />
+              </section>
+            </section>
           )}
         </Transition>
       </nav>

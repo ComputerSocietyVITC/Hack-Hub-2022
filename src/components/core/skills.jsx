@@ -13,6 +13,7 @@ import {
   SiTailwindcss,
   SiFigma,
   SiPostcss,
+  SiYarn,
   SiKubernetes,
   SiDocker,
   SiHeroku,
@@ -27,7 +28,7 @@ import { RiGatsbyLine } from "react-icons/ri";
 
 const Skills = () => {
   return (
-    <section className="bg-bgBrand">
+    <section id = "Technologies" className="bg-bgBrand">
       <section className="py-10 bg-light_bg dark:bg-darkBrand grid grid-cols-12">
         <section
           id="Frameworks"
@@ -50,6 +51,7 @@ const Skills = () => {
             <SiReact />
             <SiTailwindcss />
             <SiPurgecss />
+            <SiYarn/>
             <SiPostcss />
             <RiGatsbyLine />
             <SiFigma />

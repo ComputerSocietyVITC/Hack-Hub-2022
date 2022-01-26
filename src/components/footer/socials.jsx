@@ -80,7 +80,7 @@ const Socials = () => {
               </section>
             </section>
           </section>
-          <section className="col-start-3 col-span-1">
+          <section className="px-6 col-start-3 col-span-1">
             <section className="font-Ally text-xl text-white font-bold">
               Get in Touch
             </section>

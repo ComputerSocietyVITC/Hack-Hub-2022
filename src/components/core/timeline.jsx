@@ -4,7 +4,7 @@ import { Chrono } from "react-chrono";
 
 const TimeLine = () => {
   return (
-    <section className="py-4 grid sm:grid-cols-3 lg:grid-cols-12">
+    <section id="Timeline" className="py-4 grid sm:grid-cols-3 lg:grid-cols-12">
       <section className="sm:col-start-1 lg:col-start-2 col-span-8">
         <section className="py-4 font-Ally text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-oran to-[#9C214D]">
           Timeline

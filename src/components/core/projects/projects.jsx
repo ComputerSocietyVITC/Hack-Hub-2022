@@ -23,17 +23,17 @@ const Card = ({ Title, Tools, Link, Content }) => {
           </section>
         </section>
         <h1 className="text-xl font-Ally text-white">{Title}</h1>
-        <p className="text-md font-Ally font-normal text-gray-200 mt-4">
+        <section className="text-md font-Ally font-normal text-gray-200 mt-4">
           {Content}
-        </p>
-        <p className="text-lg text-gray-400 font-Cons text-normal">
+        </section>
+        <section className="text-lg text-gray-400 font-Cons text-normal">
           Languages and tools:
-          <p>
+          <section>
             {Tools.map((i) => {
               return <li>{i}</li>;
             })}
-          </p>
-        </p>
+          </section>
+        </section>
       </div>
     </>
   );
@@ -41,7 +41,7 @@ const Card = ({ Title, Tools, Link, Content }) => {
 const Projects = () => {
   return (
     <>
-      <section className="bg-bgBrand">
+      <section id="Projects" className="bg-bgBrand">
         <section className="grid grid-rows-2">
           <section className="row-start-1 grid grid-cols-12">
             <section className="col-start-2">

@@ -30,7 +30,7 @@ const styles = {
 };
 const items = [
   {
-    title: "September 2017",
+    title: "Sept 2017",
     cardTitle: <GrDos style={styles} />,
     cardSubtitle: (
       <section className="lg:text-lg sm:text-md ">

@@ -1,5 +1,7 @@
 .underline_hover:hover {
   color: #fff;
+  background-color: #374151;
+
 }
 
 .underline_hover:after {
@@ -26,7 +28,7 @@
       rgba(231, 78, 31, 0.7) -5.92%,
       rgba(231, 78, 31, 0) 18.17%
     ),
-    #060D37;
+    #060d37;
 }
 .frameworks_grad {
   background: -webkit-linear-gradient(-70deg, #e24a24, #b02558);

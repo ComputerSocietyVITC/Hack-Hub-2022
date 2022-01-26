@@ -5,7 +5,7 @@ import TimeLine from "../core/timeline";
 
 const WhitePageOne = () => {
   return (
-    <section className="h-full">
+    <section className="h-full bg-[#efefef]">
       <About />
       <TimeLine/>
     </section>
