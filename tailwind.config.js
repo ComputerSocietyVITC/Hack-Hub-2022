@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     screens: {
       sm: { max: "640px" },
-      md: { min: "640px", max: "768px" },
-      lg: { min: "768px" },
+      md: { min: "640px", max: "810px" },
+      lg: { min: "810px" },
     },
     extend: {
       fontFamily: {

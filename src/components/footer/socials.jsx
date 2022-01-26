@@ -40,7 +40,7 @@ const Socials = () => {
                     <a href="https://dev.to/AbhijithGanesh">
                       <FaDev
                         style={IconStyles}
-                        className="dark:text-gray-500 transition ease-in transition-duration-500ms transform hover:text-white "
+                        className="text-gray-500 transition ease-in transition-duration-500ms transform hover:text-white "
                       />
                     </a>
                   </div>
@@ -55,7 +55,7 @@ const Socials = () => {
                     <a href="https://www.linkedin.com/in/abhijithganesh14/">
                       <GrLinkedinOption
                         style={IconStyles}
-                        className="dark:text-gray-500 transition ease-in transition-duration-500ms transform hover:text-white "
+                        className="text-gray-500 transition ease-in transition-duration-500ms transform hover:text-white "
                       />
                     </a>
                   </div>
