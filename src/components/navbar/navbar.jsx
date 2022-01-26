@@ -6,7 +6,8 @@ import "../../styles/gradients.css";
 const HeaderContent = ({ Item, Reference }) => {
   return (
     <>
-      <section className="text-lg font-Ally font-bold text-gray-400 underline_hover transition ease-in-out delay-150 px-3 py-2 rounded-md">
+    {/* text-lg font-Ally font-bold text-gray-400 underline_hover hover: transition ease-in-out delay-150 px-3 py-2 rounded-md" */}
+      <section className="text-lg font-bold px-3 py-2 text-gray-600 hover: transition ease-linear delay-300 rounded-md underline_hover">
         <a href={Reference}>{Item}</a>
       </section>
     </>

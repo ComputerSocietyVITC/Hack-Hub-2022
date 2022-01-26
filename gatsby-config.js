@@ -1,7 +1,7 @@
 const path = require(`path`);
 module.exports = {
   siteMetadata: {
-    siteUrl: "Abhijith Ganesh's Website",
+    siteUrl: "https://AbhijithGanesh.tech",
     url: "https://AbhijithGanesh.tech",
     title: "Abhijith Ganesh's Portfolio",
     titleTemplate: "",
