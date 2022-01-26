@@ -8,7 +8,7 @@ import WhitePageOne from "../components/wrappers/about-framework";
 const IndexPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <MainPage />
       <WhitePageOne />
       <Skills/>

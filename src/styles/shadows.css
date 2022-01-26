@@ -8,8 +8,8 @@
 }
 
 .shadow-two {
-  -webkit-box-shadow: 0 0 4px #3a95ca;
-  box-shadow: 0 0 4px #3a95ca;
+  -webkit-box-shadow: 0 0 4px #fff;
+  box-shadow: 0 0 4px #efefef;
 }
 
 .shadow-three{

@@ -156,7 +156,7 @@ const items = [
       </section>
     ),
     cardDetailedText: (
-      <section className="text-black text-lg font-Cons text-md">
+      <section className="text-black font-Cons text-md">
         With the Pandemic impacting my last year of schooling, I had sufficient
         time to explore app-devleopment and I had realized I can make API
         endpoints with Flask/FastAPI which in-turn can be integrated with my
@@ -180,7 +180,7 @@ const items = [
       </section>
     ),
     cardDetailedText: (
-      <section className="text-black text-lg font-Cons text-md">
+      <section className="text-black font-Cons text-md">
         As time had progressed I realized I can build applications which I can
         access, the applications had their own funcitonalities but I had no clue
         as to how I will serve them to the entire world, I really didn't know
@@ -205,7 +205,7 @@ const items = [
       </section>
     ),
     cardDetailedText: (
-      <section className="text-black text-lg">
+      <section className="font-Cons text-black text-md">
         As a part of my exploration, I had come across docker as a tool to
         containerize all my services which can be shipped as a whole server. I
         realized I can divide my application into portions and I can spin them

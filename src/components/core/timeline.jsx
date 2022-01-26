@@ -10,7 +10,7 @@ const TimeLine = () => {
           Timeline
         </section>
 
-        <section style={{ height: "90vh" }}>
+        <section style={{ height: "90vh" }} className="border-2">
           <Chrono
             items={items}
             mode="VERTICAL"
