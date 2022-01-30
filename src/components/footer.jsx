@@ -1,8 +1,8 @@
 import React from "react";
-import instagram from "../images/footer/instagram_footer.png";
-import linkedin from "../images/footer/linkedin_footer.png";
-import github from "../images/footer/github_footer.png";
-import comsoc from "../images/footer/comsoc.jpeg";
+import instagram from "../images/footer/instagram.png";
+import linkedin from "../images/footer/linkedin.png";
+import twitter from "../images/footer/twitter.png";
+import comsoc from "../images/footer/comsoc.png";
 import hackhublogo from "../images/hackhublogo.png";
 import "../styles/styles.css";
 import { useNav } from '../helpers/customHooks/useNav';
@@ -45,9 +45,9 @@ let socials = [
       },
       {
         id: 3,
-        Link: "https://github.com/ComputerSocietyVITC/",
-        alt: "github",
-        src: github,
+        Link: "https://twitter.com/ieeecsvitc/",
+        alt: "twitter",
+        src: twitter,
       },
       {
         id: 4,
@@ -76,7 +76,7 @@ const SocialFoot = (props) => {
   return (
     <section>
       <div>
-        <a href={Link} target="_blank">
+        <a href={Link} target="_blank" rel="noreferrer">
           <img className="h-10 lg:h-7 mx-auto lg:mx-0" src={src} alt={alt} />
         </a>
       </div>
@@ -144,7 +144,7 @@ function Footer() {
         </div>
       </section>
       <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
-      <p className="text-white items-left justify-left text-center text-xl my-2 mx-10 lg:mx-0">
+      <p className="text-white items-left justify-left text-center text-base my-2 mx-10 lg:mx-0">
         Made With ❤️ by Team HackHub | ©️ IEEE CS VITC
       </p>
     </section>

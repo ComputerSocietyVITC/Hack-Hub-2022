@@ -20,6 +20,7 @@ const NavLink = ({ navLinkId, scrollToId }) => {
             ? "text-white"
             : "text-gray-400 hover:text-gray-200"
         }
+        aria-hidden="true"
         onClick={handleClick}
       >
         {navLinkId}
