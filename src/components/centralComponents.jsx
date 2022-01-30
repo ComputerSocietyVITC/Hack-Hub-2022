@@ -35,7 +35,7 @@ const CentralComponents = () => {
           <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-10">
             <img src={libra} alt="libra" className="w-1/2" />
           </section>
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 -top-10 left-1/3">
+          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-0 left-1/3">
             <img src={virgo} alt="virgo" className="w-2/3" />
           </section>
           <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-6 right-20">

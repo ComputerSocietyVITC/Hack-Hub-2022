@@ -26,7 +26,7 @@ const TimeLine = () => {
         <div className="container bg-transaparent mx-auto w-full h-full">
           <div className="relative wrap overflow-hidden md:p-10 h-full">
             <div className="flex justify-between items-center w-full right-timeline">
-              <div className="shadow-xl md:w-5/12 relative">
+              <div className=" md:w-5/12 relative">
                 <div>
                   <div className="ml-auto w-32 md:w-72">
                     <img src={arrow1} alt="arrow1" />
@@ -36,7 +36,7 @@ const TimeLine = () => {
                   </div>
                 </div>
               </div>
-              <div className="z-20 flex items-center shadow-xl">
+              <div className="z-20 flex items-center ">
                 <div className="text-9xl text-black relative mx-auto">
                   <div className="md:w-24 w-14">
                     <img src={hex1} alt="hex1" />
@@ -59,7 +59,7 @@ const TimeLine = () => {
                   4th March 2022, 11:59 PM
                 </div>
               </div>
-              <div className="z-20 flex items-center shadow-xl">
+              <div className="z-20 flex items-center ">
                 <div className="text-9xl text-black relative mx-auto">
                   <div className="md:w-24 w-14">
                     <img src={hex2} alt="hex2" />
@@ -69,7 +69,7 @@ const TimeLine = () => {
                   </section>
                 </div>
               </div>
-              <div className="shadow-xl md:w-5/12 relative">
+              <div className=" md:w-5/12 relative">
                 <div>
                   <div className="mr-auto w-32 md:w-72">
                     <img src={arrow2} alt="arrow2" />
@@ -82,7 +82,7 @@ const TimeLine = () => {
             </div>
             <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-gradPink to-gradViolet"></div>
             <div className="flex justify-between items-center w-full right-timeline">
-              <div className="shadow-xl md:w-5/12 relative">
+              <div className=" md:w-5/12 relative">
                 <div className="ml-auto">
                   <div className="ml-auto w-32 md:w-72">
                     <img src={arrow1} alt="arrow1" />
@@ -92,7 +92,7 @@ const TimeLine = () => {
                   </div>
                 </div>
               </div>
-              <div className="z-20 flex items-center shadow-xl">
+              <div className="z-20 flex items-center ">
                 <div className="text-9xl text-black relative mx-auto">
                   <div className="md:w-24 w-14">
                     <img src={hex1} alt="hex1" />
@@ -115,7 +115,7 @@ const TimeLine = () => {
                   6th March 2022, 12:00 PM
                 </div>
               </div>
-              <div className="z-20 flex items-center shadow-xl">
+              <div className="z-20 flex items-center ">
                 <div className="text-9xl text-black relative mx-auto">
                   <div className="md:w-24 w-14">
                     <img src={hex2} alt="hex2" />
@@ -125,7 +125,7 @@ const TimeLine = () => {
                   </section>
                 </div>
               </div>
-              <div className="shadow-xl md:w-5/12 relative">
+              <div className=" md:w-5/12 relative">
                 <div>
                   <div className="mr-auto w-32 md:w-72">
                     <img src={arrow2} alt="arrow2" />
@@ -138,7 +138,7 @@ const TimeLine = () => {
             </div>
             <div class="h-8 lg:h-12 w-1 bg-gradient-to-b mx-auto from-gradPink to-gradViolet"></div>
             <div className="flex justify-between items-center w-full right-timeline">
-              <div className="shadow-xl md:w-5/12 relative">
+              <div className=" md:w-5/12 relative">
                 <div className="ml-auto ">
                   <div className="ml-auto w-32 md:w-72">
                     <img src={arrow1} alt="arrow1" />
@@ -148,7 +148,7 @@ const TimeLine = () => {
                   </div>
                 </div>
               </div>
-              <div className="z-20 flex items-center shadow-xl">
+              <div className="z-20 flex items-center ">
                 <div className="text-9xl text-black relative mx-auto">
                   <div className="md:w-24 w-14">
                     <img src={hex1} alt="hex1" />

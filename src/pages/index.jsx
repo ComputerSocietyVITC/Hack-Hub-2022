@@ -23,21 +23,21 @@ const IndexPage = () => {
       </Helmet>
       <NavProvider>
         <Navbar />
-        <div className="bg-stars bg-fixed z-0">
-          <div className="bg-bgimage bg-fixed">
-            {/* <Background /> */}
-            <CentralComponents />
-            <About />
-            <Tracks />
-            <TimeLine />
-            <Prizes />
-            <Speakers />
-            <Judges />
-            <Sponsors />
-            <FrequentlyAskedQuestions />
-            <Footer />
-          </div>
+        <div className="bg-stars bg-cover bg-fixed z-0">
+          {/* <div className="bg-bgimage bg-fixed"> */}
+          {/* <Background /> */}
+          <CentralComponents />
+          <About />
+          <Tracks />
+          <TimeLine />
+          <Prizes />
+          <Speakers />
+          <Judges />
+          <Sponsors />
+          <FrequentlyAskedQuestions />
+          <Footer />
         </div>
+        {/* </div> */}
       </NavProvider>
     </>
   );
