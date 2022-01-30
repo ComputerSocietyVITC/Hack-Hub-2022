@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import "../styles/navbar.css";
 import { useNav } from '../helpers/customHooks/useNav';
+import devFolio from "../images/sponsors/platinum/devfolio.png";
+import polygon from "../images/sponsors/platinum/polygon.png";
+import celo from "../images/sponsors/gold/celo.png"; 
+import tezos from "../images/sponsors/gold/tezos.png";
+import filecoin from "../images/sponsors/gold/filecoin.png";
+import koii from "../images/sponsors/gold/koii.png"
+import certopus from "../images/sponsors/silver/certopus.png";
+import echo from "../images/sponsors/silver/echo.png";
+import badeLog from "../images/sponsors/silver/badelog.png";
 
 const page = [
   {
@@ -13,8 +22,12 @@ const page = [
         content: [
           {
             key: 1,
-            src: "images/sponsors/platinum_1.png",
+            src: devFolio,
           },
+          {
+            key: 2,
+            src:polygon,
+          }
         ],
       },
       {
@@ -23,8 +36,20 @@ const page = [
         content: [
           {
             key: 1,
-            src: "images/sponsors/gold_1.png",
+            src: celo,
           },
+          {
+            key: 2,
+            src :tezos,
+          },
+          {
+            key:3,
+            src:filecoin,
+          },
+          {
+            key :4,
+            src :koii
+          }
         ],
       },
       {
@@ -33,8 +58,16 @@ const page = [
         content: [
           {
             key: 1,
-            src: "images/sponsors/silver_1.png",
+            src: certopus
           },
+          {
+            key: 2,
+            src:echo,
+          },
+          {
+            key :3,
+            src : badeLog,
+          }
         ],
       },
     ],
@@ -62,8 +95,8 @@ const Sponsors = () => {
           </section>
           <div class="h-1 w-full rounded-lg bg-white"></div>
         </section>
-        <h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>
-        {/* <section className="grid grid-cols-4 gap-10">
+        {/*<h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>*/}
+        {<section className="grid grid-cols-4 gap-10">
       {page
         .filter((item) => {
           return item.textHeader === "SPONSORS";
@@ -77,7 +110,7 @@ const Sponsors = () => {
                   console.log(item.src.default);
                   return (
                     <img
-                      className="px-10 flex justify-center items-center"
+                      className="px-10 h-16 flex justify-center items-center"
                       key={item.key}
                       src={item.src}
                       alt=""
@@ -88,7 +121,7 @@ const Sponsors = () => {
             </div>
           );
         })}
-    </section> */}
+    </section> }
       </div>
     </>
   );
