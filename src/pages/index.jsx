@@ -19,8 +19,8 @@ const IndexPage = () => {
       </Helmet>
       <NavProvider>
         <Navbar />
-        <div className="bg-stars z-0">
-          <div className="bg-bgimage bg-center">
+        <div className="bg-stars bg-fixed z-0">
+          <div className="bg-bgimage bg-fixed">
             {/* <Background /> */}
             <CentralComponents />
             <About />

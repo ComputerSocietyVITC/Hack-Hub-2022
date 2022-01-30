@@ -144,7 +144,7 @@ function Footer() {
         </div>
       </section>
       <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
-      <p className="text-white items-left justify-left text-center text-xl my-2 mx-10 lg:mx-0">
+      <p className="text-white items-left justify-left text-center text-base my-2 mx-10 lg:mx-0">
         Made With ❤️ by Team HackHub | ©️ IEEE CS VITC
       </p>
     </section>
