@@ -3,8 +3,8 @@ import CountDown from "./countdown";
 import hackhublogo from "../images/hackhublogo.png";
 import discordlogo from "../images/footer/discord.png";
 import aries from "../images/svgs/aries.svg";
-import libra from "../images/svgs/libra.svg";
-import virgo from "../images/svgs/virgo.svg";
+import libra from "../images/svgs/libranew.png";
+import virgo from "../images/svgs/virgonew.png";
 import aquaris from "../images/svgs/Aquaris.svg";
 import pisces from "../images/svgs/pisces.svg";
 import leo from "../images/svgs/leo.svg";
@@ -32,7 +32,7 @@ const CentralComponents = () => {
     <>
       <div className="min-h-screen relative pt-20" ref={homeRef} id='homeContainer'>
         <section className="z-0">
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-10">
+          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-20 left-20">
             <img src={libra} alt="libra" className="w-1/2" />
           </section>
           <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-0 left-1/3">
@@ -84,9 +84,13 @@ const CentralComponents = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
             </svg>
           </div> */}
-          <div className="z-20 cursor-pointer mx-auto lg:mx-0 drop-shadow-2xl flex items-center justify-center text-xl font-SanBold text-center text-white shadow-xl hover:shadow-sm rounded py-2" style={{ "backgroundColor": "#5865F2", "width": "312px" }}>
-            <img src={discordlogo} alt="Discord" className="w-8 mr-3" />
-            <button>JOIN US ON DISCORD</button>
+          <div className="z-20 cursor-pointer">
+            <a href="https://discord.gg/UeGSd6fKNW" target="_blank">
+              <div className="mx-auto lg:mx-0 drop-shadow-2xl flex items-center justify-center text-xl font-SanBold text-center text-white shadow-xl hover:shadow-sm rounded py-2" style={{ "backgroundColor": "#5865F2", "width": "312px" }}>
+                <img src={discordlogo} alt="Discord" className="w-8 mr-3" />
+                <button>JOIN US ON DISCORD</button>
+              </div>
+            </a>
           </div>
         </div>
       </div>

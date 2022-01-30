@@ -1,7 +1,7 @@
 import React from "react";
-import instagram from "../images/footer/instagram_footer.png";
-import linkedin from "../images/footer/linkedin_footer.png";
-import github from "../images/footer/github_footer.png";
+import instagram from "../images/footer/instagram.png";
+import linkedin from "../images/footer/linkedin.png";
+import twitter from "../images/footer/twitter.png";
 import comsoc from "../images/footer/comsoc.jpeg";
 import hackhublogo from "../images/hackhublogo.png";
 import "../styles/styles.css";
@@ -45,9 +45,9 @@ let socials = [
       },
       {
         id: 3,
-        Link: "https://github.com/ComputerSocietyVITC/",
-        alt: "github",
-        src: github,
+        Link: "https://twitter.com/ieeecsvitc/",
+        alt: "twitter",
+        src: twitter,
       },
       {
         id: 4,
