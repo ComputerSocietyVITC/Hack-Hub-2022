@@ -1,20 +1,22 @@
-:root{
+:root {
   --plat: linear-gradient(#FFFFFF, #777777);
-  --gold: linear-gradient(rgba(255,163,26,0.92), rgba(255,232,26,1.0));
+  --gold: linear-gradient(rgba(255, 163, 26, 0.92), rgba(255, 232, 26, 1.0));
   --silv: linear-gradient(#656362, #363636);
 }
 
-#Platinum{
+#Platinum {
   background: var(--plat);
 }
-#Gold{
+
+#Gold {
   background: var(--gold);
 }
-#Silver{
+
+#Silver {
   background: var(--silv);
 }
 
-.bigCont{
+.bigCont {
   height: 330;
   width: auto;
   margin: 5px;
