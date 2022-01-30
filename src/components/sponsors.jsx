@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/navbar.css";
 import { useNav } from '../helpers/customHooks/useNav';
 import devFolio from "../images/sponsors/platinum/devfolio.png";
@@ -129,7 +129,7 @@ const Sponsors = () => {
                   <div className="lg:flex lg:justify-around bg-transparent lg:mt-10 mx-8">
                     {item.content.map((item) => {
                       return (
-                        <a href={item.href} target="_blank">
+                        <a href={item.href} target="_blank" rel="noreferrer">
                           <img
                             className="h-16 lg:h-20 mx-auto my-2"
                             key={item.key}

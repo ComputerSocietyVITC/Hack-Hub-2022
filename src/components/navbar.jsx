@@ -4,15 +4,15 @@ import "../styles/styles.css";
 import NavLink from "../helpers/NavLink";
 import hackhubsquarelogo from "../images/hackhubsquarelogo.png";
 
-const Component = ({ Heading, Link }) => {
-  return (
-    <>
-      <section className="uppercase items-center cursor-pointer text-center text-gray-400 bg-clip-text hover:text-transparent bg-gradient-to-r hover:from-gradPink hover:to-gradViolet">
-        <a href={Link}>{Heading}</a>
-      </section>
-    </>
-  );
-};
+// const Component = ({ Heading, Link }) => {
+//   return (
+//     <>
+//       <section className="uppercase items-center cursor-pointer text-center text-gray-400 bg-clip-text hover:text-transparent bg-gradient-to-r hover:from-gradPink hover:to-gradViolet">
+//         <a href={Link}>{Heading}</a>
+//       </section>
+//     </>
+//   );
+// };
 
 const Navbar = () => {
   const navLinks = [

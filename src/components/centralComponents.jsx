@@ -15,9 +15,9 @@ const CentralComponents = () => {
 
   const homeRef = useNav('Home');
 
-  const handleClickArrow = () => {
-    document.getElementById("aboutContainer").scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
+  // const handleClickArrow = () => {
+  //   document.getElementById("aboutContainer").scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // };
   React.useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://apply.devfolio.co/v2/sdk.js';
@@ -85,7 +85,7 @@ const CentralComponents = () => {
             </svg>
           </div> */}
           <div className="z-20 cursor-pointer">
-            <a href="https://discord.gg/UeGSd6fKNW" target="_blank">
+            <a href="https://discord.gg/UeGSd6fKNW" target="_blank" rel="noreferrer">
               <div className="mx-auto lg:mx-0 drop-shadow-2xl flex items-center justify-center text-xl font-SanBold text-center text-white shadow-xl hover:shadow-sm rounded py-2" style={{ "backgroundColor": "#5865F2", "width": "312px" }}>
                 <img src={discordlogo} alt="Discord" className="w-8 mr-3" />
                 <button>JOIN US ON DISCORD</button>

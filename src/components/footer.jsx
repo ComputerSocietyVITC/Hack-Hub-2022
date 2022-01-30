@@ -2,7 +2,7 @@ import React from "react";
 import instagram from "../images/footer/instagram.png";
 import linkedin from "../images/footer/linkedin.png";
 import twitter from "../images/footer/twitter.png";
-import comsoc from "../images/footer/comsoc.jpeg";
+import comsoc from "../images/footer/comsoc.png";
 import hackhublogo from "../images/hackhublogo.png";
 import "../styles/styles.css";
 import { useNav } from '../helpers/customHooks/useNav';
@@ -76,7 +76,7 @@ const SocialFoot = (props) => {
   return (
     <section>
       <div>
-        <a href={Link} target="_blank">
+        <a href={Link} target="_blank" rel="noreferrer">
           <img className="h-10 lg:h-7 mx-auto lg:mx-0" src={src} alt={alt} />
         </a>
       </div>
