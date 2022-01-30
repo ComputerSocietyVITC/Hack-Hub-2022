@@ -19,6 +19,7 @@ module.exports = {
       },
       backgroundImage: {
         'bgimage': "url('../images/bgimage.png')",
+        'stars': "url('../images/stars.png')",
       },
       dropShadow: { white: "0 35px 35px #FFF" },
     },
