@@ -1,7 +1,14 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://hackhub.ieeecsvitc.com/",
-    title: "HackHub2022",
+    url: "https://hackhub.ieeecsvitc.com/",
+    title: "HackHub2022 - IEEE Computer Society's Premier Hackathon",
+    titleTemplate: " ",
+    image: "./src/images/hackhubsquarelogo.png",
+    crossOrigin: "use-credentials",
+    twitterUsername: "@ieeecsvitc",
+    description:
+      "IEEE Computer Society's Premier Hackathon which is scheduled to happen between 04-06 March, Check out our website to learn more.",
   },
   pathPrefix: "/Hack-Hub-2022",
   plugins: [
@@ -13,12 +20,10 @@ module.exports = {
         start_url: "/",
         background_color: "#6b37bf",
         theme_color: "#6b37bf",
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
         icon: "src/images/hackhubsquarelogo.png", // This path is relative to the root of the site.
         crossOrigin: `use-credentials`,
-
       },
     },
     "gatsby-plugin-postcss",
@@ -28,8 +33,7 @@ module.exports = {
         printRejected: false,
         develop: true,
         tailwind: true,
-        purgeCSSOptions: {
-        },
+        purgeCSSOptions: {},
         // More options defined here https://purgecss.com/configuration.html#options
       },
     },
