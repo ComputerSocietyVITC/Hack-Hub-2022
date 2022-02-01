@@ -4,24 +4,28 @@ import "../styles/styles.css";
 import NavLink from "../helpers/NavLink";
 import hackhubsquarelogo from "../images/hackhubsquarelogo.png";
 
-const Component = ({ Heading, Link }) => {
-  return (
-    <>
-      <section className="uppercase items-center cursor-pointer text-center text-gray-400 bg-clip-text hover:text-transparent bg-gradient-to-r hover:from-gradPink hover:to-gradViolet">
-        <a href={Link}>{Heading}</a>
-      </section>
-    </>
-  );
-};
+// const Component = ({ Heading, Link }) => {
+//   return (
+//     <>
+//       <section className="uppercase items-center cursor-pointer text-center text-gray-400 bg-clip-text hover:text-transparent bg-gradient-to-r hover:from-gradPink hover:to-gradViolet">
+//         <a href={Link}>{Heading}</a>
+//       </section>
+//     </>
+//   );
+// };
 
 const Navbar = () => {
   const navLinks = [
-    { navLinkId: "Home", scrollToId: "homeContainer" },
-    { navLinkId: "About", scrollToId: "aboutContainer" },
-    { navLinkId: "Timeline", scrollToId: "timelineContainer" },
-    { navLinkId: "Sponsors", scrollToId: "sponsContainer" },
-    { navLinkId: "Faqs", scrollToId: "faqsContainer" },
-    { navLinkId: "Contact", scrollToId: "contactContainer" },
+    { navLinkId: 'Home', scrollToId: 'homeContainer' },
+    { navLinkId: 'About', scrollToId: 'aboutContainer' },
+    { navLinkId: 'Tracks', scrollToId: 'tracksContainer' },
+    { navLinkId: 'Timeline', scrollToId: 'timelineContainer' },
+    { navLinkId: 'Prizes', scrollToId: 'prizesContainer' },
+    { navLinkId: 'Speakers', scrollToId: 'speakersContainer' },
+    { navLinkId: 'Judges', scrollToId: 'judgesContainer' },
+    { navLinkId: 'Sponsors', scrollToId: 'sponsContainer' },
+    { navLinkId: 'Faqs', scrollToId: 'faqsContainer' },
+    { navLinkId: 'Contact', scrollToId: 'contactContainer' },
   ];
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
