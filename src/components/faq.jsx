@@ -1,7 +1,9 @@
 import * as React from "react";
 import arrow from "../images/svgs/arrow.svg";
+
 import FAQdata from "../helpers/FAQdata";
 import { useNav } from "../helpers/customHooks/useNav";
+
 
 const FAQComponent = ({ Question, Answer }) => {
   const [state, setState] = React.useState(false);
