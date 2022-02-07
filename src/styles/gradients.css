@@ -18,3 +18,33 @@
     #440089 100%
   );
 }
+
+.participation {
+  background: linear-gradient(
+    180deg,
+    rgba(80, 2, 112, 0.45) 0%,
+    rgba(0, 6, 31, 0.45) 100%
+  );
+}
+
+.first-place {
+  background: linear-gradient(
+    181.54deg,
+    rgba(246, 228, 120, 0.2756) 16.74%,
+    rgba(0, 0, 0, 0) 82.47%
+  );
+}
+.second-place {
+  background: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0.3016) 8.56%,
+    rgba(0, 0, 0, 0) 81.9%
+  );
+}
+.third-place {
+  background: linear-gradient(
+    180deg,
+    rgba(176, 111, 71, 0.52) 0%,
+    rgba(0, 0, 0, 0) 89.58%
+  );
+}
