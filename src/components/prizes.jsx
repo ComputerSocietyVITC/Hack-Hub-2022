@@ -65,7 +65,7 @@ const Prizes = () => {
                     <div class="h-1 w-full rounded-lg bg-white"></div>
                 </section>
                 {/*<h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>*/}
-                {<div className="lg:mx-40 relative flex space-x-8 justify-between">
+                {<div className="lg:mx-40 relative flex space-x-16 justify-between" id="winners">
                     {prizeList.filter((item)=>{
                         return item.textHeader==="Prizes";
                     })[0].prize.map((item)=>{
@@ -83,6 +83,18 @@ const Prizes = () => {
                         );
                     })}           
                 </div>}
+                <div className="mt-20 mx-40 rounded-3xl border-4 border-gray-200" id="Participation">
+                    <div className="text-4xl text-center font-Sansation font-bold uppercase">Participation Prizes</div>
+                    <div className="h-1 w-full rounded bg-gray-600"></div>
+                    <div className="text-xl  text-bold text-center font-Sansation">
+                        <ul className="space-y-6">
+                            <li>Premium Resources for free for everyone</li>
+                            <li>Certificates for everyone</li>
+                            <li>15% off to all participants</li>
+                            <li>Free XYZ domain names to everyone</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </>
     );
