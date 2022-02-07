@@ -1,62 +1,9 @@
 import * as React from "react";
-import faqribbon1 from "../images/faqribbon1.png";
-import faqribbon2 from "../images/faqribbon2.png";
+// import faqribbon1 from "../images/faqribbon1.png";
+// import faqribbon2 from "../images/faqribbon2.png";
 import arrow from "../images/svgs/arrow.svg";
 import FAQdata from "../helpers/FAQdata"
 import { useNav } from '../helpers/customHooks/useNav';
-
-const OddComponent = ({ Question, Answer }) => {
-
-  const [des, setDes] = React.useState(false);
-
-  return (
-    <>
-      <div className="md:w-3/5 mx-auto">
-        <div
-          className="mx-auto w-full relative md:my-4 font-Sansation my-2 cursor-pointer"
-          onClick={() => setDes(!des)}
-        >
-          <img src={faqribbon1} alt="Ribbon 1" className="md:h-16 md:w-full" />
-          <div className="text-white text-xs md:text-xl absolute md:top-4 md:left-20 md:pl-2 top-3 left-12">
-            {Question}
-          </div>
-          <div className="absolute md:top-4 md:left-14 top-3 left-7">
-            {des ? (
-              <div className="md:h-4 md:w-4 h-2 w-2">
-                <img src={arrow} alt="arrow" className="transform rotate-90" />
-              </div>
-            ) : (
-              <div className="md:h-4 md:w-4 h-2 w-2">
-                <img src={arrow} alt="arrow" />
-              </div>
-            )}
-          </div>
-          <div className="absolute md:top-4 md:right-14 top-3 right-7">
-            {des ? (
-              <div className="md:h-4 md:w-4 h-2 w-2">
-                <img src={arrow} alt="arrow" className="transform rotate-90" />
-              </div>
-            ) : (
-              <div className="md:h-4 md:w-4 h-2 w-2">
-                <img src={arrow} alt="arrow" className="transform rotate-180" />
-              </div>
-            )}
-          </div>
-        </div>
-        <div>
-          <p
-            className={
-              "p-2 text-white text-lg md:text-xl text-center" +
-              (des ? " block" : " hidden")
-            }
-          >
-            {Answer}
-          </p>
-        </div>
-      </div>
-    </>
-  );
-};
 
 const FAQComponent = ({ Question, Answer }) => {
   const [state, setState] = React.useState(false);
@@ -92,7 +39,7 @@ const FAQComponent = ({ Question, Answer }) => {
       <div>
         <p
           className={
-            "p-2 text-white text-lg md:text-xl text-center md:w-2/3 mx-auto" +
+            "p-2 text-white text-lg md:text-xl text-center md:w-3/4 mx-auto" +
             (state ? " block" : " hidden")
           }
         >
@@ -102,57 +49,6 @@ const FAQComponent = ({ Question, Answer }) => {
     </>
   );
 }
-
-const EvenComponent = ({ Question, Answer }) => {
-  const [state, setState] = React.useState(false);
-  return (
-    <>
-      <div className="md:w-2/3 mx-auto">
-        <div
-          className="mx-auto w-full relative md:my-4 my-2 font-sans cursor-pointer"
-          onClick={() => setState(!state)}
-        >
-          <img src={faqribbon2} alt="Ribbon 2" className="md:h-16 md:w-full" />
-          <div className="text-white text-xs md:text-xl absolute md:top-4 md:left-32 top-2 left-12">
-            {Question}
-          </div>
-          <div className="absolute md:top-4 md:left-24 top-2 left-7">
-            {state ? (
-              <div className="md:h-4 md:w-4 h-2 w-2">
-                <img src={arrow} alt="arrow" className="transform rotate-90" />
-              </div>
-            ) : (
-              <div className="md:h-4 md:w-4 h-2 w-2">
-                <img src={arrow} alt="arrow" />
-              </div>
-            )}
-          </div>
-          <div className="absolute md:top-4 md:right-24 top-2 right-7">
-            {state ? (
-              <div className="md:h-4 md:w-4 h-2 w-2">
-                <img src={arrow} alt="arrow" className="transform rotate-90" />
-              </div>
-            ) : (
-              <div className="md:h-4 md:w-4 h-2 w-2">
-                <img src={arrow} alt="arrow" className="transform rotate-180" />
-              </div>
-            )}
-          </div>
-        </div>
-        <div>
-          <p
-            className={
-              "p-2 text-white text-lg md:text-xl text-center" +
-              (state ? " block" : " hidden")
-            }
-          >
-            {Answer}
-          </p>
-        </div>
-      </div>
-    </>
-  );
-};
 
 const FrequentlyAskedQuestions = () => {
 

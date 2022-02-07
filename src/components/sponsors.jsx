@@ -11,6 +11,10 @@ import certopus from "../images/sponsors/silver/certopus.png";
 import echo from "../images/sponsors/silver/echo.png";
 import badeLog from "../images/sponsors/silver/badelog.png";
 import xyz from "../images/sponsors/silver/xyz.png";
+import leadinglearners from "../images/sponsors/silver/leadinglearners.png";
+import taskade from "../images/sponsors/silver/taskade.png";
+import axure from "../images/sponsors/silver/axure.png";
+import clerky from "../images/sponsors/silver/clerky.png";
 
 const page = [
   {
@@ -89,6 +93,26 @@ const page = [
             src: xyz,
             href: 'https://gen.xyz/'
           },
+          {
+            key: 5,
+            src: taskade,
+            href: 'https://taskade.com/'
+          },
+          {
+            key: 6,
+            src: leadinglearners,
+            href: 'https://www.leadlearners.ca/'
+          },
+          {
+            key: 7,
+            src: axure,
+            href: 'https://www.axure.com/'
+          },
+          {
+            key: 8,
+            src: clerky,
+            href: 'https://www.clerky.com/'
+          }
         ],
       },
     ],
@@ -116,7 +140,6 @@ const Sponsors = () => {
           </section>
           <div class="h-1 w-full rounded-lg bg-white"></div>
         </section>
-        {/*<h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>*/}
         {<section className="sm:mx-24 lg:mx-40">
           {page
             .filter((item) => {
@@ -124,14 +147,14 @@ const Sponsors = () => {
             })[0]
             .sponsor.map((item) => {
               return (
-                <div className={"lg:h-60 col-span-4 rounded-3xl my-10 border-4 " + item.border} key={item.id}>
+                <div className={"col-span-4 rounded-3xl my-10 border-4 py-2 " + item.border} key={item.id}>
                   <SponsorTag Text={item.title} headingColor={item.headingColor} />
-                  <div className="lg:flex lg:justify-around bg-transparent lg:mt-10 mx-8">
+                  <div className="lg:flex lg:flex-wrap lg:justify-around bg-transparent mx-8" >
                     {item.content.map((item) => {
                       return (
-                        <a href={item.href} target="_blank" rel="noreferrer">
+                        <a href={item.href} target="_blank" rel="noreferrer" style={{ "flexBasis": "25%" }}>
                           <img
-                            className="h-16 lg:h-20 mx-auto my-2"
+                            className="h-12 lg:h-16 mx-auto my-4"
                             key={item.key}
                             src={item.src}
                             alt={item.href}
