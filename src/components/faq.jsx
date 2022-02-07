@@ -1,6 +1,7 @@
 import * as React from "react";
-import faqribbon2 from "../images/faqribbon2.png";
 import arrow from "../images/svgs/arrow.svg";
+
+
 import FAQdata from "../helpers/FAQdata";
 import { useNav } from "../helpers/customHooks/useNav";
 
