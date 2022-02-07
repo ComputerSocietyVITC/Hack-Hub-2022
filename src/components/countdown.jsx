@@ -68,7 +68,9 @@ const CountDown = () => {
                 <section className="text-gradPink">{timerHours[1]}</section>
               </section>
             </section>
-            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">Hours</h2>
+            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">
+              Hours
+            </h2>
           </div>
           <div>
             <section className="mx-1 md:mx-4 grid grid-cols-2">
@@ -79,7 +81,9 @@ const CountDown = () => {
                 <section className="text-gradPink">{timerMinutes[1]}</section>
               </section>
             </section>
-            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">Minutes</h2>
+            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">
+              Minutes
+            </h2>
           </div>
           <div>
             <section className="mx-1 md:mx-4 grid grid-cols-2">
@@ -90,10 +94,12 @@ const CountDown = () => {
                 <section className="text-gradPink">{timerSeconds[1]}</section>
               </section>
             </section>
-            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">Seconds</h2>
+            <h2 className="text-lg md:text-3xl md:mt-4 mt-1 uppercase">
+              Seconds
+            </h2>
           </div>
         </section>
-        {/* <section className="text-md text-lg md:text-3xl md:mt-4 mt-1 grid-cols-4 text-center xl:w-2/3  mt-1 md:mt-4 mx-auto bg-clip-text text-transparent bg-gradient-to-r from-gradViolet via-gradPink to-gradViolet uppercase">
+        {/* <section className="text-md text-lg md:text-3xl md:mt-4 mt-1 grid-cols-4 text-center xl:w-2/3 mx-auto bg-clip-text text-transparent bg-gradient-to-r from-gradViolet via-gradPink to-gradViolet uppercase">
           <section className="">Days</section>
           <section className="">Hours</section>
           <section className="">Minutes</section>
