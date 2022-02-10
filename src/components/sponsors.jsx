@@ -86,7 +86,7 @@ const page = [
           {
             key: 3,
             src: badeLog,
-            href: 'https://badelog.in/'
+            href: 'https://badelog.co.in/'
           },
           {
             key: 4,
@@ -101,7 +101,7 @@ const page = [
           {
             key: 6,
             src: leadinglearners,
-            href: 'https://www.leadlearners.ca/'
+            href: ' linktr.ee/leadinglearners'
           },
           {
             key: 7,
@@ -140,25 +140,27 @@ const Sponsors = () => {
           </section>
           <div class="h-1 w-full rounded-lg bg-white"></div>
         </section>
-        {<section className="sm:mx-24 lg:mx-40">
+        {<section className="sm:mx-24 lg:mx-36">
           {page
             .filter((item) => {
               return item.textHeader === "SPONSORS";
             })[0]
             .sponsor.map((item) => {
               return (
-                <div className={"col-span-4 rounded-3xl my-10 border-4 py-2 " + item.border} key={item.id}>
+                <div className={"col-span-4 rounded-3xl my-10 py-2 "} key={item.id}>
                   <SponsorTag Text={item.title} headingColor={item.headingColor} />
                   <div className="lg:flex lg:flex-wrap lg:justify-around bg-transparent mx-8" >
                     {item.content.map((item) => {
                       return (
                         <a href={item.href} target="_blank" rel="noreferrer" style={{ "flexBasis": "25%" }}>
-                          <img
-                            className="h-12 lg:h-16 mx-auto my-4"
-                            key={item.key}
-                            src={item.src}
-                            alt={item.href}
-                          />
+                          <div className="h-20 bg-white hover:bg-gray-200 m-6 rounded-xl">
+                            <img
+                              className="object-contain p-3 h-full w-full"
+                              key={item.key}
+                              src={item.src}
+                              alt={item.href}
+                            />
+                          </div>
                         </a>
                       );
                     })}
