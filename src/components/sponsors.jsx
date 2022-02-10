@@ -3,6 +3,7 @@ import "../styles/navbar.css";
 import { useNav } from '../helpers/customHooks/useNav';
 import devFolio from "../images/sponsors/platinum/devfolio.png";
 import polygon from "../images/sponsors/platinum/polygon.png";
+import digitalocean from "../images/sponsors/platinum/digitalocean.png";
 import celo from "../images/sponsors/gold/celo.png";
 import tezos from "../images/sponsors/gold/tezos.png";
 import filecoin from "../images/sponsors/gold/filecoin.png";
@@ -36,6 +37,11 @@ const page = [
             key: 2,
             src: polygon,
             href: 'https://polygon.technology/'
+          },
+          {
+            key: 3,
+            src: digitalocean,
+            href: 'https://www.digitalocean.com/'
           }
         ],
       },

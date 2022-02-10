@@ -12,39 +12,52 @@ const prizeList = [
         id: 1,
         head: "1st Prize",
         border: "border-yellow-400",
+        bgclass: " first-place",
         items: [
-          {
-            key: 1,
-          },
+          "Company Lifetime Package from Clerky",
+          "$1000 Digital Ocean Credits",
+          "30% Discount from Badelog",
+          "1 year License of Axure- RP Team Plan",
+          "Lifetime upgrade of Taskade",
+          "Leading Learners Expansion packs",
+          "Schwags from Devfolio"
         ],
       },
       {
         id: 2,
         head: "2nd Prize",
         border: "border-gray-400",
+        bgclass: " second-place",
         items: [
-          {
-            key: 1,
-          },
+          "$500 Digital Ocean Credits",
+          "30% Discount from Badelog",
+          "1 year License of Axure- RP Team Plan",
+          "Lifetime upgrade of Taskade",
+          "Leading Learners Expansion packs",
+          "Schwags from Devfolio"
         ],
       },
       {
         id: 3,
         head: "3rd Prize",
-        border: "border-red-400",
+        border: "border-yellow-700",
+        bgclass: " third-place",
         items: [
-          {
-            key: 1,
-          },
+          "$500 Digital Ocean Credits",
+          "30% Discount from Badelog",
+          "1 year License of Axure- RP Team Plan",
+          "Lifetime upgrade of Taskade",
+          "Leading Learners Expansion packs",
+          "Schwags from Devfolio"
         ],
       },
     ],
   },
 ];
 const Prize = (props) => {
-  const { title } = props;
+  const { title, border } = props;
   return (
-    <section className="text-4xl font-Sansation font-bold uppercase text-white py-8">
+    <section className={"text-3xl font-Sansation border-b-2 w-auto mb-4 inline-block font-bold text-white " + border}>
       {title}
     </section>
   );
@@ -56,68 +69,64 @@ const Prizes = () => {
   return (
     <>
       <div
-        className="mt-24 px-8 sm:px-0 mb-40"
+        className="mt-12 px-8 sm:px-0 mb-40"
         ref={prizesRef}
         id="prizesContainer"
-      />
-      <section className="sm:w-1/3 lg:w-1/5 my-8 py-12">
-        <section className="text-white font-Sansation font-bold text-5xl text-center">
-          PRIZES
+      >
+        <section className="sm:w-1/3 lg:w-1/5 my-8 py-12">
+          <section className="text-white font-Sansation font-bold text-5xl text-center">
+            PRIZES
+          </section>
+          <div class="h-1 w-full rounded-lg bg-white" />
         </section>
-        <div class="h-1 w-full rounded-lg bg-white" />
-      </section>
 
-      <div
-        className="grid lg:px-8 lg:grid-cols-3 lg:gap-8 md:grid-cols-3 md:gap-4 sm:grid-cols-1"
-        id="prizes"
-      >
-        {prizeList
-          .filter((item) => {
-            return item.textHeader === "Prizes";
-          })[0]
-          .prize.map((item) => {
-            return (
-              <div
-                className={"text-center rounded-3xl border-4 " + item.border}
-                key={item.id}
-              >
-                <Prize title={item.head} />
-                <div className="py-4 text-center text-bold leading-loose text-white">
-                  {item.items.map((item) => {
-                    return (
-                      <p>
-                        Ex officia qui nulla dolor nisi sint consequat
-                        exercitation deserunt. Sunt deserunt qui officia et est.
-                        Magna id qui commodo occaecat eiusmod veniam et
-                        cupidatat incididunt duis amet do qui cupidatat. Aliqua
-                        reprehenderit sit cupidatat ipsum cupidatat. Tempor id
-                        aliqua veniam cillum in exercitation elit deserunt
-                        nostrud. Velit velit ut amet proident ullamco velit
-                        officia nisi esse ad id officia excepteur.
-                      </p>
-                    );
-                  })}
+        <div
+          className="grid gap-8 px-4 sm:px-40 md:px-12 xl:px-28 lg:grid-cols-3 md:gap-12 xl:gap-32 sm:grid-cols-1"
+          id="prizes"
+        >
+          {prizeList
+            .filter((item) => {
+              return item.textHeader === "Prizes";
+            })[0]
+            .prize.map((item) => {
+              return (
+                <div
+                  className={"text-center rounded-3xl opacity-90 hover:opacity-100 py-8 border-2 " + item.border + item.bgclass}
+                  key={item.id}
+                >
+                  <Prize title={item.head} border={item.border} />
+                  <ul className="py-4 list-disc list-inside text-center text-bold leading-loose text-white">
+                    {item.items.map((item) => {
+                      return (
+                        <li>
+                          {item}
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
-              </div>
-            );
-          })}
-      </div>
-
-      <div
-        className="participation mt-20 mx-40 rounded-3xl border-4 border-gray-200"
-        id="Participation"
-      >
-        <div className="text-4xl text-center font-Sansation font-bold uppercase text-white">
-          Participation Prizes
+              );
+            })}
         </div>
-        <div className="h-1 w-full rounded bg-gray-600"></div>
-        <div className="text-xl  text-bold text-center font-Sansation text-white">
-          <ul className="space-y-6">
-            <li>Premium Resources for free for everyone</li>
-            <li>Certificates for everyone</li>
-            <li>15% off to all participants</li>
-            <li>Free XYZ domain names to everyone</li>
-          </ul>
+
+        <div
+          className="participation mt-20 sm:mx-12 lg:mx-60 rounded-3xl border-2 opacity-90 hover:opacity-100 border-gray-200"
+          id="Participation"
+        >
+          <div className="text-3xl text-center py-3 font-Sansation font-bold uppercase text-white">
+            Participation Prizes
+          </div>
+          <div className="h-0.5 w-full rounded bg-gray-400"></div>
+          <div className="text-bold text-center font-Sansation text-white">
+            <ul className="py-6 px-4 list-disc list-inside leading-loose">
+              <li>100$ Digital Ocean Credits, 60-day Free trial</li>
+              <li>Premium Tier services from Echo3D</li>
+              <li>Free XYZ domain name for 1 year</li>
+              <li>Hacker Plan from Replit</li>
+              <li>15% Discount from Badelog</li>
+              <li>5-Year free upgrades from Taskade</li>
+            </ul>
+          </div>
         </div>
       </div>
     </>
