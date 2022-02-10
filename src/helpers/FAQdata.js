@@ -21,7 +21,7 @@ const FAQdata = [
     },
     {
         "sr": "5",
-        "Question": "Who all can participate? Are there any pre-requisites",
+        "Question": "Who all can participate? Are there any pre-requisites?",
         "Answer": "All students currently enrolled in undergraduate or postgraduate degree program are welcome to participate. Although prior experience in coding will be an advantage, teams also require a great idea and presentation skills to win. If you aren't experienced, this hackathon would be a great place to start."
     },
     {
