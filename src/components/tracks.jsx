@@ -48,7 +48,8 @@ const Tracks = () => {
           </section>
           <div class="h-1 w-full rounded-lg bg-white" />
         </section>
-        <section className="text-white font-Sansation font-bold text-4xl text-center">
+        <h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>
+        {/* <section className="text-white font-Sansation font-bold text-4xl text-center">
           <section className="grid lg:grid-cols-3 gap-4 md:grid-cols-3 md:gap-2 sm:grid-cols-1">
             <section className="px-4 lg:col-start-1 md:col-start-1 col-span-1 my-2">
               <Cards title="Title" content={Content} imgsource={medical} />
@@ -63,7 +64,7 @@ const Tracks = () => {
               <Cards title="Title" content={Content} imgsource={bulb} />
             </section>
           </section>
-        </section>
+        </section> */}
       </div>
     </>
   );
