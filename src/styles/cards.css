@@ -1,0 +1,38 @@
+.card {
+  color: white;
+}
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-content,
+.flip-card-back {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.card_one {
+  background-color: "#B4006C";
+}
+
+.background-card {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.mgnt-color {
+  background: rgba(234, 13, 145, 0.45);
+  box-shadow: 0px 4px 25px 15px rgba(2, 2, 2, 0.7);
+}

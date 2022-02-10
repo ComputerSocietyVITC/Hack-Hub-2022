@@ -9,12 +9,13 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "cross-env TAILWIND_MODE=watch gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "gatsby": "^4.2.0",
     "gatsby-plugin-image": "^2.3.0",
     "gatsby-plugin-manifest": "^4.3.0",

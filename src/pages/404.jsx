@@ -8,8 +8,8 @@ const Error = () => {
             <div className=" relative z-10 mx-4 lg:mx-auto ">
                 <img src={error} alt="404" className='mx-auto md:w-2/5 lg:w-2/5' />
             </div>
-            <h1 className='font-sans text-center text-6xl -mt-5 text-comsocgreen lg:-mt-20 lg:text-8xl'>lost in space</h1>
-            <h1 className='font-sans text-center text-xl lg:text-3xl mt-4'>you have reached the edge of universe</h1>
+            <h1 className='font-sans text-white text-center text-6xl -mt-5 lg:-mt-20 lg:text-8xl'>lost in space</h1>
+            <h1 className='font-sans text-gray-300 text-center text-xl lg:text-3xl mt-4'>you have reached the edge of universe</h1>
 
             <div onClick={() => window.location.href = '/'}>
                 <button
