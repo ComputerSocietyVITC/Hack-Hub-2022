@@ -1,7 +1,10 @@
 import * as React from "react";
 import arrow from "../images/svgs/arrow.svg";
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 4a720bfe845e87e4488726a8add6b5a58f2bfbef
 import FAQdata from "../helpers/FAQdata";
 import { useNav } from "../helpers/customHooks/useNav";
 
