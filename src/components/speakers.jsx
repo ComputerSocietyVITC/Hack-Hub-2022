@@ -31,7 +31,8 @@ const Speakers = () => {
         </section>
         <div class="h-1 w-full rounded-lg bg-white" />
       </section>
-      <section>
+      <h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>
+      {/* <section>
         <section className="md:pl-5 lg:pl-10 grid lg:grid-cols-3 lg:gap-6 md:grid-cols-3 md:gap-4 sm:grid-cols-1 gap-2 text-center items-center">
           <section className="md:col-start-1 lg:col-start-1 lg:col-span-1 md:col-span-1">
             <Cards source={icon} />
@@ -43,7 +44,7 @@ const Speakers = () => {
             <Cards source={icon} />
           </section>
         </section>
-      </section>
+      </section> */}
     </>
   );
 };

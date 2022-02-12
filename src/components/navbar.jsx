@@ -17,12 +17,12 @@ import hackhubsquarelogo from "../images/hackhubsquarelogo.png";
 const Navbar = () => {
   const navLinks = [
     { navLinkId: 'Home', scrollToId: 'homeContainer' },
-    { navLinkId: 'About', scrollToId: 'aboutContainer' },
+    // { navLinkId: 'About', scrollToId: 'aboutContainer' },
     { navLinkId: 'Tracks', scrollToId: 'tracksContainer' },
     { navLinkId: 'Timeline', scrollToId: 'timelineContainer' },
     { navLinkId: 'Prizes', scrollToId: 'prizesContainer' },
-    { navLinkId: 'Speakers', scrollToId: 'speakersContainer' },
-    { navLinkId: 'Judges', scrollToId: 'judgesContainer' },
+    // { navLinkId: 'Speakers', scrollToId: 'speakersContainer' },
+    // { navLinkId: 'Judges', scrollToId: 'judgesContainer' },
     { navLinkId: 'Sponsors', scrollToId: 'sponsContainer' },
     { navLinkId: 'Faqs', scrollToId: 'faqsContainer' },
     { navLinkId: 'Contact', scrollToId: 'contactContainer' },
@@ -90,7 +90,7 @@ const Navbar = () => {
             ))}
           </section>
         </section>
-        <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
+        <div class="h-0.5 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
       </div>
     </>
   );
