@@ -1,10 +1,5 @@
 import * as React from "react";
 import arrow from "../images/svgs/arrow.svg";
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 4a720bfe845e87e4488726a8add6b5a58f2bfbef
 import FAQdata from "../helpers/FAQdata";
 import { useNav } from "../helpers/customHooks/useNav";
 
@@ -14,15 +9,15 @@ const FAQComponent = ({ Question, Answer }) => {
     <>
       <div
         onClick={() => setState(!state)}
-        className="cursor-pointer lg:mx-24 grid grid-cols-12 bg-gradient-to-r from-gradViolet to-gradPink text-lg md:text-2xl text-center text-white shadow-xl hover:shadow-md rounded-xl py-4 my-4"
+        className="cursor-pointer lg:mx-28 grid grid-cols-12 bg-gradient-to-r from-gradViolet to-gradPink text-lg md:text-xl text-center text-white shadow-xl hover:shadow-md rounded-xl py-3 my-4"
       >
         <div className="ml-auto hidden md:block">
           {state ? (
-            <div className="h-4 w-4">
+            <div className="h-3 w-3">
               <img src={arrow} alt="arrow" className="transform rotate-90" />
             </div>
           ) : (
-            <div className="h-4 w-4">
+            <div className="h-3 w-3">
               <img src={arrow} alt="arrow" />
             </div>
           )}
@@ -30,11 +25,11 @@ const FAQComponent = ({ Question, Answer }) => {
         <div className="col-span-12 md:col-span-10 px-4">{Question}</div>
         <div className="hidden md:block">
           {state ? (
-            <div className="h-4 w-4">
+            <div className="h-3 w-3">
               <img src={arrow} alt="arrow" className="transform rotate-90" />
             </div>
           ) : (
-            <div className="h-4 w-4">
+            <div className="h-3 w-3">
               <img src={arrow} alt="arrow" className="transform rotate-180" />
             </div>
           )}
@@ -43,7 +38,7 @@ const FAQComponent = ({ Question, Answer }) => {
       <div>
         <p
           className={
-            "p-2 text-white text-lg md:text-xl text-center md:w-2/3 mx-auto" +
+            "p-2 text-white text-lg md:text-xl text-center md:w-3/4 mx-auto" +
             (state ? " block" : " hidden")
           }
         >

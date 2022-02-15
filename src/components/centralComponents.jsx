@@ -30,7 +30,7 @@ const CentralComponents = () => {
   }, []);
   return (
     <>
-      <div className="min-h-screen relative pt-20" ref={homeRef} id='homeContainer'>
+      <div className="min-h-screen relative pt-12" ref={homeRef} id='homeContainer'>
         <section className="z-0">
           <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-20 left-20">
             <img src={libra} alt="libra" className="w-1/2" />
@@ -54,7 +54,7 @@ const CentralComponents = () => {
             <img src={group22} alt="group22" className="w-1/2" />
           </section>
         </section>
-        <div className="w-full pt-28 px-10 lg:p-20 pb-12">
+        <div className="w-full pt-28 px-10 lg:p-16 pb-12">
           <div className="lg:w-1/2 mx-auto">
             <img src={hackhublogo} alt="Hackhub 2022" />
           </div>

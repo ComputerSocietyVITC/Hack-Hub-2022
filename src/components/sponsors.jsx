@@ -3,6 +3,7 @@ import "../styles/navbar.css";
 import { useNav } from '../helpers/customHooks/useNav';
 import devFolio from "../images/sponsors/platinum/devfolio.png";
 import polygon from "../images/sponsors/platinum/polygon.png";
+import digitalocean from "../images/sponsors/platinum/digitalocean.png";
 import celo from "../images/sponsors/gold/celo.png";
 import tezos from "../images/sponsors/gold/tezos.png";
 import filecoin from "../images/sponsors/gold/filecoin.png";
@@ -11,6 +12,10 @@ import certopus from "../images/sponsors/silver/certopus.png";
 import echo from "../images/sponsors/silver/echo.png";
 import badeLog from "../images/sponsors/silver/badelog.png";
 import xyz from "../images/sponsors/silver/xyz.png";
+import leadinglearners from "../images/sponsors/silver/leadinglearners.png";
+import taskade from "../images/sponsors/silver/taskade.png";
+import axure from "../images/sponsors/silver/axure.png";
+import clerky from "../images/sponsors/silver/clerky.png";
 
 const page = [
   {
@@ -32,6 +37,11 @@ const page = [
             key: 2,
             src: polygon,
             href: 'https://polygon.technology/'
+          },
+          {
+            key: 3,
+            src: digitalocean,
+            href: 'https://www.digitalocean.com/'
           }
         ],
       },
@@ -82,13 +92,33 @@ const page = [
           {
             key: 3,
             src: badeLog,
-            href: 'https://badelog.in/'
+            href: 'https://badelog.co.in/'
           },
           {
             key: 4,
             src: xyz,
             href: 'https://gen.xyz/'
           },
+          {
+            key: 5,
+            src: taskade,
+            href: 'https://taskade.com/'
+          },
+          {
+            key: 6,
+            src: leadinglearners,
+            href: ' linktr.ee/leadinglearners'
+          },
+          {
+            key: 7,
+            src: axure,
+            href: 'https://www.axure.com/'
+          },
+          {
+            key: 8,
+            src: clerky,
+            href: 'https://www.clerky.com/'
+          }
         ],
       },
     ],
@@ -116,26 +146,27 @@ const Sponsors = () => {
           </section>
           <div class="h-1 w-full rounded-lg bg-white"></div>
         </section>
-        {/*<h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>*/}
-        {<section className="sm:mx-24 lg:mx-40">
+        {<section className="sm:mx-24 lg:mx-36">
           {page
             .filter((item) => {
               return item.textHeader === "SPONSORS";
             })[0]
             .sponsor.map((item) => {
               return (
-                <div className={"lg:h-60 col-span-4 rounded-3xl my-10 border-4 " + item.border} key={item.id}>
+                <div className={"col-span-4 rounded-3xl my-10 py-2 "} key={item.id}>
                   <SponsorTag Text={item.title} headingColor={item.headingColor} />
-                  <div className="lg:flex lg:justify-around bg-transparent lg:mt-10 mx-8">
+                  <div className="lg:flex lg:flex-wrap lg:justify-around bg-transparent mx-8" >
                     {item.content.map((item) => {
                       return (
-                        <a href={item.href} target="_blank" rel="noreferrer">
-                          <img
-                            className="h-16 lg:h-20 mx-auto my-2"
-                            key={item.key}
-                            src={item.src}
-                            alt={item.href}
-                          />
+                        <a href={item.href} target="_blank" rel="noreferrer" style={{ "flexBasis": "25%" }}>
+                          <div className="h-20 bg-white hover:bg-gray-200 m-6 rounded-xl">
+                            <img
+                              className="object-contain p-3 h-full w-full"
+                              key={item.key}
+                              src={item.src}
+                              alt={item.href}
+                            />
+                          </div>
                         </a>
                       );
                     })}
