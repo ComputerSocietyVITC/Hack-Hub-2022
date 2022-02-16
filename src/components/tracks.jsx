@@ -13,7 +13,9 @@ const Cards = ({ imgsource, title, content }) => {
   return (
     <>
       <section className="py-2">
-        <section className="grid lg:grid-cols-2 lg:gap-4 sm:grid-cols-1 w-auto h-auto mgnt-color">
+        <section
+          className={`grid lg:grid-cols-2 lg:gap-4  sm:grid-cols-1 w-auto h-auto`}
+        >
           <section className="col-start-1 lg:col-span-1 w-auto">
             <img src={imgsource} />
           </section>
@@ -48,23 +50,38 @@ const Tracks = () => {
           </section>
           <div class="h-1 w-full rounded-lg bg-white" />
         </section>
-        <h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>
-        {/* <section className="text-white font-Sansation font-bold text-4xl text-center">
+        <section className="text-white font-Sansation font-bold text-4xl text-center">
           <section className="grid lg:grid-cols-3 gap-4 md:grid-cols-3 md:gap-2 sm:grid-cols-1">
             <section className="px-4 lg:col-start-1 md:col-start-1 col-span-1 my-2">
-              <Cards title="Title" content={Content} imgsource={medical} />
-              <Cards title="Title" content={Content} imgsource={cash} />
+              <section className="my-4 bg-gradPink">
+                <Cards title="Title" content={Content} imgsource={medical} />
+              </section>
+              <section className="my-4 bg-[#960000]">
+                <Cards title="Title" content={Content} imgsource={cash} />
+              </section>
             </section>
             <section className="px-4 lg:col-start-2 md:col-start-2 col-span-1">
-              <Cards title="Title" content={Content} imgsource={education} />
-              <Cards title="Title" content={Content} imgsource={agriculture} />
+              <section className="my-4 bg-[#5915B0]">
+                <Cards title="Title" content={Content} imgsource={education} />
+              </section>
+              <section className="my-4 bg-[#597800]">
+                <Cards
+                  title="Title"
+                  content={Content}
+                  imgsource={agriculture}
+                />
+              </section>
             </section>
             <section className="px-4 lg:col-start-3 md:col-start-3 col-span-1">
-              <Cards title="Title" content={Content} imgsource={fitness} />
-              <Cards title="Title" content={Content} imgsource={bulb} />
+              <section className="my-4 bg-[#DD962A]">
+                <Cards title="Title" content={Content} imgsource={fitness} />
+              </section>
+              <section className="my-4 bg-[#388787]">
+                <Cards title="Title" content={Content} imgsource={bulb} />
+              </section>
             </section>
           </section>
-        </section> */}
+        </section>
       </div>
     </>
   );
