@@ -90,7 +90,7 @@ function Footer() {
 
   return (
     <section className="bg-black mt-16" ref={contactRef} id='contactContainer'>
-      <div class="h-0.5 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
+      <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
       <section className="py-2 grid lg:grid-cols-3 lg:gap-44">
         <div className="lg:ml-auto text-center order-1 lg:order-1">
           <div>
@@ -143,7 +143,7 @@ function Footer() {
           </div>
         </div>
       </section>
-      <div class="h-0.5 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
+      <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
       <p className="text-white items-left justify-left text-center text-base my-2 mx-10 lg:mx-0">
         Made With ❤️ by Team HackHub | ©️ IEEE CS VITC
       </p>

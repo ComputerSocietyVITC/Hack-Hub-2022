@@ -16,7 +16,7 @@ const TimeLine = () => {
 
   return (
     <>
-      <div className="md:min-h-screen px-8 py-4 sm:px-0" ref={timelineRef} id='timelineContainer'>
+      <div className="min-h-screen px-8 py-4 sm:px-0" ref={timelineRef} id='timelineContainer'>
         <section className="sm:w-1/3 lg:w-1/5 py-8">
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             TIMELINE
@@ -48,7 +48,7 @@ const TimeLine = () => {
               </div>
               <div className="w-32 md:w-5/12">
                 <div className="text-white text-bold md:text-xl text-xxs font-Sansation text-left">
-                  31st Jan 2022, 12:00
+                  31st Jan 2022, 12:00 AM
                 </div>
               </div>
             </div>
@@ -56,7 +56,7 @@ const TimeLine = () => {
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="w-32 md:w-5/12">
                 <div className="text-white text-bold md:text-xl text-xxs font-Sansation text-right">
-                  4th March 2022, 23:59
+                  4th March 2022, 11:59 PM
                 </div>
               </div>
               <div className="z-20 flex items-center ">
@@ -104,7 +104,7 @@ const TimeLine = () => {
               </div>
               <div className="w-32 md:w-5/12">
                 <div className="text-white text-bold md:text-xl text-xxs font-Sansation text-left">
-                  4th March 2022, 12:00
+                  4th March 2022, 12:00 PM
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ const TimeLine = () => {
             <div className="flex justify-between items-center w-full right-timeline">
               <div className="w-32 md:w-5/12">
                 <div className="text-white text-bold md:text-xl text-xxs font-Sansation text-right">
-                  6th March 2022, 12:00
+                  6th March 2022, 12:00 PM
                 </div>
               </div>
               <div className="z-20 flex items-center ">
@@ -160,7 +160,7 @@ const TimeLine = () => {
               </div>
               <div className="w-32 md:w-5/12">
                 <div className="text-white text-bold md:text-xl text-xxs font-Sansation text-left">
-                  8th March 2022, 18:00
+                  8th March 2022, 6:00 PM
                 </div>
               </div>
             </div>

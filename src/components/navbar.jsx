@@ -90,7 +90,7 @@ const Navbar = () => {
             ))}
           </section>
         </section>
-        <div class="h-0.5 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
+        <div class="h-1 w-full bg-gradient-to-r from-gradPink to-gradViolet"></div>
       </div>
     </>
   );
