@@ -53,11 +53,6 @@ const FAQdata = [
         "sr": "11",
         "Question": "Is a specific coding language required?",
         "Answer": "No, We do not have any restriction as far as coding language is concerned."
-    },
-    {
-        "sr": "12",
-        "Question": "I still have some doubt, how can I resolve them?",
-        "Answer": "You can ping us on Discord, on Twitter, on Instagram or you can mail us at ieeecomputersociety@vit.ac.in at any time of the day. We will try to respond as soon as possible."
     }
 ]
 

@@ -1,6 +1,6 @@
 import * as React from "react";
 import CountDown from "./countdown";
-import hackhublogo from "../images/hackhublogo.png";
+import hackhublogo from "../images/logo.svg";
 import discordlogo from "../images/footer/discord.png";
 import aries from "../images/svgs/aries.svg";
 import libra from "../images/svgs/libranew.png";
@@ -50,7 +50,7 @@ const CentralComponents = () => {
           <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 bottom-1/4 ">
             <img src={leo} alt="leo" className="w-3/4" />
           </section>
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-1/4 left-1/4">
+          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-1/3 left-1/4">
             <img src={group22} alt="group22" className="w-1/2" />
           </section>
         </section>
@@ -58,11 +58,11 @@ const CentralComponents = () => {
           <div className="lg:w-1/2 mx-auto">
             <img src={hackhublogo} alt="Hackhub 2022" />
           </div>
-          <div className="mt-2 lg:mt-6 text-center">
+          {/* <div className="mt-2 lg:mt-6 text-center">
             <h1 className="text-4xl lg:text-5xl font-Atmos mx-auto text-gray-300">
               2022
             </h1>
-          </div>
+          </div> */}
         </div>
         <CountDown />
         <div className="mt-28 lg:mt-16 lg:px-36 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-60">

@@ -23,7 +23,7 @@ const IndexPage = () => {
       </Helmet>
       <NavProvider>
         <Navbar />
-        <div className="bg-stars bg-cover bg-fixed z-0">
+        <div className=" bg-cover bg-fixed z-0">
           {/* <div className="bg-bgimage bg-fixed"> */}
           {/* <Background /> */}
           <CentralComponents />
