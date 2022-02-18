@@ -7,6 +7,7 @@ import Koii from "../images/sponsors/gold/koii.png";
 import Polygon from "../images/sponsors/platinum/polygon.png";
 import Tezos from "../images/sponsors/gold/tezos.png";
 import Celo from "../images/sponsors/gold/celo.png";
+import Raahee from "../images/sponsors/silver/raahee.png";
 
 const prizeList = [
   {
@@ -72,10 +73,11 @@ const sponsorPrizes = [
         border: "border-blue-800",
         buttonColor: "bg-blue-800",
         items: [
-          {
-            key: 1,
-          },
+          "₹10, 000 for the best hack built on Ethereum",
+          "₹15, 000 for the best hack built on Ethereum + Polygon",
+          "Eligibility for internship/full-time role interviews and seed funding of upto 5000 USD"
         ],
+        readMore: "https://www.notion.so/devfolio/Polygon-Devfolio-Hackathon-Season-Prize-de8961d5eeff4780963749da0b75037c"
       },
       {
         id: 2,
@@ -84,10 +86,10 @@ const sponsorPrizes = [
         border: "border-blue-400",
         buttonColor: "bg-blue-400",
         items: [
-          {
-            key: 1,
-          },
+          "₹20,000 for best Dapp built on Tezos",
+          "Continuity grant opportunity up to $5, 000 for outstanding projects"
         ],
+        readMore: "https://www.notion.so/devfolio/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff"
       },
       {
         id: 3,
@@ -96,10 +98,10 @@ const sponsorPrizes = [
         border: "border-green-400",
         buttonColor: "bg-green-400",
         items: [
-          {
-            key: 1,
-          },
+          "₹20,000 for best Dapp built on Celo",
+          "Continuity Support"
         ],
+        readMore: "https://www.notion.so/devfolio/Celo-Devfolio-Hackathon-Season-Prize-8b98dac17f134abeae863d5d98c01ff0"
       },
       {
         id: 4,
@@ -108,10 +110,9 @@ const sponsorPrizes = [
         border: "border-blue-900",
         buttonColor: "bg-blue-900",
         items: [
-          {
-            key: 2,
-          }
-        ]
+          "₹20000 for best use of IPFS and/or Filecoin"
+        ],
+        readMore: "https://devfolio.notion.site/Filecoin-Devfolio-Hackathon-Season-Prize-998fc3fe477e474086ae1d5ed1685203"
       },
       {
         id: 5,
@@ -120,10 +121,23 @@ const sponsorPrizes = [
         border: "border-gray-400",
         buttonColor: "bg-gray-400",
         items: [
-          {
-            key: 3,
-          }
-        ]
+          "First Prize - 20000 INR",
+          "Second Prize - 10000 INR",
+          "100 KOII - Most pull requests on Atomic NFT Repo",
+          "100 KOII - Everyone who adds a new standard to Atomic NFT"
+        ],
+        readMore: "https://pickle-cruiser-238.notion.site/Koii-Hackathon-Challenge-0580738b61794c7b99366cdd22641ae9"
+      },
+      {
+        id: 6,
+        head: Raahee,
+        alt: "Raahee",
+        border: "border-gray-400",
+        buttonColor: "bg-gray-400",
+        items: [
+          "Raahee will be providing an internship if they impressed by any project which matches the goal"
+        ],
+        readMore: "https://raahee.in/"
       }
     ],
   },
@@ -138,26 +152,26 @@ const Prize = (props) => {
   );
 };
 
-const SponsorPrize = (props) => {
-  const { header, alt } = props;
-  return (
-    <section>
-      <img className="h-16 mx-auto" src={header} alt={alt} />
-    </section>
-  );
-}
+// const SponsorPrize = (props) => {
+//   const { header, alt } = props;
+//   return (
+//     <section>
+//       <img className="h-16 mx-auto" src={header} alt={alt} />
+//     </section>
+//   );
+// }
 
-const Knowmore = (props) => {
-  const { Color } = props;
-  return (
-    <section>
-      <div className={"py-4 justify-center items-center text-center text-white font-Sansation"}>
-        <button className={"w-3/4 rounded py-4 " + Color}>KNOW MORE</button>
-      </div>
-    </section>
-  )
+// const Knowmore = (props) => {
+//   const { Color } = props;
+//   return (
+//     <section>
+//       <div className={"py-4 justify-center items-center text-center text-white font-Sansation"}>
+//         <button className={"w-3/4 rounded py-4 " + Color}>KNOW MORE</button>
+//       </div>
+//     </section>
+//   )
 
-}
+// }
 
 const Prizes = () => {
   const prizesRef = useNav("Prizes");
@@ -173,9 +187,8 @@ const Prizes = () => {
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             PRIZES
           </section>
-          <div class="h-1 w-full rounded-lg bg-white" />
+          <div className="h-1 w-full rounded-lg bg-white" />
         </section>
-
         <div
           className="grid gap-8 px-4 sm:px-40 md:px-12 xl:px-28 lg:grid-cols-3 md:gap-12 xl:gap-32 sm:grid-cols-1"
           id="prizes"
@@ -225,13 +238,13 @@ const Prizes = () => {
           </div>
         </div>
         <div className="py-20 text-4xl text-center font-Sansation font-bold uppercase text-white">CHALLENGE PRIZES</div>
-        <div className="grid lg:px-8 lg:grid-cols-3 lg:gap-8 md:grid-cols-3 md:gap-4 sm:grid-cols-1">
+        <div className="grid lg:grid-cols-3 justify-items-center px-20 grid-cols-1">
           {sponsorPrizes.filter((item) => {
             return item.sponsorHeader === "Sponsor Prizes";
           })[0].sponsorPrize.map((item) => {
             return (
               <div>
-                <SponsorPrize header={item.head} alt={item.alt} />
+                {/* <SponsorPrize header={item.head} alt={item.alt} />
                 <div className={"text-center rounded-3xl border-4 " + item.border} key={item.id}>
                   <div className="py-4 text-center font-Sansation text-bold leading-loose text-white">
                     {item.items.map((item) => {
@@ -243,7 +256,24 @@ const Prizes = () => {
                     })}
                   </div>
                   <Knowmore Color={item.buttonColor} />
+                </div> */}
+
+                <div class="prizescard">
+                  <div className="bg-white rounded-lg shadow-2xl">
+                    <img src={item.head} alt={item.alt} className="object-contain px-3" />
+                  </div>
+                  <div class="prizescard__content">
+                    {item.items.map((it) => {
+                      return (
+                        <li>
+                          {it}
+                        </li>
+                      );
+                    })}
+                    <a href={item.readMore} target="_blank">Read More</a>
+                  </div>
                 </div>
+
               </div>
             )
           })}

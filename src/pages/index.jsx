@@ -11,16 +11,30 @@ import Sponsors from "../components/sponsors";
 import Prizes from "../components/prizes";
 import Judges from "../components/judges";
 import Speakers from "../components/speakers";
+import Loader from "../components/loader";
 import NavProvider from '../helpers/NavContext';
 // import Background from "../components/background";
 
 const IndexPage = () => {
+
+  const [loading, setLoading] = React.useState(false);
+  React.useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>HackHub</title>
       </Helmet>
+      {
+        loading ?
+          (<Loader />) :
+          <></>}
       <NavProvider>
         <Navbar />
         <div className=" bg-cover bg-fixed z-0">
