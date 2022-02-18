@@ -41,25 +41,136 @@
 
 
 .prizescard {
-  min-height: 200px;
-  width: 320px;
-  margin: 40px 10px;
-  padding: 1.2rem 1rem 0 1rem;
-  cursor: pointer;
-  border-radius: 10px;
-  background-color: #333;
+  width: 340px;
+  background-color: #222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
 }
 
-.prizescard img {
+.prizescard a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.prizescard:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.prizescard__thumb {
+  height: 340px;
+  overflow: hidden;
+  background-color: #000;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.prizescard__thumb img {
+  width: 100%;
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.prizescard:hover .prizescard__thumb {
+  height: 130px;
+}
+
+.prizescard:hover .prizescard__thumb img {
+  opacity: 0.6;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.prizescard__body {
+  position: relative;
+  height: 60px;
+  padding-top: 10px;
+  text-align: center;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.prizescard:hover .prizescard__body {
+  height: 200px;
+}
+
+
+.prizescard__title {
+  margin: 0;
+  padding: 0 0 10px 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.prizescard__description {
+  color: #fff;
+  line-height: 27px;
+  opacity: 0;
+  padding: 10px 20px 0;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.prizescard__description::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+
+.prizescard__description::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 100vh;
+
+}
+
+.prizescard:hover .prizescard__description {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+
+
+.challprizescard {
+  min-height: 210px;
+  width: 320px;
+  margin: 40px 10px;
+  /* padding: 1.2rem 1rem 0 1rem; */
+  cursor: pointer;
+  border-radius: 10px;
+  /* background-color: #440089; */
+}
+
+.challprizescard img {
   width: 100%;
   height: 160px;
   border-radius: 10px;
   position: relative;
+  box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all .5s ease-in-out;
 }
 
-.prizescard__content {
-  margin: 1rem 0 0 0;
+.challprizescard__content {
+  margin: 1rem;
   color: #fff;
   overflow: hidden;
   margin-top: -240px;
@@ -68,18 +179,18 @@
   transition: all .5s ease-in-out;
 }
 
-.prizescard__content h2 {
+.challprizescard__content h2 {
   margin: .6rem auto;
   text-align: center;
 }
 
-.prizescard__content p {
+.challprizescard__content p {
   font-size: 1.1rem;
   line-height: 1.8rem;
   text-align: center;
 }
 
-.prizescard__content a {
+.challprizescard__content a {
   width: 200px;
   padding: 10px 15px;
   display: block;
@@ -93,18 +204,18 @@
   transition: .3s;
 }
 
-.prizescard__content a:hover {
+.challprizescard__content a:hover {
   color: #fff;
   background-color: #000;
 }
 
-.prizescard:hover img {
+.challprizescard:hover img {
   margin-top: -60px;
-  box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.prizescard:hover>.prizescard__content {
-  margin-top: 24px;
+.challprizescard:hover>.challprizescard__content {
+  margin-top: 12px;
   opacity: 1;
   visibility: visible;
 }

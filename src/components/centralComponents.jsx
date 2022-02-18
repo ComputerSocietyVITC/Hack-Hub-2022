@@ -86,9 +86,9 @@ const CentralComponents = () => {
           </div> */}
           <div className="z-20 cursor-pointer">
             <a href="https://discord.gg/UeGSd6fKNW" target="_blank" rel="noreferrer">
-              <div className="mx-auto lg:mx-0 drop-shadow-2xl flex items-center justify-center text-xl font-SanBold text-center text-white shadow-xl hover:shadow-sm rounded py-2" style={{ "backgroundColor": "#5865F2", "width": "312px" }}>
+              <div className="mx-auto lg:mx-0 drop-shadow-2xl flex items-center justify-center text-xl font-NunitoSans text-center text-white shadow-xl hover:shadow-sm rounded py-2" style={{ "backgroundColor": "#5865F2", "width": "312px" }}>
                 <img src={discordlogo} alt="Discord" className="w-8 mr-3" />
-                <button>JOIN US ON DISCORD</button>
+                <button>Join us on Discord</button>
               </div>
             </a>
           </div>

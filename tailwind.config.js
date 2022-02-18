@@ -10,6 +10,7 @@ module.exports = {
         SanBold: ["Sansation-Bold"],
         Saira: ["Saira-Condensed"],
         Arya: ["Arya"],
+        NunitoSans: ["Nunito-Sans"],
       },
       fontSize: {
         xxs: '0.65rem',
@@ -20,7 +21,7 @@ module.exports = {
       },
       backgroundImage: {
         'bgimage': "url('../images/bgimage.png')",
-        'stars': "url('../images/stars.png')",
+        'stars': "url('../images/starsbg.png')",
       },
       dropShadow: { white: "0 35px 35px #FFF" },
     },

@@ -3,40 +3,79 @@ import "../styles/cards.css";
 import "../styles/navbar.css";
 import { useNav } from "../helpers/customHooks/useNav";
 import medical from "../images/track/medical.png";
-import cash from "../images/track/cash.png";
+import finance from "../images/track/finance.png";
 import education from "../images/track/education.png";
-import agriculture from "../images/track/sunrise.png";
-import fitness from "../images/track/fitness.png";
-import bulb from "../images/track/bulb.png";
+import agriculture from "../images/track/agriculture.png";
+import lifestyle from "../images/track/lifestyle.jpg";
+import openinnovation from "../images/track/openinnovation.png";
 
-const Cards = ({ imgsource, title, content }) => {
-  return (
-    <>
-      <section className="py-2">
-        <section
-          className={`grid lg:grid-cols-2 lg:gap-4  sm:grid-cols-1 w-auto h-auto`}
-        >
-          <section className="col-start-1 lg:col-span-1 w-auto">
-            <img src={imgsource} />
-          </section>
-          <section className="lg:col-start-2 lg:col-span-1">
-            <section className="uppercase font-Sansation text-3xl font-semibold">
-              {title}
-            </section>
-            <section className="background-card font-Sansation font-regular text-lg text-left uppercase">
-              {content}
-            </section>
-          </section>
-        </section>
-      </section>
-    </>
-  );
-};
+// const Cards = ({ imgsource, title, content }) => {
+//   return (
+//     <>
+//       <section className="py-2">
+//         <section
+//           className={`grid lg:grid-cols-2 lg:gap-4  sm:grid-cols-1 w-auto h-auto`}
+//         >
+//           <section className="col-start-1 lg:col-span-1 w-auto">
+//             <img src={imgsource} />
+//           </section>
+//           <section className="lg:col-start-2 lg:col-span-1">
+//             <section className="uppercase font-Sansation text-3xl font-semibold">
+//               {title}
+//             </section>
+//             <section className="background-card font-Sansation font-regular text-lg text-left uppercase">
+//               {content}
+//             </section>
+//           </section>
+//         </section>
+//       </section>
+//     </>
+//   );
+// };
 
 const Tracks = () => {
+
+  const trackDetails = [
+    {
+      id: 1,
+      image: medical,
+      name: "Healthcare",
+      description: "Create innovative solutions that address various health-related issues and challenges such as the COVID19 pandemic, mental health, obesity, cardiovascular diseases and many more.",
+    },
+    {
+      id: 2,
+      image: education,
+      name: "Education",
+      description: "Tackle issues in the education sector by coming up with ideas that cater to the needs of teachers and/or students. Code with an aim to make education accessible, efficient, innovative.",
+    },
+    {
+      id: 3,
+      image: lifestyle,
+      name: "Lifestyle",
+      description: "Use technology to improve lifestyle, better everyday habits, enhance psychological well being. Elevate the living quality of the users by helping them to lead active healthy lives.",
+    },
+    {
+      id: 4,
+      image: finance,
+      name: "Finance",
+      description: "Solve intriguing challenges faced by the Fin-tech industry by automating, securing and enhancing the delivery and operation of financial technology.",
+    },
+    {
+      id: 5,
+      image: agriculture,
+      name: "Agriculture",
+      description: "Use technology to improve agricultural productivity, ensuring sustainable food security, come up with innovative solutions for the largest employer sector in India.",
+    },
+    {
+      id: 6,
+      image: openinnovation,
+      name: "Open Innovation",
+      description: "This track allows limitless scope and is intended for those who may be new to the developer headspace and/or have an amazing new idea in mind and desire to build on the concept.",
+    }
+  ];
   const tracksRef = useNav("Tracks");
-  const Content =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non sem mauris. Duis molestie finibus magna";
+  // const Content =
+  //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non sem mauris. Duis molestie finibus magna";
   return (
     <>
       <div
@@ -48,8 +87,10 @@ const Tracks = () => {
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             TRACKS
           </section>
-          <div class="h-1 w-full rounded-lg bg-white" />
+          <div className="h-1 w-full rounded-lg bg-white" />
         </section>
+
+        {/*
         <section className="text-white font-Sansation font-bold text-4xl text-center">
           <section className="grid lg:grid-cols-3 gap-4 md:grid-cols-3 md:gap-2 sm:grid-cols-1">
             <section className="px-4 lg:col-start-1 md:col-start-1 col-span-1 my-2">
@@ -74,14 +115,28 @@ const Tracks = () => {
             </section>
             <section className="px-4 lg:col-start-3 md:col-start-3 col-span-1">
               <section className="my-4 bg-[#DD962A]">
-                <Cards title="Title" content={Content} imgsource={fitness} />
+                <Cards title="Title" content={Content} imgsource={lifestyle} />
               </section>
               <section className="my-4 bg-[#388787]">
-                <Cards title="Title" content={Content} imgsource={bulb} />
+                <Cards title="Title" content={Content} imgsource={openinnovation} />
               </section>
             </section>
           </section>
-        </section>
+        </section> */}
+
+        <div className="grid gap-8 px-4 sm:px-40 md:px-12 xl:px-28 lg:grid-cols-3 md:gap-12 xl:gap-32 sm:grid-cols-1">
+          {trackDetails.map((track) => (
+            <article className="trackcard">
+              <header className="trackcard__thumb">
+                <img src={track.image} />
+              </header>
+              <div className="trackcard__body">
+                <h2 className="trackcard__title">{track.name}</h2>
+                <p className="trackcard__description">{track.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </>
   );

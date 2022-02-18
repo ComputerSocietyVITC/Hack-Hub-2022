@@ -3,11 +3,13 @@
   src: url("./fonts/Atmospheric.otf");
   font-style: normal;
 }
+
 @font-face {
   font-family: "Sansation";
   src: url("./fonts/Sansation_Regular.ttf");
   font-style: normal;
 }
+
 @font-face {
   font-family: "Sansation-Bold";
   src: url("./fonts/Sansation_Bold.ttf");
@@ -20,11 +22,13 @@
   src: url("./fonts/Sansation_Italic.ttf");
   font-style: italic;
 }
+
 @font-face {
   font-family: "Sansation";
   src: url("./fonts/Sansation_Light.ttf");
   font-weight: 300;
 }
+
 @font-face {
   font-family: "Sansation";
   src: url("./fonts/Sansation_Light_Italic.ttf");
@@ -50,13 +54,21 @@
   font-weight: 700;
   font-style: bold;
 }
+
 @font-face {
   font-family: "Arya";
   src: url("./fonts/Arya-Regular.ttf");
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Arya";
   src: url("./fonts/Arya-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Nunito-Sans";
+  src: url("./fonts/NunitoSans-SemiBold.ttf");
   font-weight: 700;
 }

@@ -115,7 +115,7 @@ const page = [
           {
             key: 6,
             src: leadinglearners,
-            href: ' linktr.ee/leadinglearners'
+            href: 'https://linktr.ee/leadinglearners'
           },
           {
             key: 7,

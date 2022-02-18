@@ -8,6 +8,11 @@ import Polygon from "../images/sponsors/platinum/polygon.png";
 import Tezos from "../images/sponsors/gold/tezos.png";
 import Celo from "../images/sponsors/gold/celo.png";
 import Raahee from "../images/sponsors/silver/raahee.png";
+import firstprize from "../images/track/firstprize.png";
+import secondprize from "../images/track/secondprize.png";
+import thirdprize from "../images/track/thirdprize.png";
+import rookie from "../images/track/rookie.png";
+import allparticipants from "../images/track/allparticipants.png";
 
 const prizeList = [
   {
@@ -16,45 +21,82 @@ const prizeList = [
     prize: [
       {
         id: 1,
-        head: "1st Prize",
-        border: "border-yellow-400",
-        bgclass: " first-place",
+        head: "2nd Prize",
+        bg: "bg-gray-400",
+        bgclass: " second-place",
+        image: secondprize,
         items: [
-          "Company Lifetime Package from Clerky",
-          "$1000 Digital Ocean Credits",
+          "$125 Digital Ocean Credits",
+          "₹1200/- GFG-discount coupon",
           "30% Discount from Badelog",
-          "1 year License of Axure- RP Team Plan",
+          "1 year License of Axure-RP Team Plan",
           "Lifetime upgrade of Taskade",
           "Leading Learners Expansion packs",
-          "Schwags from Devfolio"
+          "Swags and Goodies to all team members",
+          "Certificate of Appreciation"
         ],
       },
       {
         id: 2,
-        head: "2nd Prize",
-        border: "border-gray-400",
-        bgclass: " second-place",
+        head: "1st Prize",
+        bg: "bg-yellow-400",
+        bgclass: " first-place",
+        image: firstprize,
         items: [
-          "$500 Digital Ocean Credits",
+          "Company Lifetime Package from Clerky",
+          "$250 Digital Ocean Credits",
+          "₹1200/- GFG-discount coupon",
           "30% Discount from Badelog",
-          "1 year License of Axure- RP Team Plan",
+          "1 year License of Axure-RP Team Plan",
           "Lifetime upgrade of Taskade",
           "Leading Learners Expansion packs",
-          "Schwags from Devfolio"
+          "Swags and Goodies to all team members",
+          "Certificate of Appreciation"
         ],
       },
       {
         id: 3,
         head: "3rd Prize",
-        border: "border-yellow-700",
+        bg: "bg-yellow-700",
         bgclass: " third-place",
+        image: thirdprize,
         items: [
-          "$500 Digital Ocean Credits",
+          "$100 Digital Ocean Credits",
+          "₹1200/- GFG-discount coupon",
           "30% Discount from Badelog",
-          "1 year License of Axure- RP Team Plan",
+          "1 year License of Axure-RP Team Plan",
           "Lifetime upgrade of Taskade",
           "Leading Learners Expansion packs",
-          "Schwags from Devfolio"
+          "Swags and Goodies to all team members",
+          "Certificate of Appreciation"
+        ],
+      },
+      {
+        id: 4,
+        head: "Rookie Team Prize",
+        image: rookie,
+        items: [
+          "$100 Digital Ocean Credits",
+          "₹1200/- GFG-discount coupon",
+          "30% Discount from Badelog",
+          "Lifetime upgrade of Taskade",
+          "Certificate of Appreciation"
+        ],
+      },
+      {
+        id: 5,
+        head: "All participants",
+        image: allparticipants,
+        items: [
+          "100$ Digital Ocean Credits, 60-day Free trial",
+          "₹300/- GFG-discount coupon",
+          "Premium Tier services from Echo3D",
+          "Free XYZ domain name for 1 year",
+          "15% Discount from Coding Ninjas",
+          "Hacker Plan from Replit",
+          "15% Discount from Badelog",
+          "5-Year free upgrades from Taskade",
+          "Certificate of Participation"
         ],
       },
     ],
@@ -70,8 +112,10 @@ const sponsorPrizes = [
         id: 1,
         head: Polygon,
         alt: "Polygon",
+        title: "Best Hack built with Ethereum",
         border: "border-blue-800",
         buttonColor: "bg-blue-800",
+        color: "#8247e5",
         items: [
           "₹10, 000 for the best hack built on Ethereum",
           "₹15, 000 for the best hack built on Ethereum + Polygon",
@@ -83,8 +127,10 @@ const sponsorPrizes = [
         id: 2,
         head: Tezos,
         alt: "Tezos",
+        title: "Best Hack built on Tezos",
         border: "border-blue-400",
         buttonColor: "bg-blue-400",
+        color: "#0D61FF",
         items: [
           "₹20,000 for best Dapp built on Tezos",
           "Continuity grant opportunity up to $5, 000 for outstanding projects"
@@ -95,8 +141,10 @@ const sponsorPrizes = [
         id: 3,
         head: Celo,
         alt: "Celo",
+        title: "Best Hack built on Celo",
         border: "border-green-400",
         buttonColor: "bg-green-400",
+        color: "#35d07f",
         items: [
           "₹20,000 for best Dapp built on Celo",
           "Continuity Support"
@@ -107,8 +155,10 @@ const sponsorPrizes = [
         id: 4,
         head: Filecoin,
         alt: "Filecoin",
+        title: "Best use of IPFS and/or Filecoin",
         border: "border-blue-900",
         buttonColor: "bg-blue-900",
+        color: "#0090ff",
         items: [
           "₹20000 for best use of IPFS and/or Filecoin"
         ],
@@ -118,8 +168,10 @@ const sponsorPrizes = [
         id: 5,
         head: Koii,
         alt: "Koii",
+        title: "Best use of Atomic NFT",
         border: "border-gray-400",
         buttonColor: "bg-gray-400",
+        color: "#0a0a3e",
         items: [
           "First Prize - 20000 INR",
           "Second Prize - 10000 INR",
@@ -132,25 +184,26 @@ const sponsorPrizes = [
         id: 6,
         head: Raahee,
         alt: "Raahee",
+        title: "Internship Opportunity",
         border: "border-gray-400",
         buttonColor: "bg-gray-400",
+        color: "#fc8c8c",
         items: [
           "Raahee will be providing an internship if they impressed by any project which matches the goal"
-        ],
-        readMore: "https://raahee.in/"
+        ]
       }
     ],
   },
 ];
 
-const Prize = (props) => {
-  const { title, border } = props;
-  return (
-    <section className={"text-3xl font-Sansation border-b-2 w-auto mb-4 inline-block font-bold text-white " + border}>
-      {title}
-    </section>
-  );
-};
+// const Prize = (props) => {
+//   const { title, border } = props;
+//   return (
+//     <section className={"text-3xl font-Sansation border-b-2 w-auto mb-4 inline-block font-bold text-white " + border}>
+//       {title}
+//     </section>
+//   );
+// };
 
 // const SponsorPrize = (props) => {
 //   const { header, alt } = props;
@@ -179,7 +232,7 @@ const Prizes = () => {
   return (
     <>
       <div
-        className="mt-12 px-8 sm:px-0 mb-40"
+        className="mt-12 px-8 sm:px-0 mb-28"
         ref={prizesRef}
         id="prizesContainer"
       >
@@ -190,7 +243,7 @@ const Prizes = () => {
           <div className="h-1 w-full rounded-lg bg-white" />
         </section>
         <div
-          className="grid gap-8 px-4 sm:px-40 md:px-12 xl:px-28 lg:grid-cols-3 md:gap-12 xl:gap-32 sm:grid-cols-1"
+          className=" px-4 sm:px-40 md:px-12 xl:px-28 lg:flex lg:flex-wrap lg:justify-around"
           id="prizes"
         >
           {prizeList
@@ -199,26 +252,28 @@ const Prizes = () => {
             })[0]
             .prize.map((item) => {
               return (
-                <div
-                  className={"text-center rounded-3xl opacity-90 hover:opacity-100 py-8 border-2 " + item.border + item.bgclass}
-                  key={item.id}
-                >
-                  <Prize title={item.head} border={item.border} />
-                  <ul className="py-4 list-disc list-inside text-center text-bold leading-loose text-white">
-                    {item.items.map((item) => {
-                      return (
-                        <li>
-                          {item}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
+                <article className="prizescard my-8" style={{ "flexBasis": "28%" }}>
+                  <header className="prizescard__thumb">
+                    <img src={item.image} />
+                  </header>
+                  <div className="prizescard__body">
+                    <h2 className="prizescard__title">{item.head}</h2>
+                    <div class="prizescard__description">
+                      {item.items.map((it) => {
+                        return (
+                          <li>
+                            {it}
+                          </li>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </article>
               );
             })}
         </div>
 
-        <div
+        {/* <div
           className="participation mt-20 sm:mx-12 lg:mx-60 rounded-3xl border-2 opacity-90 hover:opacity-100 border-gray-200"
           id="Participation"
         >
@@ -236,8 +291,8 @@ const Prizes = () => {
               <li>5-Year free upgrades from Taskade</li>
             </ul>
           </div>
-        </div>
-        <div className="py-20 text-4xl text-center font-Sansation font-bold uppercase text-white">CHALLENGE PRIZES</div>
+        </div> */}
+        <div className="py-16 text-4xl text-center font-Sansation font-bold uppercase text-white">CHALLENGE PRIZES</div>
         <div className="grid lg:grid-cols-3 justify-items-center px-20 grid-cols-1">
           {sponsorPrizes.filter((item) => {
             return item.sponsorHeader === "Sponsor Prizes";
@@ -258,11 +313,14 @@ const Prizes = () => {
                   <Knowmore Color={item.buttonColor} />
                 </div> */}
 
-                <div class="prizescard">
+                <div class="challprizescard" style={{ "backgroundColor": item.color }}>
                   <div className="bg-white rounded-lg shadow-2xl">
                     <img src={item.head} alt={item.alt} className="object-contain px-3" />
                   </div>
-                  <div class="prizescard__content">
+                  <div className="text-lg text-center mt-3 font-bold text-white">
+                    {item.title}
+                  </div>
+                  <div class="challprizescard__content">
                     {item.items.map((it) => {
                       return (
                         <li>
@@ -270,7 +328,7 @@ const Prizes = () => {
                         </li>
                       );
                     })}
-                    <a href={item.readMore} target="_blank">Read More</a>
+                    {item.readMore ? <a href={item.readMore} target="_blank">Read More</a> : <div className="mb-6" />}
                   </div>
                 </div>
 
