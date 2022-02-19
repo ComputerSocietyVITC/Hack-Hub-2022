@@ -2,13 +2,13 @@ import * as React from "react";
 import CountDown from "./countdown";
 import hackhublogo from "../images/logo.svg";
 import discordlogo from "../images/footer/discord.png";
-import aries from "../images/svgs/aries.svg";
-import libra from "../images/svgs/libranew.png";
-import virgo from "../images/svgs/virgonew.png";
-import aquaris from "../images/svgs/Aquaris.svg";
-import pisces from "../images/svgs/pisces.svg";
-import leo from "../images/svgs/leo.svg";
-import group22 from "../images/svgs/Group_22.svg";
+import aries from "../images/svgs/Aries.png";
+import libra from "../images/svgs/libra.png";
+import virgo from "../images/svgs/virgo.png";
+import aquaris from "../images/svgs/Aquaris.png";
+import pisces from "../images/svgs/pisces.png";
+import leo from "../images/svgs/leo.png";
+import group22 from "../images/svgs/Group_22.png";
 import { useNav } from '../helpers/customHooks/useNav';
 
 const CentralComponents = () => {
@@ -33,7 +33,7 @@ const CentralComponents = () => {
       <div className="min-h-screen relative pt-12" ref={homeRef} id='homeContainer'>
         <section className="z-0">
           <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-20 left-20">
-            <img src={libra} alt="libra" className="w-1/2" />
+            <img src={libra} alt="libra" className="w-2/3" />
           </section>
           <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-0 left-1/3">
             <img src={virgo} alt="virgo" className="w-2/3" />
@@ -47,8 +47,8 @@ const CentralComponents = () => {
           <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 bottom-0 right-1/4">
             <img src={aries} alt="aries" className="w-1/2 ml-16" />
           </section>
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 bottom-1/4 ">
-            <img src={leo} alt="leo" className="w-3/4" />
+          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 bottom-40 ">
+            <img src={leo} alt="leo" className="w-full" />
           </section>
           <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-1/3 left-1/4">
             <img src={group22} alt="group22" className="w-1/2" />

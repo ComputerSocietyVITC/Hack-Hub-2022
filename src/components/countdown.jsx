@@ -46,10 +46,10 @@ const CountDown = () => {
 
   return (
     <>
-      <section className="px-2 md:px-5 py-5 font-Sansation font-bold mt-16 md:mt-0 z-20 relative">
+      <section className="px-2 md:px-5 py-5 font-Sansation font-bold mt-16 md:mt-0">
         <section className="text-2xl sm:text-4xl md:text-5xl text-center flex w-full items-center justify-center bg-clip-text text-transparent bg-gradient-to-r from-gradViolet via-gradPink to-gradViolet">
           <div>
-            <section className="mx-1 md:mx-4 grid grid-cols-2">
+            <section className="z-20 relative mx-1 md:mx-4 grid grid-cols-2">
               <section className="w-10 sm:w-16 md:w-20 mx-1 md:mx-2 h-10 sm:h-16 md:h-20 rounded-lg p-1 sm:p-4 bg-gradPink bg-opacity-10 border-gradPink border">
                 <section className="text-gradPink">{timerDays[0]}</section>
               </section>

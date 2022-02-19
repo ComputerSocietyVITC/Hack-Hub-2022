@@ -134,3 +134,23 @@ backface-visibility: hidden;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
+@media only screen and (max-width: 600px) {
+  .trackcard {
+    width: 280px;
+    margin: auto;
+  }
+
+  .trackcard__thumb {
+    height: 240px;
+  }
+
+  .trackcard:hover .trackcard__body {
+    height: 220px;
+  }
+
+
+  .trackcard__description {
+    padding: 0 10px;
+  }
+}

@@ -148,7 +148,26 @@
   transition-delay: 0.2s;
 }
 
+@media only screen and (max-width: 600px) {
+  .prizescard {
+    width: 280px;
+    margin: 12px auto;
+  }
 
+  .prizescard__thumb {
+    height: 240px;
+  }
+
+  .prizescard:hover .prizescard__body {
+    height: 220px;
+  }
+
+
+  .prizescard__description {
+    padding: 0 10px;
+    height: 75%;
+  }
+}
 
 .challprizescard {
   min-height: 210px;

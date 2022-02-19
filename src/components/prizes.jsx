@@ -23,7 +23,7 @@ const prizeList = [
         id: 1,
         head: "2nd Prize",
         bg: "bg-gray-400",
-        bgclass: " second-place",
+        bgclass: " order-2 md:order-1",
         image: secondprize,
         items: [
           "$125 Digital Ocean Credits",
@@ -40,7 +40,7 @@ const prizeList = [
         id: 2,
         head: "1st Prize",
         bg: "bg-yellow-400",
-        bgclass: " first-place",
+        bgclass: "  order-1 md:order-2",
         image: firstprize,
         items: [
           "Company Lifetime Package from Clerky",
@@ -58,7 +58,7 @@ const prizeList = [
         id: 3,
         head: "3rd Prize",
         bg: "bg-yellow-700",
-        bgclass: " third-place",
+        bgclass: " order-3",
         image: thirdprize,
         items: [
           "$100 Digital Ocean Credits",
@@ -74,6 +74,7 @@ const prizeList = [
       {
         id: 4,
         head: "Rookie Team Prize",
+        bgclass: " order-4",
         image: rookie,
         items: [
           "$100 Digital Ocean Credits",
@@ -85,7 +86,8 @@ const prizeList = [
       },
       {
         id: 5,
-        head: "All participants",
+        head: "All Participants",
+        bgclass: " order-5",
         image: allparticipants,
         items: [
           "100$ Digital Ocean Credits, 60-day Free trial",
@@ -236,14 +238,14 @@ const Prizes = () => {
         ref={prizesRef}
         id="prizesContainer"
       >
-        <section className="sm:w-1/3 lg:w-1/5 my-8 py-12">
+        <section className="sm:w-1/3 lg:w-1/5 py-12">
           <section className="text-white font-Sansation font-bold text-5xl text-center">
             PRIZES
           </section>
           <div className="h-1 w-full rounded-lg bg-white" />
         </section>
         <div
-          className=" px-4 sm:px-40 md:px-12 xl:px-28 lg:flex lg:flex-wrap lg:justify-around"
+          className=" px-4 sm:px-40 md:px-12 lg:px-28 grid grid-cols-1 md:flex md:flex-wrap md:justify-around"
           id="prizes"
         >
           {prizeList
@@ -252,7 +254,7 @@ const Prizes = () => {
             })[0]
             .prize.map((item) => {
               return (
-                <article className="prizescard my-8" style={{ "flexBasis": "28%" }}>
+                <article className={"prizescard my-8" + item.bgclass} style={{ "flexBasis": "28%" }}>
                   <header className="prizescard__thumb">
                     <img src={item.image} />
                   </header>
