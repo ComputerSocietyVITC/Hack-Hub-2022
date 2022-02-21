@@ -164,7 +164,7 @@ const Sponsors = () => {
           </section>
           <div class="h-1 w-full rounded-lg bg-white"></div>
         </section>
-        {<section className="sm:mx-24 lg:mx-36">
+        {<section className="sm:mx-24 lg:mx-32">
           {page
             .filter((item) => {
               return item.textHeader === "SPONSORS";

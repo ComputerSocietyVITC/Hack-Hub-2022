@@ -24,6 +24,9 @@ module.exports = {
         'stars': "url('../images/starsbg.png')",
       },
       dropShadow: { white: "0 35px 35px #FFF" },
+      transitionProperty: {
+        'max-height': 'max-height',
+      }
     },
   },
   variants: {

@@ -26,8 +26,8 @@ const CountDown = () => {
       if (seconds.length === 1) seconds = "0" + seconds;
       if (distance < 0) {
         //stop timer and load Play Area
-        clearInterval(interval.current);
-        window.location.reload();
+        clearInterval(interval);
+        // window.location.reload();
       } else {
         //update timer
         setTimerDays(days);
@@ -40,7 +40,7 @@ const CountDown = () => {
   useEffect(() => {
     startTimer();
     return () => {
-      clearInterval(interval.current);
+      clearInterval(interval);
     };
   }, []);
 

@@ -1,19 +1,19 @@
 import React from "react";
-import icon from "../images/icon.png";
+// import icon from "../images/icon.png";
 import "../styles/navbar.css";
 import { useNav } from "../helpers/customHooks/useNav";
 
-const Cards = ({ source }) => {
-  return (
-    <>
-      <section className="">
-        <section className="py-2 w-auto">
-          <img src={source} />
-        </section>
-      </section>
-    </>
-  );
-};
+// const Cards = ({ source }) => {
+//   return (
+//     <>
+//       <section className="">
+//         <section className="py-2 w-auto">
+//           <img src={source} />
+//         </section>
+//       </section>
+//     </>
+//   );
+// };
 
 const Speakers = () => {
   const speakersRef = useNav("Speakers");

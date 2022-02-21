@@ -256,7 +256,7 @@ const Prizes = () => {
               return (
                 <article className={"prizescard my-8" + item.bgclass} style={{ "flexBasis": "28%" }}>
                   <header className="prizescard__thumb">
-                    <img src={item.image} />
+                    <img src={item.image} alt={item.head} />
                   </header>
                   <div className="prizescard__body">
                     <h2 className="prizescard__title">{item.head}</h2>
@@ -330,7 +330,7 @@ const Prizes = () => {
                         </li>
                       );
                     })}
-                    {item.readMore ? <a href={item.readMore} target="_blank">Read More</a> : <div className="mb-6" />}
+                    {item.readMore ? <a href={item.readMore} target="_blank" rel="noreferrer">Read More</a> : <div className="mb-6" />}
                   </div>
                 </div>
 

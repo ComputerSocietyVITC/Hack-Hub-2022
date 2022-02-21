@@ -124,11 +124,11 @@ const Tracks = () => {
           </section>
         </section> */}
 
-        <div className="grid gap-8 px-4 sm:px-40 md:px-12 xl:px-28 lg:grid-cols-3 md:gap-12 xl:gap-32 sm:grid-cols-1">
+        <div className="grid gap-8 px-4 sm:px-40 md:px-12 xl:px-32 lg:grid-cols-3 md:gap-12 xl:gap-28 sm:grid-cols-1">
           {trackDetails.map((track) => (
             <article className="trackcard">
               <header className="trackcard__thumb">
-                <img src={track.image} />
+                <img src={track.image} alt={track.name} />
               </header>
               <div className="trackcard__body">
                 <h2 className="trackcard__title">{track.name}</h2>
