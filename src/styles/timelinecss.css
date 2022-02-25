@@ -1,15 +1,17 @@
-.timeline-section{
+.timeline-section {
 	min-height: 100vh;
 	padding: 15px 15px;
 }
-.timeline-items{
+
+.timeline-items {
 	max-width: 600px;
-	margin:auto;
+	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
 }
-.timeline-items::before{
+
+.timeline-items::before {
 	content: '';
 	position: absolute;
 	width: 2px;
@@ -17,69 +19,81 @@
 	background-color: #222222;
 	left: calc(50% - 1px);
 }
-.timeline-item{
+
+.timeline-item {
 	margin-bottom: 40px;
 	width: 100%;
 	position: relative;
 }
-.timeline-item:last-child{
+
+.timeline-item:last-child {
 	margin-bottom: 0;
 }
-.timeline-item:nth-child(odd){
-  padding-right: calc(50% + 30px);
+
+.timeline-item:nth-child(odd) {
+	padding-right: calc(50% + 30px);
 	text-align: center;
 }
-.timeline-item:nth-child(even){
-    padding-left: calc(50% + 30px);
-    text-align: center;
+
+.timeline-item:nth-child(even) {
+	padding-left: calc(50% + 30px);
+	text-align: center;
 }
-.timeline-dot{
+
+.timeline-dot {
 	height: 16px;
 	width: 16px;
 	background-color: #ff005d;
 	position: absolute;
 	left: calc(50% - 8px);
 	border-radius: 50%;
-	top:10px;
+	top: 10px;
 }
-.timeline-date{
+
+.timeline-date {
 	font-size: 18px;
 	color: #ff005d;
-	margin:6px 0 15px;
+	margin: 6px 0 15px;
 }
-.timeline-content{
-  background-color: #222222;
-	padding: 20px;
+
+.timeline-content {
+	background-color: #222222;
+	padding: 14px;
 	border-radius: 5px;
 }
-.timeline-content h3{
-  font-size: 20px;
+
+.timeline-content h3 {
+	font-size: 20px;
 	color: #ffffff;
-	margin:0 0 10px;
+	margin: 0 0 4px;
 	text-transform: capitalize;
 	font-weight: 500;
 }
-.timeline-content p{
-  color: #c8c8c8;
+
+.timeline-content p {
+	color: #c8c8c8;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 22px;
 }
 
 /* responsive */
-@media(max-width: 767px){
-	.timeline-items::before{
+@media(max-width: 767px) {
+	.timeline-items::before {
 		left: 7px;
 	}
-	.timeline-item:nth-child(odd){
+
+	.timeline-item:nth-child(odd) {
 		padding-right: 0;
 		text-align: center
 	}
+
 	.timeline-item:nth-child(odd),
-	.timeline-item:nth-child(even){
+	.timeline-item:nth-child(even) {
 		padding-left: 37px;
 	}
-	.timeline-dot{
-		left:0;
+
+	.timeline-dot {
+		left: 0;
 	}
 }

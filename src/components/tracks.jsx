@@ -40,36 +40,42 @@ const Tracks = () => {
       id: 1,
       image: medical,
       name: "Healthcare",
+      bgcolor: "#6081c1",
       description: "Create innovative solutions that address various health-related issues and challenges such as the COVID19 pandemic, mental health, obesity, cardiovascular diseases and many more.",
     },
     {
       id: 2,
       image: education,
       name: "Education",
+      bgcolor: "#de9244",
       description: "Tackle issues in the education sector by coming up with ideas that cater to the needs of teachers and/or students. Code with an aim to make education accessible, efficient, innovative.",
     },
     {
       id: 3,
       image: lifestyle,
       name: "Lifestyle",
+      bgcolor: "#6081c1",
       description: "Use technology to improve lifestyle, better everyday habits, enhance psychological well being. Elevate the living quality of the users by helping them to lead active healthy lives.",
     },
     {
       id: 4,
       image: finance,
       name: "Finance",
+      bgcolor: "#de9244",
       description: "Solve intriguing challenges faced by the Fin-tech industry by automating, securing and enhancing the delivery and operation of financial technology.",
     },
     {
       id: 5,
       image: agriculture,
       name: "Agriculture",
+      bgcolor: "#6081c1",
       description: "Use technology to improve agricultural productivity, ensuring sustainable food security, come up with innovative solutions for the largest employer sector in India.",
     },
     {
       id: 6,
       image: openinnovation,
       name: "Open Innovation",
+      bgcolor: "#de9244",
       description: "This track allows limitless scope and is intended for those who may be new to the developer headspace and/or have an amazing new idea in mind and desire to build on the concept.",
     }
   ];
@@ -126,7 +132,7 @@ const Tracks = () => {
 
         <div className="grid gap-8 px-4 sm:px-40 md:px-12 xl:px-32 lg:grid-cols-3 md:gap-12 xl:gap-28 sm:grid-cols-1">
           {trackDetails.map((track) => (
-            <article className="trackcard">
+            <article className="trackcard" style={{ "backgroundColor": track.bgcolor }}>
               <header className="trackcard__thumb">
                 <img src={track.image} alt={track.name} />
               </header>
