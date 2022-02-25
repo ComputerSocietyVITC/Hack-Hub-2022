@@ -17,9 +17,8 @@ import NavProvider from '../helpers/NavContext';
 
 const IndexPage = () => {
 
-  const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
-    setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 3100)
