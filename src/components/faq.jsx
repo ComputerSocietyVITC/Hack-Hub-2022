@@ -54,15 +54,15 @@ const FrequentlyAskedQuestions = () => {
   return (
     <>
       <div
-        className="min-h-screen px-8 sm:px-0 mt-24"
+        className="min-h-screen px-8 sm:px-0 mt-16"
         ref={faqsRef}
         id="faqsContainer"
       >
-        <section className="sm:w-1/3 lg:w-1/5 my-8 py-12">
-          <section className="text-white font-Sansation font-bold text-5xl text-center">
+        <section className="sm:w-1/3 lg:w-1/5 my-8 py-12 mx-auto">
+          <section className="text-gradPink font-Sansation font-bold text-5xl md:text-6xl text-center">
             FAQs
           </section>
-          <div class="h-1 w-full rounded-lg bg-white"></div>
+          {/* <div class="h-1 w-full rounded-lg bg-white"></div> */}
         </section>
         <div className="w-full md:px-40">
           {FAQdata.map((faq) =>

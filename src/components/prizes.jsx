@@ -238,11 +238,11 @@ const Prizes = () => {
         ref={prizesRef}
         id="prizesContainer"
       >
-        <section className="sm:w-1/3 lg:w-1/5 py-12">
-          <section className="text-white font-Sansation font-bold text-5xl text-center">
+        <section className="sm:w-1/3 lg:w-1/5 py-12 mx-auto">
+          <section className="text-gradPink font-Sansation font-bold text-5xl md:text-6xl text-center">
             PRIZES
           </section>
-          <div className="h-1 w-full rounded-lg bg-white" />
+          {/* <div className="h-1 w-full rounded-lg bg-white" /> */}
         </section>
         <div
           className=" px-4 sm:px-40 md:px-12 lg:px-28 grid grid-cols-1 md:flex md:flex-wrap md:justify-around"
@@ -294,7 +294,7 @@ const Prizes = () => {
             </ul>
           </div>
         </div> */}
-        <div className="py-16 text-4xl text-center font-Sansation font-bold uppercase text-white">CHALLENGE PRIZES</div>
+        <div className="py-16 text-4xl text-center font-Sansation font-bold uppercase text-gradPink">CHALLENGE PRIZES</div>
         <div className="grid lg:grid-cols-3 justify-items-center px-20 grid-cols-1">
           {sponsorPrizes.filter((item) => {
             return item.sponsorHeader === "Sponsor Prizes";

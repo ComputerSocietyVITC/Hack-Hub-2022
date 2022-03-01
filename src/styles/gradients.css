@@ -42,7 +42,7 @@
 
 .prizescard {
   width: 340px;
-  background-color: #222;
+  background-color: transparent;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   -webkit-transition: box-shadow 0.5s;
@@ -61,7 +61,7 @@
 .prizescard__thumb {
   height: 340px;
   overflow: hidden;
-  background-color: #000;
+  background-color: transparent;
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
@@ -106,7 +106,7 @@
   margin: 0;
   padding: 0 0 10px 0;
   color: #fff;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
 }

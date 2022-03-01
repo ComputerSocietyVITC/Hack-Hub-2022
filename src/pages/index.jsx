@@ -11,6 +11,7 @@ import Sponsors from "../components/sponsors";
 import Prizes from "../components/prizes";
 import Judges from "../components/judges";
 import Speakers from "../components/speakers";
+import CommunityPartners from "../components/communityPartners";
 import Loader from "../components/loader";
 import NavProvider from '../helpers/NavContext';
 // import Background from "../components/background";
@@ -21,7 +22,7 @@ const IndexPage = () => {
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3100)
+    }, 3000)
   }, [])
 
   return (
@@ -36,7 +37,7 @@ const IndexPage = () => {
           <></>}
       <NavProvider>
         <Navbar />
-        <div className=" bg-cover bg-fixed z-0">
+        <div className="bg-stars bg-cover bg-fixed z-0">
           {/* <div className="bg-bgimage bg-fixed"> */}
           {/* <Background /> */}
           <CentralComponents />
@@ -47,6 +48,7 @@ const IndexPage = () => {
           <Speakers />
           <Judges />
           <Sponsors />
+          <CommunityPartners />
           <FrequentlyAskedQuestions />
           <Footer />
         </div>

@@ -51,9 +51,10 @@
 }
 
 .timeline-date {
-	font-size: 18px;
+	font-size: 19px;
 	color: #ff005d;
-	margin: 6px 0 15px;
+	margin: 6px 0 12px;
+	font-weight: 500;
 }
 
 .timeline-content {

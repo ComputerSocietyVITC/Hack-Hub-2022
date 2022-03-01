@@ -32,25 +32,25 @@ const CentralComponents = () => {
     <>
       <div className="min-h-screen relative pt-12" ref={homeRef} id='homeContainer'>
         <section className="z-0">
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-20 left-20">
+          <section className="absolute opacity-0 hidden lg:block hover:opacity-100 transition duration-500 top-20 left-20">
             <img src={libra} alt="libra" className="w-2/3" />
           </section>
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-0 left-1/3">
+          <section className="absolute opacity-0 hidden lg:block hover:opacity-100 transition duration-500 top-0 left-1/3">
             <img src={virgo} alt="virgo" className="w-2/3" />
           </section>
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-6 right-20">
+          <section className="absolute opacity-0 hidden lg:block hover:opacity-100 transition duration-500 top-6 right-20">
             <img src={aquaris} alt="aquaris" className="w-2/3" />
           </section>
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 bottom-1/4 right-0">
+          <section className="absolute opacity-0 hidden lg:block hover:opacity-100 transition duration-500 bottom-1/4 right-0">
             <img src={pisces} alt="pisces" className="w-2/3 ml-auto" />
           </section>
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 bottom-0 right-1/4">
+          <section className="absolute opacity-0 hidden lg:block hover:opacity-100 transition duration-500 bottom-0 right-1/4">
             <img src={aries} alt="aries" className="w-1/2 ml-16" />
           </section>
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 bottom-40 ">
+          <section className="absolute opacity-0 hidden lg:block hover:opacity-100 transition duration-500 bottom-40 ">
             <img src={leo} alt="leo" className="w-full" />
           </section>
-          <section className="absolute opacity-25 hidden lg:block hover:opacity-100 transition duration-500 top-1/3 left-1/4">
+          <section className="absolute opacity-0 hidden lg:block hover:opacity-100 transition duration-500 top-1/3 left-1/4">
             <img src={group22} alt="group22" className="w-1/2" />
           </section>
         </section>

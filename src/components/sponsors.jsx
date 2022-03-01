@@ -19,6 +19,10 @@ import axure from "../images/sponsors/silver/axure.png";
 import clerky from "../images/sponsors/silver/clerky.png";
 import codingninjas from "../images/sponsors/silver/codingninjas.png";
 import raahee from "../images/sponsors/silver/raahee.png";
+import replit from "../images/sponsors/silver/replit.png";
+import scriptfoundation from "../images/sponsors/silver/scriptfoundation.png";
+import simpliclarify from "../images/sponsors/silver/simpliclarify.png";
+import jetbrains from "../images/sponsors/silver/jetbrains.png";
 
 const page = [
   {
@@ -136,6 +140,26 @@ const page = [
             key: 10,
             src: raahee,
             href: 'https://raahee.in/'
+          },
+          {
+            key: 11,
+            src: jetbrains,
+            href: 'https://www.jetbrains.com/'
+          },
+          {
+            key: 12,
+            src: replit,
+            href: 'https://replit.com/'
+          },
+          {
+            key: 13,
+            src: scriptfoundation,
+            href: 'https://www.scriptindia.org/'
+          },
+          {
+            key: 14,
+            src: simpliclarify,
+            href: 'https://www.simpliclarify.com/'
           }
         ],
       },
@@ -158,11 +182,11 @@ const Sponsors = () => {
   return (
     <>
       <div className="mt-24 px-8 sm:px-0" ref={sponsorsRef} id='sponsContainer'>
-        <section className="sm:w-1/3 lg:w-1/5 my-8 py-12">
-          <section className="text-white font-Sansation font-bold text-5xl text-center">
+        <section className="sm:w-1/3 lg:w-1/5 my-8 py-12 mx-auto">
+          <section className="text-gradPink font-Sansation font-bold text-5xl md:text-6xl text-center">
             SPONSORS
           </section>
-          <div class="h-1 w-full rounded-lg bg-white"></div>
+          {/* <div class="h-1 w-full rounded-lg bg-white"></div> */}
         </section>
         {<section className="sm:mx-24 lg:mx-32">
           {page

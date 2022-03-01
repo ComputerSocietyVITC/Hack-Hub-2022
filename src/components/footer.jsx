@@ -14,13 +14,13 @@ let contact = [
     emails: [
       {
         id: 1,
-        name: "Samank Gupta",
-        email: "samankgupta@gmail.com",
+        name: "Rohan Alroy",
+        email: "rohanalroy.b2020@vitstudent.ac.in",
       },
       {
         id: 2,
-        name: "Tanay Bhadula",
-        email: "tanaybhadula2002@gmail.com",
+        name: "Dikshita Mehta",
+        email: "dikshita.mehta2020@vitstudent.ac.in",
       },
     ],
   },

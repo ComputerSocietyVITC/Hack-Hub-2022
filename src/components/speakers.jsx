@@ -21,15 +21,15 @@ const Speakers = () => {
   return (
     <>
       <div
-        className="mt-24 px-8 sm:px-0 mb-40"
+        className="mt-0 px-8 sm:px-0 mb-28"
         ref={speakersRef}
         id="speakersContainer"
       />
-      <section className="sm:w-1/3 lg:w-1/5 my-8 py-12">
-        <section className="text-white font-Sansation font-bold text-5xl text-center">
+      <section className="sm:w-1/3 lg:w-1/5 my-8 py-12 mx-auto">
+        <section className="text-gradPink font-Sansation font-bold text-5xl md:text-6xl text-center">
           SPEAKERS
         </section>
-        <div class="h-1 w-full rounded-lg bg-white" />
+        {/* <div class="h-1 w-full rounded-lg bg-white" /> */}
       </section>
       <h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>
       {/* <section>

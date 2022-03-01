@@ -8,11 +8,11 @@ function About() {
 
   return (
     <section className="pt-12 px-8 sm:px-0" ref={aboutRef} id='aboutContainer'>
-      <section className="sm:w-1/3 lg:w-1/5">
-        <section className="text-white font-Sansation font-bold text-5xl text-center">
+      <section className="sm:w-1/3 lg:w-1/5 mx-auto">
+        <section className="text-gradPink font-Sansation font-bold text-5xl md:text-6xl text-center">
           ABOUT
         </section>
-        <div class="h-1 w-full rounded-lg bg-white"></div>
+        {/* <div class="h-1 w-full rounded-lg bg-white"></div> */}
       </section>
       <section className="font-Sansation text-bold text-lg md:text-2xl text-white my-16 sm:mx-24 lg:mx-32 text-center md:leading-loose">
         HackHub is the flagship hackathon conducted by IEEE Computer Society VIT Chennai every year to encourage tech enthusiasts from across the country to apply their technical skills to develop solutions for the future. HackHub aims to provide a platform for students to ideate, develop and present their solutions to challenging real-world problems. It is a platform to compete and network with like-minded and skilled students from all walks of life.
