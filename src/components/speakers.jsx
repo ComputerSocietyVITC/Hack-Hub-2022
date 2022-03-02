@@ -3,6 +3,7 @@ import "../styles/navbar.css";
 import "../styles/cards.css";
 import { useNav } from "../helpers/customHooks/useNav";
 import kriti from "../images/speakers/kriti.jpeg";
+import saurav from "../images/speakers/saurav.jpeg";
 
 const Speakers = () => {
 
@@ -20,6 +21,18 @@ const Speakers = () => {
         "Platform": "Microsoft Teams"
       },
       designation: "Course Mentor, GeeksforGeeks",
+    },
+    {
+      id: 2,
+      image: saurav,
+      name: "Saurav Bhagat",
+      details: {
+        "Topic": "How to succeed as a hacker in a Corporate job?",
+        "Date": "4th March 2022",
+        "Time": "6:00 PM",
+        "Platform": "Youtube Live"
+      },
+      designation: "Frontend Developer, Jumbotail",
     }
   ];
 

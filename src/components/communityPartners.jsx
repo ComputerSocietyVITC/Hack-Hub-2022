@@ -3,6 +3,7 @@ import "../styles/navbar.css";
 import randomize from "../images/communitypartners/randomize.png";
 import optica from "../images/communitypartners/optica.png";
 import iete from "../images/communitypartners/iete.png";
+import acm from "../images/communitypartners/acm.png";
 
 const page = [
     {
@@ -28,6 +29,11 @@ const page = [
                         key: 3,
                         src: iete,
                         href: 'http://ietevit.com/'
+                    },
+                    {
+                        key: 4,
+                        src: acm,
+                        href: 'http://bennett.acm.org/'
                     }
                 ],
             }

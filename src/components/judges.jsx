@@ -4,6 +4,7 @@ import "../styles/cards.css";
 import { useNav } from "../helpers/customHooks/useNav";
 import aylmer from "../images/judges/aylmer.jpeg";
 import mansi from "../images/judges/mansi.jpeg";
+import niket from "../images/judges/niket.jpg";
 
 const Judges = () => {
 
@@ -23,6 +24,13 @@ const Judges = () => {
       name: "Mansi Parashar",
       designation: "Software Development Intern, Amazon",
       linkedin: "https://www.linkedin.com/in/mansi-parashar-4bb713173",
+    },
+    {
+      id: 3,
+      image: niket,
+      name: "Niket Paresh Ganatra",
+      designation: "Intern, Bajaj Finserv",
+      linkedin: "https://www.linkedin.com/in/niket-ganatra",
     }
   ];
 

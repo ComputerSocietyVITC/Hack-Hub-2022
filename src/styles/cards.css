@@ -197,7 +197,7 @@ backface-visibility: hidden;
 }
 
 .speakercard:hover .speakercard__thumb {
-  height: 130px;
+  height: 150px;
 }
 
 .speakercard:hover .speakercard__thumb img {
