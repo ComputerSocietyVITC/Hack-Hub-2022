@@ -25,7 +25,7 @@ const Speakers = () => {
         ref={speakersRef}
         id="speakersContainer"
       />
-      <section className="sm:w-1/3 lg:w-1/5 my-8 py-12 mx-auto">
+      <section className="sm:w-1/3 lg:w-1/5 my-8 pb-12 mx-auto">
         <section className="text-gradPink font-Sansation font-bold text-5xl md:text-6xl text-center">
           SPEAKERS
         </section>

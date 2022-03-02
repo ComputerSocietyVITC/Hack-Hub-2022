@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/navbar.css";
 import { useNav } from '../helpers/customHooks/useNav';
+import lumos from "../images/sponsors/platinum/lumos.png";
 import devFolio from "../images/sponsors/platinum/devfolio.png";
 import polygon from "../images/sponsors/platinum/polygon.png";
 import digitalocean from "../images/sponsors/platinum/digitalocean.png";
@@ -31,6 +32,19 @@ const page = [
     sponsor: [
       {
         id: 1,
+        title: "Title",
+        border: "border-gray-200",
+        headingColor: "text-white",
+        content: [
+          {
+            key: 1,
+            src: lumos,
+            href: 'https://www.lumoslabs.co/'
+          }
+        ],
+      },
+      {
+        id: 2,
         title: "Platinum",
         border: "border-gray-200",
         headingColor: "bg-clip-text text-transparent bg-gradient-to-t from-gray-100 to-gray-300",
@@ -53,7 +67,7 @@ const page = [
         ],
       },
       {
-        id: 2,
+        id: 3,
         title: "Gold",
         border: "border-yellow-400",
         headingColor: "bg-clip-text text-transparent bg-gradient-to-t from-yellow-300 to-yellow-500",
@@ -86,7 +100,7 @@ const page = [
         ],
       },
       {
-        id: 3,
+        id: 4,
         title: "Silver",
         border: "border-gray-400",
         headingColor: "bg-clip-text text-transparent bg-gradient-to-t from-gray-300 to-gray-500",
@@ -182,7 +196,7 @@ const Sponsors = () => {
   return (
     <>
       <div className="mt-24 px-8 sm:px-0" ref={sponsorsRef} id='sponsContainer'>
-        <section className="sm:w-1/3 lg:w-1/5 my-8 py-12 mx-auto">
+        <section className="sm:w-1/3 lg:w-1/5 pt-12 pb-4 mx-auto">
           <section className="text-gradPink font-Sansation font-bold text-5xl md:text-6xl text-center">
             SPONSORS
           </section>

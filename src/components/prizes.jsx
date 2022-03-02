@@ -5,6 +5,7 @@ import { useNav } from "../helpers/customHooks/useNav";
 import Filecoin from "../images/sponsors/gold/filecoin.png";
 import Koii from "../images/sponsors/gold/koii.png";
 import Polygon from "../images/sponsors/platinum/polygon.png";
+import Lumos from "../images/sponsors/platinum/lumos.png";
 import Tezos from "../images/sponsors/gold/tezos.png";
 import Celo from "../images/sponsors/gold/celo.png";
 import Raahee from "../images/sponsors/silver/raahee.png";
@@ -183,7 +184,21 @@ const sponsorPrizes = [
         readMore: "https://pickle-cruiser-238.notion.site/Koii-Hackathon-Challenge-0580738b61794c7b99366cdd22641ae9"
       },
       {
-        id: 6,
+        id: 5,
+        head: Lumos,
+        alt: "Cudos",
+        title: "Best Hack built on Cudos",
+        border: "border-gray-400",
+        buttonColor: "bg-gray-400",
+        color: "#00c6f4",
+        items: [
+          "First Prize - 7000 INR",
+          "Second Prize - 5000 INR"
+        ],
+        readMore: "https://navy-cake-13c.notion.site/Cudos-Hackathon-Challenge-a62b847a0f2c4f73a027e0dc3e901731"
+      },
+      {
+        id: 7,
         head: Raahee,
         alt: "Raahee",
         title: "Internship Opportunity",
@@ -295,7 +310,7 @@ const Prizes = () => {
           </div>
         </div> */}
         <div className="py-16 text-4xl text-center font-Sansation font-bold uppercase text-gradPink">CHALLENGE PRIZES</div>
-        <div className="grid lg:grid-cols-3 justify-items-center px-20 grid-cols-1">
+        <div className="flex flex-wrap justify-around px-20">
           {sponsorPrizes.filter((item) => {
             return item.sponsorHeader === "Sponsor Prizes";
           })[0].sponsorPrize.map((item) => {
@@ -315,7 +330,7 @@ const Prizes = () => {
                   <Knowmore Color={item.buttonColor} />
                 </div> */}
 
-                <div class="challprizescard" style={{ "backgroundColor": item.color }}>
+                <div class="challprizescard mx-auto" style={{ "backgroundColor": item.color }}>
                   <div className="bg-white rounded-lg shadow-2xl">
                     <img src={item.head} alt={item.alt} className="object-contain px-3" />
                   </div>
