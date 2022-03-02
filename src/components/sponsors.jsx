@@ -196,7 +196,7 @@ const Sponsors = () => {
   return (
     <>
       <div className="mt-24 px-8 sm:px-0" ref={sponsorsRef} id='sponsContainer'>
-        <section className="sm:w-1/3 lg:w-1/5 pt-12 pb-4 mx-auto">
+        <section className="sm:w-1/3  pt-12 pb-4 mx-auto">
           <section className="text-gradPink font-Sansation font-bold text-5xl md:text-6xl text-center">
             SPONSORS
           </section>

@@ -1,22 +1,27 @@
 import React from "react";
-// import icon from "../images/icon.png";
 import "../styles/navbar.css";
+import "../styles/cards.css";
 import { useNav } from "../helpers/customHooks/useNav";
-
-// const Cards = ({ source }) => {
-//   return (
-//     <>
-//       <section className="">
-//         <section className="py-2 w-auto">
-//           <img src={source} />
-//         </section>
-//       </section>
-//     </>
-//   );
-// };
+import kriti from "../images/speakers/kriti.jpeg";
 
 const Speakers = () => {
+
   const speakersRef = useNav("Speakers");
+
+  const speakerDetails = [
+    {
+      id: 1,
+      image: kriti,
+      name: "Kriti Gera",
+      details: {
+        "Topic": "Roadmap to DSA",
+        "Date": "3rd March 2022",
+        "Time": "6:00 PM",
+        "Platform": "Microsoft Teams"
+      },
+      designation: "Course Mentor, GeeksforGeeks",
+    }
+  ];
 
   return (
     <>
@@ -31,20 +36,27 @@ const Speakers = () => {
         </section>
         {/* <div class="h-1 w-full rounded-lg bg-white" /> */}
       </section>
-      <h1 className="text-white font-Sansation font-bold text-4xl text-center">To Be Announced...</h1>
-      {/* <section>
-        <section className="md:pl-5 lg:pl-10 grid lg:grid-cols-3 lg:gap-6 md:grid-cols-3 md:gap-4 sm:grid-cols-1 gap-2 text-center items-center">
-          <section className="md:col-start-1 lg:col-start-1 lg:col-span-1 md:col-span-1">
-            <Cards source={icon} />
-          </section>
-          <section className="md:col-start-2 md:col-span-1 lg:col-start-2 lg:col-span-1">
-            <Cards source={icon} />
-          </section>
-          <section className="md:col-start-3 md:col-span-1 lg:col-start-3 lg:col-span-1">
-            <Cards source={icon} />
-          </section>
-        </section>
-      </section> */}
+      <div className="mt-16 grid gap-8 px-4 sm:px-40 lg:grid-cols-3 md:gap-12 xl:gap-28 sm:grid-cols-1">
+        {speakerDetails.map((speaker) => (
+          <article className="speakercard">
+            <header className="speakercard__thumb">
+              <img src={speaker.image} alt={speaker.name} />
+            </header>
+            <div className="speakercard__body">
+              <h2 className="speakercard__title text-gradPink">{speaker.name}</h2>
+              <h4 className="text-white text-lg mt-1 mb-3">{speaker.designation}</h4>
+              <div className="speakercard__description">
+                {Object.keys(speaker.details).map((key) => (
+                  <p className="text-white font-medium text-base">
+                    <span className="text-gradPink">{key} : </span>
+                    <span>{speaker.details[key]}</span>
+                  </p>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
     </>
   );
 };

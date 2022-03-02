@@ -154,3 +154,193 @@ backface-visibility: hidden;
     padding: 0 10px;
   }
 }
+
+
+.speakercard {
+  width: 340px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+}
+
+.speakercard a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.speakercard:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.speakercard__thumb {
+  height: 280px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.speakercard__thumb img {
+  width: 100%;
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.speakercard:hover .speakercard__thumb {
+  height: 130px;
+}
+
+.speakercard:hover .speakercard__thumb img {
+  opacity: 0.6;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.speakercard__body {
+  position: relative;
+  height: 90px;
+  padding-top: 10px;
+  text-align: center;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.speakercard:hover .speakercard__body {
+  height: 200px;
+}
+
+
+.speakercard__title {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.speakercard__description {
+  color: #fff;
+  line-height: 27px;
+  opacity: 0;
+  padding: 0 20px;
+  -webkit-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.speakercard:hover .speakercard__description {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .speakercard {
+    width: 280px;
+    margin: auto;
+  }
+
+  .speakercard__thumb {
+    height: 240px;
+  }
+
+  .speakercard:hover .speakercard__body {
+    height: 220px;
+  }
+
+
+  .speakercard__description {
+    padding: 0 10px;
+  }
+}
+
+
+
+.judgecard {
+  width: 340px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+}
+
+.judgecard a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.judgecard__thumb {
+  height: 280px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.judgecard__thumb img {
+  width: 100%;
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.judgecard:hover .judgecard__thumb img {
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.judgecard__body {
+  position: relative;
+  height: 90px;
+  padding-top: 10px;
+  text-align: center;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.judgecard__title {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .judgecard {
+    width: 280px;
+    margin: auto;
+  }
+
+  .judgecard__thumb {
+    height: 240px;
+  }
+}

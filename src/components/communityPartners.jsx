@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/navbar.css";
 import randomize from "../images/communitypartners/randomize.png";
 import optica from "../images/communitypartners/optica.png";
+import iete from "../images/communitypartners/iete.png";
 
 const page = [
     {
@@ -22,6 +23,11 @@ const page = [
                         key: 2,
                         src: optica,
                         href: 'http://jiitopticachapter.com/'
+                    },
+                    {
+                        key: 3,
+                        src: iete,
+                        href: 'http://ietevit.com/'
                     }
                 ],
             }
