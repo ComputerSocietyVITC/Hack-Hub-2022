@@ -42,9 +42,25 @@ const TimeLine = () => {
 
             <div class="timeline-item">
               <div class="timeline-dot"></div>
+              <div class="timeline-date">4th March 2022, 18:00</div>
+              <div class="timeline-content">
+                <h3>How to succeed as a hacker in a Corporate job?</h3>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
               <div class="timeline-date">4th March 2022, 23:59</div>
               <div class="timeline-content">
                 <h3>Registration Ends</h3>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">5th March 2022, 12:30</div>
+              <div class="timeline-content">
+                <h3>Blockchain 101 and Career in Web 3.0</h3>
               </div>
             </div>
 
