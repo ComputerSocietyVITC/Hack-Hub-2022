@@ -2,6 +2,7 @@ import React from "react";
 import instagram from "../images/footer/instagram.png";
 import linkedin from "../images/footer/linkedin.png";
 import twitter from "../images/footer/twitter.png";
+import youtube from "../images/footer/youtube.png";
 import comsoc from "../images/footer/comsoc.png";
 import hackhublogo from "../images/hackhublogo.png";
 import "../styles/styles.css";
@@ -51,6 +52,12 @@ let socials = [
       },
       {
         id: 4,
+        Link: "https://www.youtube.com/channel/UCOgwDinZGau4rwv3swAe-nQ/",
+        alt: "youtube",
+        src: youtube,
+      },
+      {
+        id: 5,
         Link: "https://www.ieeecsvitc.com/",
         alt: "comsoc",
         src: comsoc,

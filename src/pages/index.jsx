@@ -29,7 +29,7 @@ const IndexPage = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>HackHub</title>
+        <title>HackHub 2022</title>
       </Helmet>
       {
         loading ?

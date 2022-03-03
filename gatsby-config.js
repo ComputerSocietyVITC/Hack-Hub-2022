@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://hackhub.ieeecsvitc.com/",
     url: "https://hackhub.ieeecsvitc.com/",
-    title: "HackHub2022 - IEEE Computer Society's Premier Hackathon",
+    title: "HackHub 2022 - IEEE Computer Society's Premier Hackathon",
     titleTemplate: " ",
     image: "./src/images/hackhubsquarelogo.png",
     crossOrigin: "use-credentials",

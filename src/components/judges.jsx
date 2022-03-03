@@ -4,6 +4,7 @@ import "../styles/cards.css";
 import { useNav } from "../helpers/customHooks/useNav";
 import aylmer from "../images/judges/aylmer.jpeg";
 import mansi from "../images/judges/mansi.jpeg";
+import vydekimam from "../images/judges/vydekimam.jpeg";
 import niket from "../images/judges/niket.jpg";
 
 const Judges = () => {
@@ -22,7 +23,7 @@ const Judges = () => {
       id: 2,
       image: mansi,
       name: "Mansi Parashar",
-      designation: "Software Development Intern, Amazon",
+      designation: "SDE Intern, Amazon",
       linkedin: "https://www.linkedin.com/in/mansi-parashar-4bb713173",
     },
     {
@@ -31,6 +32,13 @@ const Judges = () => {
       name: "Niket Paresh Ganatra",
       designation: "Intern, Bajaj Finserv",
       linkedin: "https://www.linkedin.com/in/niket-ganatra",
+    },
+    {
+      id: 4,
+      image: vydekimam,
+      name: "Dr. Vydeki D",
+      designation: "Counsellor, IEEE SB VIT Chennai",
+      linkedin: "https://in.linkedin.com/in/vydeki-vijayakumar-8a402456",
     }
   ];
 

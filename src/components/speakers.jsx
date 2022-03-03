@@ -4,6 +4,7 @@ import "../styles/cards.css";
 import { useNav } from "../helpers/customHooks/useNav";
 import kriti from "../images/speakers/kriti.jpeg";
 import saurav from "../images/speakers/saurav.jpeg";
+import nikhil from "../images/speakers/nikhil.jpeg";
 
 const Speakers = () => {
 
@@ -14,6 +15,7 @@ const Speakers = () => {
       id: 1,
       image: kriti,
       name: "Kriti Gera",
+      link: "https://tinyurl.com/28kcrch7",
       details: {
         "Topic": "Roadmap to DSA",
         "Date": "3rd March 2022",
@@ -26,6 +28,7 @@ const Speakers = () => {
       id: 2,
       image: saurav,
       name: "Saurav Bhagat",
+      link: "https://www.youtube.com/channel/UCOgwDinZGau4rwv3swAe-nQ",
       details: {
         "Topic": "How to succeed as a hacker in a Corporate job?",
         "Date": "4th March 2022",
@@ -33,6 +36,19 @@ const Speakers = () => {
         "Platform": "Youtube Live"
       },
       designation: "Frontend Developer, Jumbotail",
+    },
+    {
+      id: 3,
+      image: nikhil,
+      name: "Nikhil Aparajit",
+      link: "https://www.youtube.com/channel/UCOgwDinZGau4rwv3swAe-nQ",
+      details: {
+        "Topic": "Blockchain 101 and Career in Web 3.0",
+        "Date": "5th March 2022",
+        "Time": "12:30 PM",
+        "Platform": "Youtube Live"
+      },
+      designation: "Community Manager, Lumos Labs",
     }
   ];
 
@@ -62,7 +78,7 @@ const Speakers = () => {
                 {Object.keys(speaker.details).map((key) => (
                   <p className="text-white font-medium text-base">
                     <span className="text-gradPink">{key} : </span>
-                    <span>{speaker.details[key]}</span>
+                    <span>{key === "Platform" ? <a href={speaker.link} target="_blank" rel="noreferrer">{speaker.details[key]}</a> : speaker.details[key]}</span>
                   </p>
                 ))}
               </div>
