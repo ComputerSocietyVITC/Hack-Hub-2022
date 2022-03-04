@@ -28,12 +28,12 @@ const Speakers = () => {
       id: 2,
       image: saurav,
       name: "Saurav Bhagat",
-      link: "https://www.youtube.com/channel/UCOgwDinZGau4rwv3swAe-nQ",
+      link: "https://tinyurl.com/HackHub22",
       details: {
         "Topic": "How to succeed as a hacker in a Corporate job?",
         "Date": "4th March 2022",
         "Time": "6:00 PM",
-        "Platform": "Youtube Live"
+        "Platform": "Microsoft Teams"
       },
       designation: "Frontend Developer, Jumbotail",
     },
@@ -41,12 +41,12 @@ const Speakers = () => {
       id: 3,
       image: nikhil,
       name: "Nikhil Aparajit",
-      link: "https://www.youtube.com/channel/UCOgwDinZGau4rwv3swAe-nQ",
+      link: "https://tinyurl.com/HackHub22",
       details: {
         "Topic": "Blockchain 101 and Career in Web 3.0",
         "Date": "5th March 2022",
         "Time": "12:30 PM",
-        "Platform": "Youtube Live"
+        "Platform": "Microsoft Teams"
       },
       designation: "Community Manager, Lumos Labs",
     }
