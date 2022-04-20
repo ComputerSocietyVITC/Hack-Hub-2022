@@ -103,7 +103,7 @@ const prizeList = [
           "Hacker Plan from Replit",
           "Free Educational License from JetBrains",
           "15% Discount from Badelog",
-          "250 Clarity Coins from Simpliclarify",
+          "50 Clarity Coins from Simpliclarify",
           "5-Year free upgrades from Taskade",
           "Certificate of Participation"
         ],
